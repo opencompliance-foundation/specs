@@ -11,6 +11,7 @@
 - Draft linkage rules from proof-bundle claims into synthetic corridor control identifiers.
 - A machine-readable control-boundary file for the current synthetic corridor.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
+- Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 
 ## What does not exist yet
 

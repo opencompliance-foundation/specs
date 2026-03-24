@@ -15,6 +15,7 @@ It is the artifact that later verification-result envelopes, punch-lists or cert
 - `scope`
 - `claims`
 - `summary`
+- `proofRunner`
 
 ## Claim object
 
@@ -42,6 +43,21 @@ Each claim entry should include:
 3. A proof bundle may be published without a certificate.
 4. A proof bundle is replayable only if its required inputs are pinned or disclosed well enough for independent rerun.
 5. A proof bundle does not by itself say whether a scoped certificate was issued or withheld. That decision belongs in the verification-result envelope.
+6. If a claim is marked `proved`, the proof bundle should disclose which proof runner checked the decidable slice.
+
+## Proof runner object
+
+The `proofRunner` object should include:
+
+- `batchId`
+- `fixture` or equivalent scope identifier
+- `status`
+- `theoremCount`
+- `verifiedTheorems`
+
+Allowed status values:
+
+- `verified`
 
 ## Framework mapping entry
 

@@ -13,7 +13,8 @@
     "scope",
     "claims",
     "summary",
-    "nextActions"
+    "nextActions",
+    "proofRunner"
   ],
   "properties": {
     "bundleId": {
@@ -128,6 +129,53 @@
       "items": {
         "type": "string"
       }
+    },
+    "proofRunner": {
+      "type": "object",
+      "required": [
+        "batchId",
+        "fixture",
+        "status",
+        "theoremCount",
+        "verifiedTheorems",
+        "command"
+      ],
+      "properties": {
+        "batchId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fixture": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "verified"
+          ]
+        },
+        "theoremCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verifiedTheorems": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "command": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

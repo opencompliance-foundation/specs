@@ -56,10 +56,17 @@ The `proofRunner` object should include:
 - `status`
 - `theoremCount`
 - `verifiedTheorems`
+- `importedModules`
+- `verifiedClaims`
+- `boundaryInventory`
 
 Allowed status values:
 
 - `verified`
+
+`verifiedClaims` should say which proved claims actually entered the public Lean batch, which control boundary and predicate they used, and which theorem name was checked.
+
+`boundaryInventory` should make the omission boundary explicit. If a claim is marked `proved` in the corridor but has no public Lean predicate yet, that omission belongs here instead of being silently hidden.
 
 ## Framework mapping entry
 

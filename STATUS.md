@@ -12,6 +12,7 @@
 - A machine-readable control-boundary file for the current synthetic corridor.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - A draft classification-result artifact and schema for the public prove/attest/judgment routing surface, plus a first public `mixedControls` decomposition format in the medium ExampleCo corridor.
+- The proof-runner output now derives Lean batch imports and verified claim bindings from control-boundary metadata and surfaces omitted proved claims as explicit boundary inventory instead of silently dropping them.
 - Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 - A draft signed-artifact manifest format plus synthetic public example signature bundles over the issued and lifecycle packs.
 - Draft transparency-log and inclusion-proof artifacts plus public transparency outputs for the synthetic ExampleCo corridors.

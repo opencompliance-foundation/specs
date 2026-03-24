@@ -150,6 +150,9 @@
         "status",
         "theoremCount",
         "verifiedTheorems",
+        "importedModules",
+        "verifiedClaims",
+        "boundaryInventory",
         "command"
       ],
       "properties": {
@@ -177,6 +180,111 @@
             "type": "string",
             "minLength": 1
           }
+        },
+        "importedModules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "verifiedClaims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "claimId",
+              "controlId",
+              "module",
+              "predicate",
+              "evidenceClaimType",
+              "theorem"
+            ],
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "controlId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "module": {
+                "type": "string",
+                "minLength": 1
+              },
+              "predicate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidenceClaimType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "theorem": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "boundaryInventory": {
+          "type": "object",
+          "required": [
+            "provedClaimCount",
+            "leanBackedClaimCount",
+            "omittedProvedClaims"
+          ],
+          "properties": {
+            "provedClaimCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "leanBackedClaimCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "omittedProvedClaims": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "claimId",
+                  "title",
+                  "controlRefs",
+                  "reason"
+                ],
+                "properties": {
+                  "claimId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "controlRefs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "enum": [
+                      "no_evidence_ref",
+                      "no_public_lean_predicate",
+                      "no_registered_batch_builder"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
         },
         "command": {
           "type": "array",

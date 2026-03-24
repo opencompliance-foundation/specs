@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/classification-result.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/classification-result.schema.json",
   "title": "OpenCompliance Classification Result",
   "type": "object",
   "required": [

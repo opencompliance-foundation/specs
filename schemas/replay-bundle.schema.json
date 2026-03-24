@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/replay-bundle.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/replay-bundle.schema.json",
   "title": "OpenCompliance Replay Bundle",
   "type": "object",
   "required": [

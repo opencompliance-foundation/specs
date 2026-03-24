@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/exact-anchor-review-pilot.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/exact-anchor-review-pilot.schema.json",
   "title": "OpenCompliance Exact Anchor Review Pilot",
   "type": "object",
   "required": [

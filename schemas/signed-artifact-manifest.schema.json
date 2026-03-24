@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/signed-artifact-manifest.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/signed-artifact-manifest.schema.json",
   "title": "OpenCompliance Signed Artifact Manifest",
   "type": "object",
   "required": [

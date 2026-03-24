@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/control-boundaries.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/control-boundaries.schema.json",
   "title": "OpenCompliance Control Boundaries",
   "type": "object",
   "required": [

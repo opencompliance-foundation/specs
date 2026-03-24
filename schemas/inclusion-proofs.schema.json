@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/inclusion-proofs.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/inclusion-proofs.schema.json",
   "title": "OpenCompliance Transparency Inclusion Proofs",
   "type": "object",
   "required": [

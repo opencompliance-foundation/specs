@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/certificate-lifecycle.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/certificate-lifecycle.schema.json",
   "title": "OpenCompliance Certificate Lifecycle Event",
   "type": "object",
   "required": [

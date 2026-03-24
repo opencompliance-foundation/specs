@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/punch-list.schema.json",
+  "$id": "https://opencompliancefoundation.com/specs/schemas/punch-list.schema.json",
   "title": "OpenCompliance Punch-List",
   "type": "object",
   "required": [

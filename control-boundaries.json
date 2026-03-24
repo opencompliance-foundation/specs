@@ -40,7 +40,8 @@
       },
       "publicExamples": [
         "minimal",
-        "medium"
+        "medium",
+        "cyber-baseline"
       ],
       "sourceMappings": [
         {
@@ -1197,7 +1198,9 @@
       "classification": "decidable",
       "evidenceClaimType": "network_firewall_boundary",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "cyber-baseline"
+      ],
       "sourceMappings": [
         {
           "framework": "Cyber Essentials",
@@ -1292,7 +1295,9 @@
       "classification": "decidable",
       "evidenceClaimType": "secure_configuration_state",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "cyber-baseline"
+      ],
       "sourceMappings": [
         {
           "framework": "Cyber Essentials",
@@ -1387,7 +1392,9 @@
       "classification": "decidable",
       "evidenceClaimType": "security_update_state",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "cyber-baseline"
+      ],
       "sourceMappings": [
         {
           "framework": "Cyber Essentials",
@@ -1482,7 +1489,9 @@
       "classification": "decidable",
       "evidenceClaimType": "malware_protection_state",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "cyber-baseline"
+      ],
       "sourceMappings": [
         {
           "framework": "Cyber Essentials",
@@ -1566,7 +1575,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_context_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",
@@ -1638,7 +1649,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_risk_management_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",
@@ -1721,7 +1734,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_human_oversight_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",
@@ -1782,7 +1797,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_monitoring_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",
@@ -1865,7 +1882,9 @@
       "classification": "decidable",
       "evidenceClaimType": "ai_content_labeling_state",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",

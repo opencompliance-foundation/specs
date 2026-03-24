@@ -15,7 +15,7 @@
 - A framework-source-availability note that separates public exact-anchor frameworks, crosswalk-derived candidates, and explicit blocker states.
 - A first exact-anchor review pilot that now spans reviewed public-source anchors for GDPR, IRAP, Cyber Essentials, NCSC CAF 4.0, NIST CSF 2.0, NIST SP 800-53 Rev. 5.1, the EU AI Act, the EU GPAI Code of Practice, and NIST AI RMF 1.0.
 - The same pilot now also records crosswalk-derived candidate anchors for ISO/IEC 42001, ISO/IEC 23894, and ISO/IEC 42005 instead of pretending those ISO AI standards are already open-reviewed exact mappings.
-- Planned controls without public fixtures now exist in `control-boundaries.json` for serious next-step corridors: Cyber Essentials boundary/configuration/update/malware controls and AI governance controls for the EU AI Act and related frameworks.
+- Public synthetic corridors now exist for Cyber Essentials-style boundary/configuration/update/malware controls and for AI-governance controls spanning the EU AI Act, the EU GPAI Code of Practice, NIST AI RMF, and candidate ISO AI crosswalks.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - A draft classification-result artifact and schema for the public prove/attest/judgment routing surface, plus a first public `mixedControls` decomposition format in the medium ExampleCo corridor.
 - The proof-runner output now derives Lean batch imports and verified claim bindings from control-boundary metadata and surfaces omitted proved claims as explicit boundary inventory instead of silently dropping them.
@@ -30,7 +30,7 @@
 - No signed release process for these formats.
 - No independent implementation conformance programme.
 - No externally reviewed clause-, Annex A-, criterion-, or point-of-focus anchor set for the public corridor yet.
-- No public fixture corridors yet for the newly planned Cyber Essentials and AI-governance controls.
+- No live-connector or real-organisation corridors yet for the newer Cyber Essentials and AI-governance controls.
 
 ## Publishing rule
 

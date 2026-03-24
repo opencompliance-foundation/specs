@@ -27,7 +27,7 @@ They describe the artifact shapes OpenCompliance intends to stabilize:
 - public synthetic example packs,
 - and versioning rules for those artifacts.
 
-They are useful now for review and example generation. They are not yet a stable standard.
+They are useful now for review and example generation. The public synthetic ExampleCo set now spans seven corridor packs, including dedicated cyber-baseline and AI-governance examples. They are not yet a stable standard.
 
 ## Contents
 

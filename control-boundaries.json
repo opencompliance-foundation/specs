@@ -62,6 +62,26 @@
           "framework": "GDPR",
           "family": "security_of_processing",
           "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "Cyber Essentials",
+          "family": "user_access_control",
+          "controlId": "cyber_essentials.family.user_access_control"
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "family": "identity_and_access_control",
+          "controlId": "ncsc_caf_4_0.family.identity_and_access_control"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "identity_management_and_access_control",
+          "controlId": "nist_csf_2_0.family.identity_management_and_access_control"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "identification_and_authentication",
+          "controlId": "nist_sp_800_53_rev_5_1.family.identification_and_authentication"
         }
       ],
       "mappingStatus": {
@@ -97,6 +117,32 @@
               "article",
               "recital",
               "guidance"
+            ]
+          },
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NCSC CAF 4.0",
+            "anchorKinds": [
+              "objective",
+              "principle"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
             ]
           }
         ]
@@ -204,6 +250,21 @@
           "framework": "IRAP",
           "family": "logging_monitoring",
           "controlId": "irap.family.logging_monitoring"
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "family": "security_monitoring",
+          "controlId": "ncsc_caf_4_0.family.security_monitoring"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "protective_technology_and_logging",
+          "controlId": "nist_csf_2_0.family.protective_technology_and_logging"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "audit_and_accountability",
+          "controlId": "nist_sp_800_53_rev_5_1.family.audit_and_accountability"
         }
       ],
       "mappingStatus": {
@@ -231,6 +292,25 @@
             "framework": "IRAP",
             "anchorKinds": [
               "ism_control"
+            ]
+          },
+          {
+            "framework": "NCSC CAF 4.0",
+            "anchorKinds": [
+              "objective",
+              "principle"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
             ]
           }
         ]
@@ -278,6 +358,16 @@
           "framework": "GDPR",
           "family": "security_of_processing",
           "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "data_in_transit_protection",
+          "controlId": "nist_csf_2_0.family.data_in_transit_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "transmission_confidentiality_and_integrity",
+          "controlId": "nist_sp_800_53_rev_5_1.family.transmission_confidentiality_and_integrity"
         }
       ],
       "mappingStatus": {
@@ -313,6 +403,18 @@
               "article",
               "recital",
               "guidance"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
             ]
           }
         ]
@@ -764,6 +866,16 @@
           "framework": "IRAP",
           "family": "backup_and_recovery",
           "controlId": "irap.family.backup_and_recovery"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "data_backup_and_recovery_preparation",
+          "controlId": "nist_csf_2_0.family.data_backup_and_recovery_preparation"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "system_backup",
+          "controlId": "nist_sp_800_53_rev_5_1.family.system_backup"
         }
       ],
       "mappingStatus": {
@@ -791,6 +903,18 @@
             "framework": "IRAP",
             "anchorKinds": [
               "ism_control"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
             ]
           }
         ]
@@ -1064,6 +1188,747 @@
         "doesNotProve": [
           "That privacy by design is satisfied",
           "That product and legal judgment can be reduced to a narrow theorem"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.boundary-01",
+      "title": "Default-deny network boundary in place",
+      "classification": "decidable",
+      "evidenceClaimType": "network_firewall_boundary",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "firewalls",
+          "controlId": "cyber_essentials.family.firewalls"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "boundary_protection",
+          "controlId": "nist_csf_2_0.family.boundary_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "boundary_protection",
+          "controlId": "nist_sp_800_53_rev_5_1.family.boundary_protection"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "network_security",
+          "controlId": "iso27001.family.network_security"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "network_security",
+          "controlId": "soc2.family.network_security"
+        },
+        {
+          "framework": "IRAP",
+          "family": "network_boundary_and_crypto",
+          "controlId": "irap.family.network_boundary_and_crypto"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped network boundary is default-deny inbound and only declared ingress paths remain exposed.",
+        "doesNotProve": [
+          "That every route through the wider network estate is reviewed correctly",
+          "That firewall policy alone makes the whole perimeter sufficient"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.cfg-01",
+      "title": "Secure baseline configuration export present",
+      "classification": "decidable",
+      "evidenceClaimType": "secure_configuration_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "secure_configuration",
+          "controlId": "cyber_essentials.family.secure_configuration"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "configuration_management",
+          "controlId": "nist_csf_2_0.family.configuration_management"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "configuration_settings",
+          "controlId": "nist_sp_800_53_rev_5_1.family.configuration_settings"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "secure_configuration",
+          "controlId": "iso27001.family.secure_configuration"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "system_operations_and_hardening",
+          "controlId": "soc2.family.system_operations_and_hardening"
+        },
+        {
+          "framework": "IRAP",
+          "family": "secure_configuration",
+          "controlId": "irap.family.secure_configuration"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That a typed baseline configuration export exists for the scoped assets and that prohibited insecure defaults are absent in the current snapshot.",
+        "doesNotProve": [
+          "That every hardening rule is complete for every asset class",
+          "That the organization-wide configuration program is otherwise adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.patch-01",
+      "title": "Supported security updates current",
+      "classification": "decidable",
+      "evidenceClaimType": "security_update_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "security_update_management",
+          "controlId": "cyber_essentials.family.security_update_management"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "software_maintenance_and_patch_management",
+          "controlId": "nist_csf_2_0.family.software_maintenance_and_patch_management"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "flaw_remediation",
+          "controlId": "nist_sp_800_53_rev_5_1.family.flaw_remediation"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "vulnerability_and_patch_management",
+          "controlId": "iso27001.family.vulnerability_and_patch_management"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "vulnerability_management",
+          "controlId": "soc2.family.vulnerability_management"
+        },
+        {
+          "framework": "IRAP",
+          "family": "patch_and_vulnerability_management",
+          "controlId": "irap.family.patch_and_vulnerability_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped asset set is on supported versions and that no security update is overdue beyond the declared patch window.",
+        "doesNotProve": [
+          "That vulnerability management is complete for every dependency type",
+          "That emergency remediation decisions were always adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.malware-01",
+      "title": "Endpoint malware protection baseline enabled",
+      "classification": "decidable",
+      "evidenceClaimType": "malware_protection_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "malware_protection",
+          "controlId": "cyber_essentials.family.malware_protection"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "malicious_code_protection",
+          "controlId": "nist_csf_2_0.family.malicious_code_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "malicious_code_protection",
+          "controlId": "nist_sp_800_53_rev_5_1.family.malicious_code_protection"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "malware_protection",
+          "controlId": "iso27001.family.malware_protection"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "endpoint_protection",
+          "controlId": "soc2.family.endpoint_protection"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped endpoints have anti-malware or application-control protection enabled and that the protection state is current in the typed export.",
+        "doesNotProve": [
+          "That every endpoint detection rule is tuned correctly",
+          "That malware protection alone is sufficient for the broader endpoint-security program"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-01",
+      "title": "AI system context and intended use documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_context_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "technical_documentation_and_intended_purpose",
+          "controlId": "eu_ai_act.family.technical_documentation_and_intended_purpose"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "context_and_intended_use",
+          "controlId": "nist_ai_rmf_1_0.family.context_and_intended_use"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "documented_context_and_ai_objectives",
+          "controlId": "iso_iec_42001.family.documented_context_and_ai_objectives"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_inputs",
+          "controlId": "iso_iec_42005.family.impact_assessment_inputs"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped AI system's intended use, deployment context, owner, and affected stakeholder class are documented.",
+        "doesNotProve": [
+          "That the documented context is complete or adequate",
+          "That the AI system is lawful or acceptable for every deployment"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-02",
+      "title": "AI risk management process documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_risk_management_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "ai_risk_management",
+          "controlId": "eu_ai_act.family.ai_risk_management"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "risk_management_process",
+          "controlId": "nist_ai_rmf_1_0.family.risk_management_process"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "ai_management_system_risk_process",
+          "controlId": "iso_iec_42001.family.ai_management_system_risk_process"
+        },
+        {
+          "framework": "ISO/IEC 23894",
+          "family": "ai_risk_management_guidance",
+          "controlId": "iso_iec_23894.family.ai_risk_management_guidance"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_process",
+          "controlId": "iso_iec_42005.family.impact_assessment_process"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 23894",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states a lifecycle AI risk-management process exists, declared risk tolerances are recorded, and the review window is current.",
+        "doesNotProve": [
+          "That the AI risk-management process is adequate",
+          "That every identified risk has been mitigated sufficiently"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-03",
+      "title": "AI human oversight assignment documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_human_oversight_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "human_oversight",
+          "controlId": "eu_ai_act.family.human_oversight"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "human_ai_roles_and_oversight",
+          "controlId": "nist_ai_rmf_1_0.family.human_ai_roles_and_oversight"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "roles_responsibilities_and_oversight",
+          "controlId": "iso_iec_42001.family.roles_responsibilities_and_oversight"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states human oversight roles, escalation paths, and override responsibilities are documented for the scoped AI system.",
+        "doesNotProve": [
+          "That the assigned humans will exercise oversight effectively",
+          "That the oversight design is sufficient for every use case"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-04",
+      "title": "AI monitoring and incident handling plan documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_monitoring_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "ai_monitoring_and_incident_handling",
+          "controlId": "eu_ai_act.family.ai_monitoring_and_incident_handling"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "post_deployment_monitoring",
+          "controlId": "nist_ai_rmf_1_0.family.post_deployment_monitoring"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "monitoring_measurement_and_improvement",
+          "controlId": "iso_iec_42001.family.monitoring_measurement_and_improvement"
+        },
+        {
+          "framework": "ISO/IEC 23894",
+          "family": "risk_monitoring_and_review",
+          "controlId": "iso_iec_23894.family.risk_monitoring_and_review"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_monitoring",
+          "controlId": "iso_iec_42005.family.impact_assessment_monitoring"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 23894",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states there is a monitoring owner, an incident escalation path, and a current review window for the scoped AI system.",
+        "doesNotProve": [
+          "That monitoring coverage is adequate",
+          "That every incident will be detected or handled correctly"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-05",
+      "title": "AI-generated content disclosure mechanism configured",
+      "classification": "decidable",
+      "evidenceClaimType": "ai_content_labeling_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "ai_generated_content_transparency",
+          "controlId": "eu_ai_act.family.ai_generated_content_transparency"
+        },
+        {
+          "framework": "EU GPAI Code of Practice",
+          "family": "transparency_and_copyright",
+          "controlId": "eu_gpai_code.family.transparency_and_copyright"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "transparency_and_accountability",
+          "controlId": "nist_ai_rmf_1_0.family.transparency_and_accountability"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "documented_information_and_communication",
+          "controlId": "iso_iec_42001.family.documented_information_and_communication"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "EU GPAI Code of Practice",
+            "anchorKinds": [
+              "chapter",
+              "commitment"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped generated-content pipeline enforces a declared disclosure marker or metadata flag for outputs in the current configuration snapshot.",
+        "doesNotProve": [
+          "That every user-facing disclosure is understandable in context",
+          "That the wider transparency program is complete"
         ]
       }
     }

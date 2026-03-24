@@ -14,6 +14,10 @@ They are a narrow, review-oriented artifact that records:
 - where exact anchors are still only candidates,
 - and where exact anchor publication is blocked because the authoritative source text is proprietary or otherwise not publicly available for safe open publication.
 
+Pilot files may also include controls that do not yet have public synthetic fixtures.
+
+That is allowed when the goal is to make the mapping and review boundary explicit before runtime evidence or examples exist.
+
 ## Review status meanings
 
 - `public_source_reviewed`

@@ -34,6 +34,7 @@ They are useful now for review and example generation. They are not yet a stable
 - `STATUS.md`
 - `VERSIONING.md`
 - `mapping-methodology.md`
+- `framework-source-availability.md`
 - `control-boundaries.json`
 - `review-pilots/README.md`
 - `review-pilots/exact-anchor-review-pilot.json`

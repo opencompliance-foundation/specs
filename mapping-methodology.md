@@ -6,7 +6,7 @@ OpenCompliance does not map raw framework clauses directly into Lean theorems.
 
 The current public corridor works in three layers:
 
-1. Source frameworks such as ISO 27001, SOC 2, IRAP, and GDPR.
+1. Source frameworks such as ISO 27001, SOC 2, IRAP, GDPR, Cyber Essentials, NIST CSF 2.0, NIST SP 800-53, and AI-governance sources like the EU AI Act or NIST AI RMF.
 2. Narrow OpenCompliance controls that isolate a single atomic or near-atomic obligation.
 3. Lean 4 predicates for the decidable slice of those OpenCompliance controls.
 
@@ -30,6 +30,7 @@ The public corridor is still draft and family-proxy only.
 - Lean proofs exist for a narrow decidable subset.
 - OSCAL-shaped mapping collections exist for the same synthetic corridor.
 - Exact reviewed source anchors are not yet published for the public corridor.
+- Some additional controls now exist as planned boundaries with empty `publicExamples` arrays. That means the mapping and claim-shape work is ahead of fixture implementation on purpose.
 
 ## State-of-the-art target
 
@@ -73,3 +74,9 @@ That first pilot now exists as a separate review artifact. It is intentionally m
 - public-source exact anchors where the authoritative source is actually open,
 - candidate anchors where the public evidence is not yet strong enough,
 - and explicit blocker entries where proprietary or non-public source material still prevents a defensible exact-anchor publication.
+
+The same rule now applies to AI standards.
+
+- Public EU and NIST AI frameworks can carry reviewed exact anchors.
+- Public crosswalks into ISO AI standards can carry candidate anchors.
+- Licensed ISO source review is still required before those candidate anchors can be promoted to reviewed exact-anchor status.

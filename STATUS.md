@@ -12,7 +12,10 @@
 - A machine-readable control-boundary file for the current synthetic corridor.
 - Explicit mapping-maturity metadata that says the current public corridor is still family-proxy and names the exact-anchor target state.
 - A draft mapping-methodology note and a control-boundaries schema so mapping maturity and review intent are machine-checkable.
-- A first exact-anchor review pilot with public-source exact anchors for selected IRAP and GDPR controls, plus explicit blocker records for ISO 27001 and SOC 2 exact-anchor publication.
+- A framework-source-availability note that separates public exact-anchor frameworks, crosswalk-derived candidates, and explicit blocker states.
+- A first exact-anchor review pilot that now spans reviewed public-source anchors for GDPR, IRAP, Cyber Essentials, NCSC CAF 4.0, NIST CSF 2.0, NIST SP 800-53 Rev. 5.1, the EU AI Act, the EU GPAI Code of Practice, and NIST AI RMF 1.0.
+- The same pilot now also records crosswalk-derived candidate anchors for ISO/IEC 42001, ISO/IEC 23894, and ISO/IEC 42005 instead of pretending those ISO AI standards are already open-reviewed exact mappings.
+- Planned controls without public fixtures now exist in `control-boundaries.json` for serious next-step corridors: Cyber Essentials boundary/configuration/update/malware controls and AI governance controls for the EU AI Act and related frameworks.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - A draft classification-result artifact and schema for the public prove/attest/judgment routing surface, plus a first public `mixedControls` decomposition format in the medium ExampleCo corridor.
 - The proof-runner output now derives Lean batch imports and verified claim bindings from control-boundary metadata and surfaces omitted proved claims as explicit boundary inventory instead of silently dropping them.
@@ -27,6 +30,7 @@
 - No signed release process for these formats.
 - No independent implementation conformance programme.
 - No externally reviewed clause-, Annex A-, criterion-, or point-of-focus anchor set for the public corridor yet.
+- No public fixture corridors yet for the newly planned Cyber Essentials and AI-governance controls.
 
 ## Publishing rule
 

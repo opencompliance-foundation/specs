@@ -18,6 +18,7 @@ They describe the artifact shapes OpenCompliance intends to stabilize:
 - proof bundles,
 - witness receipts,
 - revocations,
+- public synthetic example packs,
 - and versioning rules for those artifacts.
 
 They are useful now for review and example generation. They are not yet a stable standard.
@@ -30,3 +31,4 @@ They are useful now for review and example generation. They are not yet a stable
 - `artifacts/proof-bundle.md`
 - `artifacts/witness-receipt.md`
 - `artifacts/revocation.md`
+- `artifacts/public-example-pack.md`

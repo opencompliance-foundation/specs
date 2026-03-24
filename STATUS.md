@@ -3,9 +3,10 @@
 ## What exists today
 
 - Draft format documents for the main public artifacts.
-- A synthetic example bundle that follows those draft formats.
-- A seed OSCAL projection for the same synthetic example.
-- Conformance vectors derived from the same example.
+- Synthetic `ExampleCo` example bundles that follow those draft formats.
+- Seed OSCAL projections for the same synthetic examples.
+- Conformance vectors derived from the same examples.
+- Draft linkage rules from proof-bundle claims into synthetic corridor control identifiers.
 
 ## What does not exist yet
 

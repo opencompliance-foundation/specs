@@ -20,14 +20,14 @@
       "ISO/IEC 23894",
       "ISO/IEC 42005"
     ],
-      "controlsCovered": 20,
+    "controlsCovered": 21,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 93,
-    "publicSourceReviewed": 53,
+    "reviewEntries": 101,
+    "publicSourceReviewed": 59,
     "candidatePublicSourceUnreviewed": 14,
-    "blockedNonpublicSourceReview": 26
+    "blockedNonpublicSourceReview": 28
   },
   "controls": [
     {
@@ -173,6 +173,157 @@
           ],
           "blocker": "Exact SOC 2 anchor publication requires licensed or account-gated Trust Services Criteria review. Public AICPA material establishes the TSC category structure, but not a publishable exact-anchor corpus for this project.",
           "rationale": "The pilot encodes the blocker explicitly so the public mapping is not overstated.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Trust Services Criteria category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.id-04",
+      "title": "Unique infrastructure access identities required",
+      "decompositionNote": "The corridor proves that the scoped infrastructure access plane requires named identities and that no shared administrative accounts are present in the declared environment. It does not prove full authentication strength, all break-glass governance, or the correctness of every privilege decision.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1263",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow privileged-identity invariant for the scoped infrastructure access plane: named identities are required and shared administrative accounts are absent. That is a defensible functional subset of the ISM requirement that unique privileged user accounts be used for administering individual server applications.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for personnel security",
+            "locator": "ISM-1263"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 32(1)(b)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Unique named infrastructure identities and the absence of shared administrative accounts contribute to the confidentiality, integrity, and resilience of the processing systems in scope, but they remain only one narrow technical slice of the wider Article 32 obligation.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 32(1)(b)"
+          }
+        },
+        {
+          "framework": "Cyber Essentials",
+          "anchorType": "control_theme",
+          "anchorId": "User Access Control / unique credentials and separate administrative accounts",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow, machine-checkable slice of Cyber Essentials user-access-control requirements: users authenticate with unique credentials for the scoped administrative plane and shared administrative accounts are absent in that slice.",
+          "authoritativeSource": {
+            "authority": "NCSC",
+            "documentId": "Cyber Essentials Requirements for IT Infrastructure v3.2",
+            "locator": "User Access Control / authenticate users with unique credentials; use separate accounts to perform administrative activities only"
+          }
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "anchorType": "principle",
+          "anchorId": "Principle B2",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves one narrow identity-accountability invariant within CAF Principle B2 on identity and access control without implying the whole principle is satisfied.",
+          "authoritativeSource": {
+            "authority": "NCSC",
+            "documentId": "Cyber Assessment Framework v4.0 supplementary information",
+            "locator": "Principle B2 Identity and Access Control"
+          }
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "anchorType": "function_category_subcategory",
+          "anchorId": "PR.AA-01",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Requiring named identities and forbidding shared administrative accounts in the scoped infrastructure plane is a narrow implementation slice of the identities-and-credentials management outcome under CSF 2.0.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "Cybersecurity Framework 2.0 Core",
+            "locator": "PR.AA-01"
+          }
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "anchorType": "control",
+          "anchorId": "IA-4",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow identifier-management invariant over the scoped infrastructure access plane by requiring named identities and excluding shared administrative accounts in that slice.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "SP 800-53 Rev. 5.1",
+            "locator": "IA-4"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 unique-identity anchors require licensed source review before public publication.",
+          "rationale": "The imported seed points to a dense cluster of Annex A authentication and privileged-access controls, but the public corpus should not publish guessed exact anchors without licensed review.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Clauses 4-10 and Annex A structural boundary"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 unique-identity anchors require licensed or account-gated Trust Services Criteria review before public publication.",
+          "rationale": "The seed corpus indicates a dense CC6.x overlap, but the public pilot should record the blocker rather than publish guessed criteria or points of focus.",
           "authoritativeSource": {
             "authority": "AICPA",
             "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",

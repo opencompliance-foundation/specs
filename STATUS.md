@@ -16,14 +16,14 @@
 - A first exact-anchor review pilot that now spans reviewed public-source anchors for GDPR, IRAP, Cyber Essentials, NCSC CAF 4.0, NIST CSF 2.0, NIST SP 800-53 Rev. 5.1, the EU AI Act, the EU GPAI Code of Practice, and NIST AI RMF 1.0.
 - The same pilot now also records crosswalk-derived candidate anchors for ISO/IEC 42001, ISO/IEC 23894, and ISO/IEC 42005 instead of pretending those ISO AI standards are already open-reviewed exact mappings.
 - Public synthetic corridors now exist for Cyber Essentials-style boundary/configuration/update/malware controls and for AI-governance controls spanning the EU AI Act, the EU GPAI Code of Practice, NIST AI RMF, and candidate ISO AI crosswalks.
-- The medium and issued ExampleCo corridors now also carry a narrow encryption-at-rest control with typed storage-encryption exports, Lean-backed proofs, refreshed witness material, updated lifecycle drift outputs, and regenerated public signature manifests.
+- The medium and issued ExampleCo corridors now also carry narrow encryption-at-rest and unique-infrastructure-identity controls with typed storage and identity exports, Lean-backed proofs, refreshed witness material, updated lifecycle drift outputs, and regenerated public signature manifests.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - A draft classification-result artifact and schema for the public prove/attest/judgment routing surface, plus a first public `mixedControls` decomposition format in the medium ExampleCo corridor.
 - The proof-runner output now derives Lean batch imports and verified claim bindings from control-boundary metadata and surfaces omitted proved claims as explicit boundary inventory instead of silently dropping them.
 - Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 - A draft signed-artifact manifest format plus synthetic public example signature bundles over the issued and lifecycle packs.
 - Draft transparency-log and inclusion-proof artifacts plus public transparency outputs for the synthetic ExampleCo corridors.
-- The exact-anchor review pilot now also covers the public encryption-at-rest control, keeping GDPR, IRAP, and NIST SP 800-53 at reviewed status, a NIST CSF 2.0 anchor at candidate status pending direct identifier confirmation, and ISO 27001 / SOC 2 as explicit blockers.
+- The exact-anchor review pilot now also covers the public encryption-at-rest and unique-infrastructure-identity controls, keeping GDPR, IRAP, Cyber Essentials, NCSC CAF, NIST CSF 2.0, and NIST SP 800-53 at reviewed status where public text supports it, and ISO 27001 / SOC 2 as explicit blockers where licensed review is still required.
 
 ## What does not exist yet
 

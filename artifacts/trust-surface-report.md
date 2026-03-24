@@ -14,6 +14,7 @@ It must not flatten different epistemic categories into one status.
    - `proved`
    - `attested`
    - `failed`
+   - `stale_evidence`
    - `judgment_required`
    - `evidence_missing`
 4. Scope statement.
@@ -25,6 +26,7 @@ It must not flatten different epistemic categories into one status.
 - `proved` means derived from deterministic system state or equally deterministic typed input.
 - `attested` means supported by signed or documentary evidence but not mechanically proved.
 - `failed` means the required claim was present but did not satisfy the corridor predicate.
+- `stale_evidence` means the required claim was present but had expired before the verification run.
 - `judgment_required` means a human reviewer or auditor still has to decide adequacy or interpretation.
 - `evidence_missing` means the claim is a candidate for proof or attestation but the required input is absent.
 

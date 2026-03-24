@@ -71,6 +71,8 @@
             "enum": [
               "failing_machine_evidence",
               "failing_attestation",
+              "stale_machine_evidence",
+              "stale_attestation",
               "missing_machine_evidence",
               "missing_attestation",
               "human_judgment_required"

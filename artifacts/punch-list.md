@@ -40,6 +40,8 @@ Optional:
 - `missing_attestation`
 - `failing_machine_evidence`
 - `failing_attestation`
+- `stale_machine_evidence`
+- `stale_attestation`
 - `human_judgment_required`
 
 ## Rules

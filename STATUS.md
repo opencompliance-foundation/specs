@@ -4,7 +4,7 @@
 
 - Draft format documents for the main public artifacts.
 - Synthetic `ExampleCo` example bundles that follow those draft formats.
-- A blocked Verify path via typed punch-lists, a first-class failed-claim path for present-but-bad evidence, and a certificate path via the issued synthetic corridor.
+- A blocked Verify path via typed punch-lists, a first-class failed-claim path for present-but-bad evidence, a first-class stale-evidence path for expired claims, and a certificate path via the issued synthetic corridor.
 - Replay-bundle artifacts that pin the public synthetic rerun inputs and expected outputs.
 - Seed OSCAL projections for the same synthetic examples.
 - Conformance vectors derived from the same examples.

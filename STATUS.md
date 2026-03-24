@@ -10,6 +10,8 @@
 - Conformance vectors derived from the same examples.
 - Draft linkage rules from proof-bundle claims into synthetic corridor control identifiers.
 - A machine-readable control-boundary file for the current synthetic corridor.
+- Explicit mapping-maturity metadata that says the current public corridor is still family-proxy and names the exact-anchor target state.
+- A draft mapping-methodology note and a control-boundaries schema so mapping maturity and review intent are machine-checkable.
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - A draft classification-result artifact and schema for the public prove/attest/judgment routing surface, plus a first public `mixedControls` decomposition format in the medium ExampleCo corridor.
 - The proof-runner output now derives Lean batch imports and verified claim bindings from control-boundary metadata and surfaces omitted proved claims as explicit boundary inventory instead of silently dropping them.
@@ -23,6 +25,7 @@
 - No compatibility guarantees beyond `0.x` draft expectations.
 - No signed release process for these formats.
 - No independent implementation conformance programme.
+- No reviewed clause-, Annex A-, criterion-, or point-of-focus anchor set for the public corridor yet.
 
 ## Publishing rule
 

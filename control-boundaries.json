@@ -2,6 +2,28 @@
   "version": "0.1.0",
   "corridor": "exampleco_synthetic_seed",
   "mappingLevel": "family_proxy",
+  "mappingModel": {
+    "currentState": {
+      "level": "family_proxy",
+      "description": "The current public corridor maps synthetic OpenCompliance atomic controls to public-safe family proxy targets instead of reviewed exact ISO 27001, SOC 2, IRAP, or GDPR source anchors.",
+      "leanAttachmentPoint": "OpenCompliance atomic controls",
+      "relation": "subset-of",
+      "mappingMethod": "semantic",
+      "reviewStatus": "draft_unreviewed"
+    },
+    "targetState": {
+      "level": "atomic_obligation_with_reviewed_source_anchors",
+      "description": "State of the art is not a one-theorem-per-clause encoding. It is a reviewed mapping layer where each atomic obligation carries exact source anchors, route, relation semantics, method, and confidence before the decidable slice enters Lean 4.",
+      "requiredCapabilities": [
+        "Decompose source standards into atomic obligations before proof assignment.",
+        "Attach exact authoritative source anchors such as clauses, Annex A controls, criteria, points of focus, or equivalent framework-native identifiers.",
+        "Persist mapping relation, mapping method, review status, and confidence for each mapping edge.",
+        "Keep decidable, attestation, judgment, and mixed routes explicit at the atomic-obligation layer.",
+        "Export machine-readable OSCAL mapping collections at control, statement, objective, or comparable granularity.",
+        "Publish coverage and non-coverage boundaries so consumers can see which source anchors remain unresolved."
+      ]
+    }
+  },
   "controls": [
     {
       "controlId": "oc.id-01",
@@ -42,6 +64,43 @@
           "controlId": "gdpr.family.security_of_processing"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Scoped administrative identities require MFA and conditional access in the declared environment.",
         "doesNotProve": [
@@ -76,6 +135,35 @@
           "controlId": "irap.family.identity_access"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That a typed access review export exists for the declared review window.",
         "doesNotProve": [
@@ -118,6 +206,35 @@
           "controlId": "irap.family.logging_monitoring"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That audit logging is enabled and a retention window is declared in the scoped runtime.",
         "doesNotProve": [
@@ -163,6 +280,43 @@
           "controlId": "gdpr.family.security_of_processing"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That public ingress is HTTPS-only, uses managed certificates, and enforces TLS 1.2 or higher.",
         "doesNotProve": [
@@ -197,6 +351,35 @@
           "controlId": "irap.family.secure_development_and_change"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That the scoped repository default branch is protected with approvals, status checks, and force-push restrictions.",
         "doesNotProve": [
@@ -231,6 +414,35 @@
           "controlId": "irap.family.secure_development_and_change"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That the scoped CI workflow requires review, trusted publishing, protected refs, and environment approvals.",
         "doesNotProve": [
@@ -265,6 +477,35 @@
           "controlId": "irap.family.secure_development_and_change"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "decomposition": [
         {
           "controlId": "oc.repo-01",
@@ -316,6 +557,35 @@
           "controlId": "irap.family.secure_development_and_change"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That a named human attested the scoped change-review policy is approved and an emergency change path is declared for the current review window.",
         "doesNotProve": [
@@ -361,6 +631,43 @@
           "controlId": "gdpr.family.security_of_processing"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That the scoped runtime service accounts do not rely on user-managed long-lived keys.",
         "doesNotProve": [
@@ -396,6 +703,29 @@
           "controlId": "gdpr.family.data_locality_and_transfer_boundary"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That the scoped workload runs only in the declared approved regions and has no undeclared regions.",
         "doesNotProve": [
@@ -436,6 +766,35 @@
           "controlId": "irap.family.backup_and_recovery"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "That backup snapshots are enabled with a declared schedule and immutable window.",
         "doesNotProve": [
@@ -471,6 +830,35 @@
           "controlId": "irap.family.backup_and_recovery"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Only that a restore exercise attestation exists in the declared review window.",
         "doesNotProve": [
@@ -501,6 +889,29 @@
           "controlId": "iso27001.family.awareness_and_training"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Only that a human attestation of training completion exists for the declared population and window.",
         "doesNotProve": [
@@ -535,6 +946,37 @@
           "controlId": "gdpr.family.processors_and_subprocessors"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Only that a human attestation states the processor register is current and DPA coverage is declared.",
         "doesNotProve": [
@@ -559,6 +1001,23 @@
           "controlId": "gdpr.family.data_subject_rights"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Only that a DSR runbook attestation exists with a named owner and review window.",
         "doesNotProve": [
@@ -583,6 +1042,23 @@
           "controlId": "gdpr.family.privacy_by_design_and_default"
         }
       ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
       "boundary": {
         "proves": "Nothing mechanically. This control is an explicit adequacy boundary for human review.",
         "doesNotProve": [

@@ -76,6 +76,10 @@ Each framework mapping entry should include:
 - `family`
 - optional `controlId`
 
+These claim-level mappings are reduced projections for the verification artifact surface.
+
+The authoritative mapping provenance for the current corridor lives in `control-boundaries.json` and the matching OSCAL mapping collections, where mapping maturity, target anchor plans, and proof boundaries can evolve without pretending the proof bundle alone is a reviewed standards crosswalk.
+
 ## Control reference rule
 
 `controlRefs` should identify the narrow OpenCompliance corridor controls that the claim is asserting.

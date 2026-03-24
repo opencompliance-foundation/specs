@@ -10,7 +10,7 @@
 - Conformance vectors derived from the same examples.
 - Draft linkage rules from proof-bundle claims into synthetic corridor control identifiers.
 - A machine-readable control-boundary file for the current synthetic corridor.
-- Draft JSON Schemas for the main machine-readable verification artifacts.
+- Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 
 ## What does not exist yet
 

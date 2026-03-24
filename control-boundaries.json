@@ -488,8 +488,319 @@
       "boundary": {
         "proves": "That public ingress is HTTPS-only, uses managed certificates, and enforces TLS 1.2 or higher.",
         "doesNotProve": [
+          "That plaintext transport is explicitly disabled rather than merely redirected elsewhere",
           "That the wider network architecture is sufficient",
           "That every downstream connection uses the same cryptographic posture"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.net-02",
+      "title": "Managed ingress boundary attached",
+      "classification": "decidable",
+      "evidenceClaimType": "network_firewall_boundary",
+      "lean": {
+        "module": "OpenCompliance.Controls.Network",
+        "predicate": "ManagedIngressBoundaryAttached",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim124_proved"
+        ]
+      },
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "network_security",
+          "controlId": "soc2.family.network_security"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "network_security",
+          "controlId": "iso27001.family.network_security"
+        },
+        {
+          "framework": "IRAP",
+          "family": "network_boundary_and_crypto",
+          "controlId": "irap.family.network_boundary_and_crypto"
+        },
+        {
+          "framework": "Cyber Essentials",
+          "family": "firewalls",
+          "controlId": "cyber_essentials.family.firewalls"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "boundary_protection",
+          "controlId": "nist_csf_2_0.family.boundary_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "boundary_protection",
+          "controlId": "nist_sp_800_53_rev_5_1.family.boundary_protection"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped ingress path traverses the declared managed network boundary.",
+        "doesNotProve": [
+          "That every possible route through the wider estate traverses the same boundary",
+          "That the declared ingress topology is sufficient for the whole perimeter architecture"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.net-03",
+      "title": "Administrative ingress restricted",
+      "classification": "decidable",
+      "evidenceClaimType": "network_firewall_boundary",
+      "lean": {
+        "module": "OpenCompliance.Controls.Network",
+        "predicate": "AdministrativeIngressRestricted",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim125_proved"
+        ]
+      },
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "network_security",
+          "controlId": "soc2.family.network_security"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "network_security",
+          "controlId": "iso27001.family.network_security"
+        },
+        {
+          "framework": "IRAP",
+          "family": "network_boundary_and_crypto",
+          "controlId": "irap.family.network_boundary_and_crypto"
+        },
+        {
+          "framework": "Cyber Essentials",
+          "family": "firewalls",
+          "controlId": "cyber_essentials.family.firewalls"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "boundary_protection",
+          "controlId": "nist_csf_2_0.family.boundary_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "boundary_protection",
+          "controlId": "nist_sp_800_53_rev_5_1.family.boundary_protection"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That administrative ingress is restricted to declared approved source ranges at the scoped managed boundary.",
+        "doesNotProve": [
+          "That the approved source ranges themselves are adequate",
+          "That non-administrative exposure is otherwise safe by virtue of this restriction alone"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.net-04",
+      "title": "Plaintext transport disabled",
+      "classification": "decidable",
+      "evidenceClaimType": "tls_ingress_configuration",
+      "lean": {
+        "module": "OpenCompliance.Controls.Network",
+        "predicate": "PlaintextTransportDisabled",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim126_proved"
+        ]
+      },
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "network_security",
+          "controlId": "soc2.family.network_security"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "network_security",
+          "controlId": "iso27001.family.network_security"
+        },
+        {
+          "framework": "IRAP",
+          "family": "network_boundary_and_crypto",
+          "controlId": "irap.family.network_boundary_and_crypto"
+        },
+        {
+          "framework": "GDPR",
+          "family": "security_of_processing",
+          "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "data_in_transit_protection",
+          "controlId": "nist_csf_2_0.family.data_in_transit_protection"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "transmission_confidentiality_and_integrity",
+          "controlId": "nist_sp_800_53_rev_5_1.family.transmission_confidentiality_and_integrity"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That plaintext transport is disabled on the scoped public ingress path.",
+        "doesNotProve": [
+          "That every downstream service hop enforces the same transport posture",
+          "That cryptographic key management or cipher-suite adequacy is resolved by this control alone"
         ]
       }
     },
@@ -1519,7 +1830,13 @@
       "title": "Default-deny network boundary in place",
       "classification": "decidable",
       "evidenceClaimType": "network_firewall_boundary",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Network",
+        "predicate": "DefaultDenyNetworkBoundarySatisfied",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim602_proved"
+        ]
+      },
       "publicExamples": [
         "cyber-baseline"
       ],

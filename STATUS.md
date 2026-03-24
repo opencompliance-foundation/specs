@@ -13,6 +13,7 @@
 - Draft JSON Schemas for the main machine-readable verification artifacts, now exercised by the public conformance check.
 - Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 - A draft signed-artifact manifest format plus synthetic public example signature bundles over the issued and lifecycle packs.
+- Draft transparency-log and inclusion-proof artifacts plus public transparency outputs for the synthetic ExampleCo corridors.
 
 ## What does not exist yet
 

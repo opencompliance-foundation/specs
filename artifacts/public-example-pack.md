@@ -16,6 +16,8 @@ It is the main safe publication unit for examples.
 - `replay-bundle.json`
 - `witness-receipt.json`
 - `revocation.json`
+- `transparency-log.json`
+- `inclusion-proofs.json`
 
 ## Common optional files
 
@@ -42,6 +44,8 @@ Inside a serious example pack:
 - verification-result envelopes point to either a typed punch-list or a narrow certificate artifact,
 - replay bundles pin the material input digests and expected output digests for reruns,
 - witness receipts pin the digests for the proof bundle and its material replay inputs,
+- transparency logs pin the canonical artifact digests into an append-ordered Merkle root,
+- inclusion proofs let outsiders validate each logged artifact against that root,
 - and the trust-surface report stays faithful to the bundle summary.
 
 ## Boundary note

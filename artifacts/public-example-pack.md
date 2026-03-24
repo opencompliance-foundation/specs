@@ -23,6 +23,7 @@ It is the main safe publication unit for examples.
 
 - `company.json`
 - `certificate.json`
+- `classification-result.json`
 - `punch-list.json`
 - `system-description.json`
 - `oscal/`

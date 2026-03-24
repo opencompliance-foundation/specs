@@ -4,7 +4,7 @@
 
 A proof bundle is the machine-readable result of one verification run.
 
-It is the artifact that later signing, transparency logging, replay, and witness verification depend on.
+It is the artifact that later verification-result envelopes, punch-lists or certificates, signing, transparency logging, replay, and witness verification depend on.
 
 ## Minimum required fields
 
@@ -41,6 +41,7 @@ Each claim entry should include:
 2. Evidence references must be stable identifiers, not opaque prose.
 3. A proof bundle may be published without a certificate.
 4. A proof bundle is replayable only if its required inputs are pinned or disclosed well enough for independent rerun.
+5. A proof bundle does not by itself say whether a scoped certificate was issued or withheld. That decision belongs in the verification-result envelope.
 
 ## Framework mapping entry
 

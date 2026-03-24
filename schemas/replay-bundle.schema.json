@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opencompliance.aguilar-pelaez.co.uk/specs/schemas/replay-bundle.schema.json",
+  "title": "OpenCompliance Replay Bundle",
+  "type": "object",
+  "required": [
+    "replayBundleId",
+    "generatedAt",
+    "bundleId",
+    "verifierVersion",
+    "fixture",
+    "replayCommand",
+    "materialInputs",
+    "expectedOutputs"
+  ],
+  "properties": {
+    "replayBundleId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "bundleId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verifierVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fixture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replayCommand": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "materialInputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/artifactRef"
+      }
+    },
+    "expectedOutputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/artifactRef"
+      }
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "artifactRef": {
+      "type": "object",
+      "required": [
+        "artifactType",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "artifactType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -12,12 +12,16 @@ It is the main safe publication unit for examples.
 - `evidence-claims.json`
 - `proof-bundle.json`
 - `trust-surface-report.md`
+- `verification-result.json`
+- `replay-bundle.json`
 - `witness-receipt.json`
 - `revocation.json`
 
 ## Common optional files
 
 - `company.json`
+- `certificate.json`
+- `punch-list.json`
 - `system-description.json`
 - `oscal/`
 
@@ -35,6 +39,8 @@ Inside a serious example pack:
 
 - evidence claims carry typed payloads and framework mappings,
 - proof-bundle claims carry `frameworkMappings` and `controlRefs`,
+- verification-result envelopes point to either a typed punch-list or a narrow certificate artifact,
+- replay bundles pin the material input digests and expected output digests for reruns,
 - witness receipts pin the digests for the proof bundle and its material replay inputs,
 - and the trust-surface report stays faithful to the bundle summary.
 

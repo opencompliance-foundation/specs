@@ -16,6 +16,10 @@ They describe the artifact shapes OpenCompliance intends to stabilize:
 
 - trust-surface reports,
 - proof bundles,
+- verification-result envelopes,
+- typed punch-lists,
+- narrow corridor certificates,
+- replay bundles,
 - witness receipts,
 - revocations,
 - public synthetic example packs,
@@ -30,6 +34,11 @@ They are useful now for review and example generation. They are not yet a stable
 - `control-boundaries.json`
 - `artifacts/trust-surface-report.md`
 - `artifacts/proof-bundle.md`
+- `artifacts/verification-result.md`
+- `artifacts/punch-list.md`
+- `artifacts/certificate.md`
+- `artifacts/replay-bundle.md`
 - `artifacts/witness-receipt.md`
 - `artifacts/revocation.md`
 - `artifacts/public-example-pack.md`
+- `schemas/*.schema.json`

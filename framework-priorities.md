@@ -30,6 +30,8 @@ Those seven give the best mix of:
 - public exact-anchor feasibility,
 - and usefulness for the current OpenCompliance corridor.
 
+The UK ICO and NIST AI 600-1 layers are now reviewed in the public exact-anchor pilot rather than remaining backlog-only items.
+
 ## Follow-on AI order
 
 The next layer after that is:
@@ -40,11 +42,16 @@ The next layer after that is:
 - `ISO/IEC 23894`
 - `NIST SP 800-218A`
 
-These matter for AI security, continuous conformity, and regional expansion.
+These matter for AI security, continuous conformity, and regional expansion. Australia plus the two ETSI entries now also have their first reviewed public anchors in the pilot, even though they still sit behind the immediate AI order for deeper implementation work.
+
+## Special-case provider layer
+
+- `EU GPAI Code of Practice`
+
+This layer is already public and reviewed for the current disclosure-marker control, but it is still narrow and provider-oriented, so it is not the first place to spend the next full operator-depth round.
 
 ## Watch list
 
-- `EU GPAI Code of Practice`
 - `NIST AI 800-1`
 - `ISO/IEC 42006`
 

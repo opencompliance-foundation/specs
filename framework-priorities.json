@@ -31,7 +31,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Directly relevant to UK and EU personal-data handling, customer diligence, and AI systems that process personal data.",
-      "nextAction": "Deepen reviewed article-level coverage around monitoring, transparency, individual rights, and AI-adjacent accountability."
+      "nextAction": "Maintain the reviewed article-level layer across security of processing, transfer boundaries, data-subject-rights operations, and processor governance, then widen from the current deployer corridor into privacy-by-design and AI-adjacent rights handling."
     },
     {
       "framework": "IRAP",
@@ -41,7 +41,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Important for Australian government and regulated-enterprise pathways, especially for a legal-tech deployer pushing into Australia.",
-      "nextAction": "Deepen public exact-anchor coverage for monitoring, incident handling, and boundary controls while keeping hosted-shared-responsibility assumptions explicit."
+      "nextAction": "Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, and repository-integrity controls, then widen into secure configuration, patch governance, and change-control slices while keeping hosted shared-responsibility assumptions explicit."
     },
     {
       "framework": "EU AI Act",
@@ -51,7 +51,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Most important binding AI governance regime for EU-facing deployments and for any provable AI transparency or oversight story.",
-      "nextAction": "Keep the current documentary corridor honest and deepen into typed technical-documentation, logging, and post-market monitoring slices."
+      "nextAction": "Keep the current reviewed articles for risk, oversight, monitoring, and transparency, and only promote the remaining documentation-heavy Article 11 and logging-heavy Article 12 candidates once the typed corridor grows beyond simple signed attestations."
     },
     {
       "framework": "UK ICO AI and data protection guidance",
@@ -59,9 +59,9 @@
       "priorityRank": 6,
       "priorityTier": "ai_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "priority_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Highly relevant where AI use intersects with personal data, transparency, and UK-regulator expectations.",
-      "nextAction": "Map the current AI context, risk, oversight, and disclosure controls to guidance-grade anchors and keep them clearly separate from statutory GDPR anchors."
+      "nextAction": "Use the reviewed governance, rights, and transparency anchors now in the pilot, but keep monitoring the guidance refresh triggered by the Data (Use and Access) Act before treating the guidance text as stable long-term anchor inventory."
     },
     {
       "framework": "UK AI Cyber Security Code of Practice",
@@ -69,9 +69,9 @@
       "priorityRank": 7,
       "priorityTier": "ai_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "partial_review_and_priority_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Best near-term public baseline for securing AI systems used or operated by UK software vendors.",
-      "nextAction": "Use it to shape the next planned AI security control family around AI threat modelling, monitoring, and secure lifecycle operations."
+      "nextAction": "Keep using the reviewed principles for risk assessment, human responsibility, and monitoring, and widen next into more technical AI security controls only when the public fixture corridor stops being mostly documentary."
     },
     {
       "framework": "NIST AI RMF 1.0",
@@ -81,7 +81,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Strong voluntary structure for operational AI governance, especially when the company wants a rigorous internal control language without waiting for certification.",
-      "nextAction": "Keep using it as the public exact-anchor backbone for the current AI-governance corridor and newer ISO crosswalk candidates."
+      "nextAction": "Keep using it as the backbone public exact-anchor layer for the AI corridor while the GenAI-specific, ETSI, and ISO candidate layers deepen around it."
     },
     {
       "framework": "NIST AI 600-1 Generative AI Profile",
@@ -89,9 +89,9 @@
       "priorityRank": 9,
       "priorityTier": "ai_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "family_proxy_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Directly relevant for generative-AI deployments and complements the core NIST AI RMF with GenAI-specific risk treatment.",
-      "nextAction": "Promote it from family-proxy planning into reviewed anchors for disclosure, oversight, and post-deployment monitoring."
+      "nextAction": "Use the reviewed GenAI anchors for context, risk governance, post-deployment monitoring, and content transparency as the first deployer-grade GenAI exact-anchor layer, then widen into additional GAI actions when the fixture corridor grows beyond the current documentary scope."
     },
     {
       "framework": "ISO/IEC 42001",
@@ -119,9 +119,9 @@
       "priorityRank": 12,
       "priorityTier": "regional_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "partial_review_and_priority_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Relevant for Australian deployments and especially useful because it is deployer-oriented and openly structured as ten guardrails.",
-      "nextAction": "Treat it as the Australian public-anchor bridge for context, risk, oversight, monitoring, and disclosure controls."
+      "nextAction": "Keep treating it as the Australian public-anchor bridge for context, risk, oversight, monitoring, and disclosure controls, then add more operational slices only when the public AI corridor includes live evaluation and deployment evidence."
     },
     {
       "framework": "ETSI EN 304 223",
@@ -129,9 +129,9 @@
       "priorityRank": 13,
       "priorityTier": "regional_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "priority_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Strong European baseline for AI cybersecurity, especially useful if a legal-tech deployer wants a public AI security story beyond governance prose.",
-      "nextAction": "Use it to shape the first non-fixture AI security controls before attempting exact-anchor publication."
+      "nextAction": "Use the reviewed monitoring and incident-handling anchor as the first ETSI AI security foothold, then widen into supply-chain and secure-development provisions when there is a real public AI security corridor to attach them to."
     },
     {
       "framework": "ETSI TS 104 008",
@@ -139,9 +139,9 @@
       "priorityRank": 14,
       "priorityTier": "regional_now",
       "sourceAvailability": "public_exact_feasible",
-      "openComplianceState": "priority_backlog",
+      "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Directly relevant to OpenCompliance itself because it frames continuous auditing-based conformity assessment for dynamic AI systems.",
-      "nextAction": "Use it as a design input for the transparency, witness, and continuous-verification plane rather than as a product compliance target only."
+      "nextAction": "Use the reviewed continuous-auditing anchor to shape the transparency, witness, and continuous-verification plane, then widen only when the public runtime can emit richer monitoring and conformity-assessment evidence."
     },
     {
       "framework": "ISO/IEC 23894",

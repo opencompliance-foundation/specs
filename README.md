@@ -15,6 +15,7 @@ These specs are draft `0.x` documents.
 They describe the artifact shapes OpenCompliance intends to stabilize:
 
 - mapping methodology and control-boundary metadata,
+- exact-anchor review pilots and review-status semantics,
 - trust-surface reports,
 - proof bundles,
 - verification-result envelopes,
@@ -34,6 +35,8 @@ They are useful now for review and example generation. They are not yet a stable
 - `VERSIONING.md`
 - `mapping-methodology.md`
 - `control-boundaries.json`
+- `review-pilots/README.md`
+- `review-pilots/exact-anchor-review-pilot.json`
 - `artifacts/trust-surface-report.md`
 - `artifacts/proof-bundle.md`
 - `artifacts/verification-result.md`
@@ -44,4 +47,5 @@ They are useful now for review and example generation. They are not yet a stable
 - `artifacts/revocation.md`
 - `artifacts/public-example-pack.md`
 - `schemas/control-boundaries.schema.json`
+- `schemas/exact-anchor-review-pilot.schema.json`
 - `schemas/*.schema.json`

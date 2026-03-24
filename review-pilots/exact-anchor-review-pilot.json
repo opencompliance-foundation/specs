@@ -1,0 +1,464 @@
+{
+  "version": "0.1.0",
+  "pilotId": "exact-anchor-review-pilot-2026-q1",
+  "status": "internal_draft",
+  "reviewMode": "internal_public_source_review",
+  "scope": {
+    "frameworks": [
+      "ISO 27001",
+      "SOC 2",
+      "IRAP",
+      "GDPR"
+    ],
+    "controlsCovered": 6,
+    "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Proprietary standards remain explicitly blocked until licensed framework review is complete."
+  },
+  "summary": {
+    "reviewEntries": 21,
+    "publicSourceReviewed": 10,
+    "candidatePublicSourceUnreviewed": 1,
+    "blockedNonpublicSourceReview": 10
+  },
+  "controls": [
+    {
+      "controlId": "oc.id-01",
+      "title": "Scoped administrative MFA enforcement",
+      "decompositionNote": "The corridor proves narrow administrative MFA enforcement, not full identity governance or all access-review obligations.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1173",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves that scoped administrative identities require MFA in the declared environment. That is a narrow technical subset of the broader privileged-user MFA requirement.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Essential Eight maturity model",
+            "locator": "ISM-1173"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 32(1)(b)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Scoped administrative MFA contributes to the ongoing confidentiality, integrity, availability, and resilience of processing systems and services, but it is only one narrow technical slice of Article 32.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 32(1)(b)"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 anchor publication requires licensed source review. Public ISO material is sufficient to establish the clause-versus-Annex-A structure, but not a defensible open exact-anchor corpus.",
+          "rationale": "The current public boundary is intentionally honest about ISO exact-anchor incompleteness.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Clauses 4-10 and Annex A structural boundary"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 anchor publication requires licensed or account-gated Trust Services Criteria review. Public AICPA material establishes the TSC category structure, but not a publishable exact-anchor corpus for this project.",
+          "rationale": "The pilot encodes the blocker explicitly so the public mapping is not overstated.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Trust Services Criteria category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.log-01",
+      "title": "Scoped audit logging enabled",
+      "decompositionNote": "The corridor proves that scoped audit logging is enabled and that a retention window is declared, but it does not yet prove centralized monitoring adequacy or a standards-specific retention threshold.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1405",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's scoped logging predicate is a narrow slice of the requirement that a centralised event logging facility be implemented.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for system monitoring",
+            "locator": "ISM-1405"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1988",
+          "relation": "intersects-with",
+          "mappingMethod": "functional",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Strengthen the corridor from retention-window-declared to standards-threshold-checked before promoting this anchor to reviewed.",
+          "rationale": "The corridor currently declares a retention window but does not yet prove the ISM's stated minimum retention duration.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for system monitoring",
+            "locator": "ISM-1988"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 logging anchor publication requires licensed source review.",
+          "rationale": "Public ISO material does not provide a safe exact-anchor basis for the logging corridor.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 logging anchor publication requires licensed or account-gated TSC review.",
+          "rationale": "The public AICPA source establishes the existence of the TSC corpus and categories, but not a publishable exact logging crosswalk.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.net-01",
+      "title": "TLS ingress hardened",
+      "decompositionNote": "The corridor proves HTTPS-only ingress, managed certificates, and TLS 1.2 or higher for the scoped public edge. It does not prove the whole cryptographic architecture.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0469",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's enforced HTTPS ingress is a narrow slice of the broader requirement to use encryption when data is communicated over network infrastructure.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information Security Manual (September 2022)",
+            "locator": "ISM-0469"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1139",
+          "relation": "subset-of",
+          "mappingMethod": "syntactic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's TLS 1.2-or-higher boundary is aligned with the public ISM TLS guidance at the connection level, but does not yet capture the whole cipher-suite surface.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information Security Manual (September 2022)",
+            "locator": "ISM-1139"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 32(1)(a)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Scoped TLS ingress hardening is a narrow technical slice of encryption-related measures under Article 32.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 32(1)(a)"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 network-security anchors require licensed source review.",
+          "rationale": "The public corridor is not claiming a publishable ISO exact network-security mapping yet.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 network-security anchors require licensed or account-gated TSC review.",
+          "rationale": "The current public corpus does not yet publish exact SOC 2 network-security anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.backup-01",
+      "title": "Backup schedule declared",
+      "decompositionNote": "The corridor proves that snapshots are enabled with a declared schedule and immutable window. It does not yet prove a full recovery program or restoration success.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1511",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's snapshot schedule is a narrow machine-checkable slice of the broader requirement to perform and retain backups in line with continuity requirements.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for System Management (September 2023)",
+            "locator": "ISM-1511"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1811",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's immutable-window boundary is a narrow technical slice of retaining backups in a secure and resilient manner.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for System Management (September 2023)",
+            "locator": "ISM-1811"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 backup anchors require licensed source review.",
+          "rationale": "The public backup corridor is not yet expressed as a reviewed ISO exact-anchor set.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 backup and recovery anchors require licensed or account-gated TSC review.",
+          "rationale": "The project is not yet claiming a publishable exact SOC 2 backup crosswalk.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.rec-01",
+      "title": "Restore exercise evidence present",
+      "decompositionNote": "The corridor only proves that restore-exercise evidence exists. It does not prove that every restoration path succeeds.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1515",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A restore-test attestation is a narrow documentary slice of the broader requirement to test restoration as part of disaster recovery exercises.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for System Management (September 2023)",
+            "locator": "ISM-1515"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 recovery-test anchors require licensed source review.",
+          "rationale": "The restore-evidence corridor is not yet published as a reviewed ISO exact-anchor set.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 recovery-test anchors require licensed or account-gated TSC review.",
+          "rationale": "The project is not yet publishing an exact SOC 2 restore-testing crosswalk.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.privacy-02",
+      "title": "Privacy by design adequacy review boundary",
+      "decompositionNote": "This control is intentionally judgment-routed. The pilot records an exact public source anchor without pretending the requirement is mechanically decidable.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph",
+          "anchorId": "Article 25(1)",
+          "relation": "subset-of",
+          "mappingMethod": "semantic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The control is an explicit adequacy-review boundary for privacy by design and default, not a theorem. The exact anchor is public, but the route remains judgment rather than proof.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:32016R0679",
+            "locator": "Article 25(1)"
+          }
+        }
+      ]
+    }
+  ]
+}

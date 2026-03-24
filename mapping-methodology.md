@@ -67,3 +67,9 @@ It is to upgrade the public corridor from family proxies toward reviewed source 
 - exact-anchor plans per control,
 - machine-checked mapping metadata,
 - and eventually a first reviewed pilot set of clause- or criterion-grade mappings for a small number of controls.
+
+That first pilot now exists as a separate review artifact. It is intentionally mixed:
+
+- public-source exact anchors where the authoritative source is actually open,
+- candidate anchors where the public evidence is not yet strong enough,
+- and explicit blocker entries where proprietary or non-public source material still prevents a defensible exact-anchor publication.

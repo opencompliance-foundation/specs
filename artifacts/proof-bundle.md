@@ -67,7 +67,7 @@ Allowed status values:
 
 `verifiedClaims` should say which proved claims actually entered the public Lean batch, which control boundary and predicate they used, and which theorem name was checked.
 
-`typedBoundaryLayer` should expose the current typed legal-semantics surface when one exists. In the current public corridor that means the `LegalLean` dependency, the typed OpenCompliance modules that lift proof boundaries into `FormalisationBoundary`, and honest runtime flags indicating that typed control results, defeasibility, and discretionary-term tagging are live even though the Python verdict layer has not yet been replaced end to end.
+`typedBoundaryLayer` should expose the current typed legal-semantics surface when one exists. In the current public corridor that means the `LegalLean` dependency, the typed OpenCompliance modules that lift proof boundaries into `FormalisationBoundary`, the list of runtime-consumed claims when a corridor is already driven by Lean-side verdicts, and honest runtime flags indicating where typed control results, defeasibility, discretionary-term tagging, and the Python verdict replacement are actually live.
 
 `boundaryInventory` should make the omission boundary explicit. If a claim is marked `proved` in the corridor but has no public Lean predicate yet, that omission belongs here instead of being silently hidden.
 

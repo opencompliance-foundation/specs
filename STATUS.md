@@ -4,6 +4,7 @@
 
 - Draft format documents for the main public artifacts.
 - A synthetic example bundle that follows those draft formats.
+- A seed OSCAL projection for the same synthetic example.
 - Conformance vectors derived from the same example.
 
 ## What does not exist yet

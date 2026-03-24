@@ -240,6 +240,91 @@
       }
     },
     {
+      "controlId": "oc.change-01",
+      "title": "Production change control decomposition boundary",
+      "classification": "mixed",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "change_management",
+          "controlId": "soc2.family.change_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "secure_development_and_change_control",
+          "controlId": "iso27001.family.secure_development_and_change_control"
+        },
+        {
+          "framework": "IRAP",
+          "family": "secure_development_and_change",
+          "controlId": "irap.family.secure_development_and_change"
+        }
+      ],
+      "decomposition": [
+        {
+          "controlId": "oc.repo-01",
+          "route": "decidable",
+          "why": "Repository branch protections are the narrow repository-policy slice of the broader change-control boundary."
+        },
+        {
+          "controlId": "oc.ci-01",
+          "route": "decidable",
+          "why": "CI workflow policy is the narrow delivery-policy slice of the broader change-control boundary."
+        },
+        {
+          "controlId": "oc.change-02",
+          "route": "attestation",
+          "why": "Change-review governance remains signed documentary evidence in the current corridor."
+        }
+      ],
+      "boundary": {
+        "proves": "Nothing directly. This boundary exists to decompose one higher-level change-control area into machine-checkable and attested sub-obligations.",
+        "doesNotProve": [
+          "That the whole secure development lifecycle is adequate",
+          "That every specific change approval decision was correct"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.change-02",
+      "title": "Change review governance attested",
+      "classification": "attestation",
+      "evidenceClaimType": "change_review_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "change_management",
+          "controlId": "soc2.family.change_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "secure_development_and_change_control",
+          "controlId": "iso27001.family.secure_development_and_change_control"
+        },
+        {
+          "framework": "IRAP",
+          "family": "secure_development_and_change",
+          "controlId": "irap.family.secure_development_and_change"
+        }
+      ],
+      "boundary": {
+        "proves": "That a named human attested the scoped change-review policy is approved and an emergency change path is declared for the current review window.",
+        "doesNotProve": [
+          "That every individual approval followed the declared process",
+          "That the wider change-management programme is adequate across every system"
+        ]
+      }
+    },
+    {
       "controlId": "oc.key-01",
       "title": "No user-managed long-lived machine keys",
       "classification": "decidable",

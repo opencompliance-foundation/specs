@@ -12,6 +12,25 @@ The current public corridor works in three layers:
 
 That is why the current public `control-boundaries.json` uses family-proxy mappings. The proofs attach to the OpenCompliance control layer, not to raw standards text.
 
+## Optional private seed layer
+
+There is one useful layer that can exist before the public OpenCompliance controls:
+
+1. Framework-native source anchors.
+2. Imported operational control inventories used only as a private seed layer.
+3. Narrow OpenCompliance controls that isolate a single atomic or near-atomic obligation.
+4. Lean 4 predicates for the decidable slice of those OpenCompliance controls.
+
+The seed layer can be valuable because existing workflow tools often already cluster repeated framework anchors around reusable operational control nouns such as MFA, backup, vendor management, or secure development.
+
+But that seed layer is not authoritative.
+
+- Imported seed controls are often many-to-many with framework anchors.
+- Imported seed controls often mix technical state, process evidence, and human judgment.
+- Imported seed controls may carry source-specific naming, typos, or modeling quirks.
+
+So OpenCompliance can use those inventories privately to accelerate decomposition, but it should only publish normalized OpenCompliance controls plus reviewed framework-native anchors.
+
 ## Why a direct clause-to-theorem model is wrong
 
 Most real controls are mixed objects.
@@ -30,7 +49,9 @@ The public corridor is still draft and family-proxy only.
 - Lean proofs exist for a narrow decidable subset.
 - OSCAL-shaped mapping collections exist for the same synthetic corridor.
 - Exact reviewed source anchors are not yet published for the public corridor.
-- Some additional controls now exist as planned boundaries with empty `publicExamples` arrays. That means the mapping and claim-shape work is ahead of fixture implementation on purpose.
+- A private operational seed corpus can exist upstream of the public corridor, but it remains non-authoritative until decomposed and re-anchored to framework-native sources.
+- The first private ISO 27001 / SOC 2 seed-decomposition pilot has already promoted access-review closure, configuration exceptions, patch exceptions and adequacy boundaries, incident-procedure attestations, and vendor-term and vendor-adequacy boundaries into public `oc.*` controls and synthetic ExampleCo corridors.
+- The remaining unpublished targets from that pilot are still the network and transport extensions `oc.net-02`, `oc.net-03`, and `oc.net-04`.
 
 ## State-of-the-art target
 
@@ -60,14 +81,14 @@ For ISO 27001 and SOC 2, the right pipeline is usually:
 
 ## Immediate next step
 
-The next credible step is not a fake "full mapping".
+The next credible step is still not a fake "full mapping".
 
-It is to upgrade the public corridor from family proxies toward reviewed source anchors with:
+It is to keep upgrading the public corridor from family proxies toward reviewed source anchors with:
 
 - explicit mapping maturity,
 - exact-anchor plans per control,
 - machine-checked mapping metadata,
-- and eventually a first reviewed pilot set of clause- or criterion-grade mappings for a small number of controls.
+- and a growing reviewed pilot set of clause- or criterion-grade mappings for a small number of controls at a time.
 
 That first pilot now exists as a separate review artifact. It is intentionally mixed:
 

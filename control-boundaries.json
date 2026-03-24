@@ -163,7 +163,8 @@
       "evidenceClaimType": "access_review_export",
       "lean": null,
       "publicExamples": [
-        "medium"
+        "medium",
+        "issued"
       ],
       "sourceMappings": [
         {
@@ -216,6 +217,70 @@
         "doesNotProve": [
           "Adequacy of reviewer judgment",
           "Effectiveness of each reviewed entitlement decision"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.id-03",
+      "title": "Access review closure attested",
+      "classification": "attestation",
+      "evidenceClaimType": "access_review_closure_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium",
+        "issued"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "access_control",
+          "controlId": "soc2.family.access_control"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "identity_and_access_management",
+          "controlId": "iso27001.family.identity_and_access_management"
+        },
+        {
+          "framework": "IRAP",
+          "family": "identity_access",
+          "controlId": "irap.family.identity_access"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states the declared access review completed for the scoped population and that no high-risk findings remain open in that attested window.",
+        "doesNotProve": [
+          "That each reviewed entitlement decision was correct",
+          "That reviewer judgment was sufficient for every edge case"
         ]
       }
     },
@@ -1111,6 +1176,263 @@
       }
     },
     {
+      "controlId": "oc.vendor-02",
+      "title": "Vendor security terms attested",
+      "classification": "attestation",
+      "evidenceClaimType": "vendor_security_terms_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "supplier_relationships",
+          "controlId": "iso27001.family.supplier_relationships"
+        },
+        {
+          "framework": "GDPR",
+          "family": "processors_and_subprocessors",
+          "controlId": "gdpr.family.processors_and_subprocessors"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states the reviewed high-risk vendors carry the declared security and privacy terms in the current review window.",
+        "doesNotProve": [
+          "That every vendor agreement is complete",
+          "That the wider vendor management program is adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-03",
+      "title": "Vendor management adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "supplier_relationships",
+          "controlId": "iso27001.family.supplier_relationships"
+        },
+        {
+          "framework": "GDPR",
+          "family": "processors_and_subprocessors",
+          "controlId": "gdpr.family.processors_and_subprocessors"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for the wider vendor management program.",
+        "doesNotProve": [
+          "That vendor tiering is appropriate",
+          "That inherited controls and supplier assurance are sufficient"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ir-01",
+      "title": "Incident response runbook current",
+      "classification": "attestation",
+      "evidenceClaimType": "incident_response_runbook_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium",
+        "issued"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "incident_response",
+          "controlId": "soc2.family.incident_response"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "incident_response",
+          "controlId": "iso27001.family.incident_response"
+        },
+        {
+          "framework": "IRAP",
+          "family": "incident_response",
+          "controlId": "irap.family.incident_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states an incident response runbook is approved, owned, and current for the declared review window.",
+        "doesNotProve": [
+          "That the incident process is adequate for every scenario",
+          "That responders execute the runbook correctly during an incident"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ir-02",
+      "title": "Incident escalation paths maintained",
+      "classification": "attestation",
+      "evidenceClaimType": "incident_contact_matrix_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "incident_response",
+          "controlId": "soc2.family.incident_response"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "incident_response",
+          "controlId": "iso27001.family.incident_response"
+        },
+        {
+          "framework": "IRAP",
+          "family": "incident_response",
+          "controlId": "irap.family.incident_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states the incident escalation contacts are current and the escalation path is documented for the declared review window.",
+        "doesNotProve": [
+          "That every contact responds in time",
+          "That the wider incident communication program is sufficient"
+        ]
+      }
+    },
+    {
       "controlId": "oc.privacy-01",
       "title": "DSR runbook ownership documented",
       "classification": "attestation",
@@ -1387,6 +1709,103 @@
       }
     },
     {
+      "controlId": "oc.cfg-02",
+      "title": "Configuration exceptions attested",
+      "classification": "attestation",
+      "evidenceClaimType": "configuration_exception_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "secure_configuration",
+          "controlId": "cyber_essentials.family.secure_configuration"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "configuration_management",
+          "controlId": "nist_csf_2_0.family.configuration_management"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "configuration_settings",
+          "controlId": "nist_sp_800_53_rev_5_1.family.configuration_settings"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "secure_configuration",
+          "controlId": "iso27001.family.secure_configuration"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "system_operations_and_hardening",
+          "controlId": "soc2.family.system_operations_and_hardening"
+        },
+        {
+          "framework": "IRAP",
+          "family": "secure_configuration",
+          "controlId": "irap.family.secure_configuration"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states the configuration exception register is current and no declared exception is already past expiry in the review window.",
+        "doesNotProve": [
+          "That every exception is justified",
+          "That the wider hardening program is adequate"
+        ]
+      }
+    },
+    {
       "controlId": "oc.patch-01",
       "title": "Supported security updates current",
       "classification": "decidable",
@@ -1480,6 +1899,200 @@
         "doesNotProve": [
           "That vulnerability management is complete for every dependency type",
           "That emergency remediation decisions were always adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.patch-02",
+      "title": "Patch exceptions attested",
+      "classification": "attestation",
+      "evidenceClaimType": "patch_exception_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "security_update_management",
+          "controlId": "cyber_essentials.family.security_update_management"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "software_maintenance_and_patch_management",
+          "controlId": "nist_csf_2_0.family.software_maintenance_and_patch_management"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "flaw_remediation",
+          "controlId": "nist_sp_800_53_rev_5_1.family.flaw_remediation"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "vulnerability_and_patch_management",
+          "controlId": "iso27001.family.vulnerability_and_patch_management"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "vulnerability_management",
+          "controlId": "soc2.family.vulnerability_management"
+        },
+        {
+          "framework": "IRAP",
+          "family": "patch_and_vulnerability_management",
+          "controlId": "irap.family.patch_and_vulnerability_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states the patch exception register is current, compensating controls are declared, and no exception is already past expiry in the review window.",
+        "doesNotProve": [
+          "That every patch exception is justified",
+          "That exception compensating controls are sufficient"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.patch-03",
+      "title": "Patch adequacy review boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "Cyber Essentials",
+          "family": "security_update_management",
+          "controlId": "cyber_essentials.family.security_update_management"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "software_maintenance_and_patch_management",
+          "controlId": "nist_csf_2_0.family.software_maintenance_and_patch_management"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "flaw_remediation",
+          "controlId": "nist_sp_800_53_rev_5_1.family.flaw_remediation"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "vulnerability_and_patch_management",
+          "controlId": "iso27001.family.vulnerability_and_patch_management"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "vulnerability_management",
+          "controlId": "soc2.family.vulnerability_management"
+        },
+        {
+          "framework": "IRAP",
+          "family": "patch_and_vulnerability_management",
+          "controlId": "irap.family.patch_and_vulnerability_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "Cyber Essentials",
+            "anchorKinds": [
+              "control_theme",
+              "requirement_topic"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for patch cadence, exception thresholds, and compensating controls.",
+        "doesNotProve": [
+          "That the patch program is adequate for asset criticality",
+          "That delayed remediation decisions were always appropriate"
         ]
       }
     },

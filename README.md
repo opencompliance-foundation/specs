@@ -35,6 +35,10 @@ They are useful now for review and example generation. The public synthetic Exam
 - `VERSIONING.md`
 - `mapping-methodology.md`
 - `framework-source-availability.md`
+- `framework-priorities.json`
+- `framework-priorities.md`
+- `framework-coverage.json`
+- `framework-coverage.md`
 - `control-boundaries.json`
 - `review-pilots/README.md`
 - `review-pilots/exact-anchor-review-pilot.json`

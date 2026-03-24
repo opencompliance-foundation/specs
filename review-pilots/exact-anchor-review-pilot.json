@@ -16,6 +16,8 @@
       "EU AI Act",
       "EU GPAI Code of Practice",
       "NIST AI RMF 1.0",
+      "UK AI Cyber Security Code of Practice",
+      "Australia Voluntary AI Safety Standard",
       "ISO/IEC 42001",
       "ISO/IEC 23894",
       "ISO/IEC 42005"
@@ -24,8 +26,8 @@
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 132,
-    "publicSourceReviewed": 80,
+    "reviewEntries": 140,
+    "publicSourceReviewed": 88,
     "candidatePublicSourceUnreviewed": 14,
     "blockedNonpublicSourceReview": 38
   },
@@ -2259,6 +2261,23 @@
           }
         },
         {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 1",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned context attestation is a narrow documentary slice of the Australian guardrail requiring an accountability process with governance, internal capability, and a strategy for regulatory compliance.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 1"
+          }
+        },
+        {
           "framework": "ISO/IEC 42001",
           "anchorType": "clause",
           "anchorId": "4.1;5.2;6.2;7.5.3",
@@ -2333,6 +2352,40 @@
             "authority": "NIST",
             "documentId": "AI RMF 1.0 Playbook",
             "locator": "Govern 1.4"
+          }
+        },
+        {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 2",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned signed risk-process attestation is a narrow documentary slice of the Australian guardrail requiring an implemented risk-management process to identify and mitigate AI risks.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 2"
+          }
+        },
+        {
+          "framework": "UK AI Cyber Security Code of Practice",
+          "anchorType": "principle",
+          "anchorId": "Principle 3",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned risk-management attestation is a narrow documentary slice of the UK AI cyber-security requirement to analyse threats and manage security risks across the AI lifecycle.",
+          "authoritativeSource": {
+            "authority": "Department for Science, Innovation and Technology",
+            "documentId": "Code of Practice for the Cyber Security of AI",
+            "locator": "Principle 3"
           }
         },
         {
@@ -2431,6 +2484,40 @@
           }
         },
         {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 5",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned oversight attestation is a narrow documentary slice of the Australian guardrail requiring meaningful human control or intervention in AI systems.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 5"
+          }
+        },
+        {
+          "framework": "UK AI Cyber Security Code of Practice",
+          "anchorType": "principle",
+          "anchorId": "Principle 4",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned human-oversight attestation is a narrow documentary slice of the UK AI cyber-security requirement to enable human responsibility for AI systems.",
+          "authoritativeSource": {
+            "authority": "Department for Science, Innovation and Technology",
+            "documentId": "Code of Practice for the Cyber Security of AI",
+            "locator": "Principle 4"
+          }
+        },
+        {
           "framework": "ISO/IEC 42001",
           "anchorType": "clause",
           "anchorId": "B.6.1.3;B.4.6",
@@ -2505,6 +2592,40 @@
             "authority": "NIST",
             "documentId": "AI RMF 1.0 Playbook",
             "locator": "Manage 4.1"
+          }
+        },
+        {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 4",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned monitoring and incident-handling attestation is a narrow documentary slice of the Australian guardrail requiring testing and post-deployment monitoring of AI systems.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 4"
+          }
+        },
+        {
+          "framework": "UK AI Cyber Security Code of Practice",
+          "anchorType": "principle",
+          "anchorId": "Principle 12",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned monitoring and incident-handling attestation is a narrow documentary slice of the UK AI cyber-security requirement to monitor system behaviour, analyse logs, and detect unexpected changes over time.",
+          "authoritativeSource": {
+            "authority": "Department for Science, Innovation and Technology",
+            "documentId": "Code of Practice for the Cyber Security of AI",
+            "locator": "Principle 12"
           }
         },
         {
@@ -2600,6 +2721,23 @@
             "authority": "European Commission",
             "documentId": "General-Purpose AI Code of Practice",
             "locator": "Transparency"
+          }
+        },
+        {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 6",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned disclosure-marker corridor is a narrow implementation slice of the Australian guardrail requiring disclosure of AI-enabled decisions, interactions, and AI-generated content.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 6"
           }
         },
         {

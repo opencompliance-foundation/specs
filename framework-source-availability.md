@@ -24,6 +24,20 @@ It exists to keep the mapping corpus honest.
   Public chapter-level anchors are feasible while the code remains versioned and openly published.
 - `NIST AI RMF 1.0`
   Public function-outcome anchors are feasible.
+- `NIST AI 600-1 Generative AI Profile`
+  Public GenAI profile risks and actions are feasible.
+- `NIST SP 800-218A`
+  Public secure-development practice anchors for GenAI and dual-use foundation models are feasible.
+- `UK ICO AI and data protection guidance`
+  Public chapter- and guidance-section-level anchors are feasible.
+- `UK AI Cyber Security Code of Practice`
+  Public principle- and requirement-level anchors are feasible.
+- `Australia Voluntary AI Safety Standard`
+  Public guardrail-level anchors are feasible.
+- `ETSI EN 304 223`
+  Public standard text is available, so principle- and requirement-level anchors are feasible.
+- `ETSI TS 104 008`
+  Public technical-specification text is available, so section- and requirement-level anchors are feasible.
 
 ## Crosswalk-derived candidate anchors only
 
@@ -33,6 +47,8 @@ It exists to keep the mapping corpus honest.
   Public crosswalk material is useful for candidate alignment, but not yet strong enough for reviewed exact-anchor publication without licensed review.
 - `ISO/IEC 42005`
   Public crosswalk material is useful for candidate alignment, but not yet strong enough for reviewed exact-anchor publication without licensed review.
+- `ISO/IEC 42006`
+  Public descriptions make the standard strategically relevant, but exact clause-grade publication still needs licensed review.
 
 ## Explicit blocker state
 
@@ -40,6 +56,13 @@ It exists to keep the mapping corpus honest.
   Public structural material is enough to establish clauses-versus-Annex-A shape, but not a defensible open exact-anchor corpus.
 - `SOC 2`
   Public material establishes the Trust Services Criteria structure, but exact criterion and point-of-focus publication still needs licensed or account-gated review.
+
+## Emerging public drafts or moving targets
+
+- `NIST AI 800-1`
+  Public draft guidance exists, but it is still draft and should not yet be treated as a stable exact-anchor target.
+- `ETSI TS 104 008`
+  The specification is public and usable, but it is new enough that OpenCompliance should treat it as a strategic design input before claiming mature control coverage against it.
 
 ## Interpretation rule
 

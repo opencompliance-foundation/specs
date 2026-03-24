@@ -18,6 +18,11 @@ Pilot files may also include controls that do not yet have public synthetic fixt
 
 That is allowed when the goal is to make the mapping and review boundary explicit before runtime evidence or examples exist.
 
+The current pilot now spans core security and privacy frameworks plus the first
+wave of public AI-governance and AI-security frameworks, including the EU AI
+Act, NIST AI RMF, the Australian Voluntary AI Safety Standard, and the UK AI
+Cyber Security Code of Practice.
+
 ## Review status meanings
 
 - `public_source_reviewed`

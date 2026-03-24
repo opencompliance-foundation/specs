@@ -935,6 +935,124 @@
       }
     },
     {
+      "controlId": "oc.seg-01",
+      "title": "Customer and environment segmentation enforced",
+      "classification": "decidable",
+      "evidenceClaimType": "environment_segmentation_state",
+      "lean": {
+        "module": "OpenCompliance.Controls.Network",
+        "predicate": "EnvironmentSegmentationSatisfied",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim129_proved"
+        ]
+      },
+      "publicExamples": [
+        "medium",
+        "issued"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "environment_and_tenant_separation",
+          "controlId": "soc2.family.environment_and_tenant_separation"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "segregation_and_environment_separation",
+          "controlId": "iso27001.family.segregation_and_environment_separation"
+        },
+        {
+          "framework": "IRAP",
+          "family": "network_segmentation_and_isolation",
+          "controlId": "irap.family.network_segmentation_and_isolation"
+        },
+        {
+          "framework": "GDPR",
+          "family": "security_of_processing",
+          "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "family": "system_security_and_segregation",
+          "controlId": "ncsc_caf_4_0.family.system_security_and_segregation"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "segmentation_and_isolation",
+          "controlId": "nist_csf_2_0.family.segmentation_and_isolation"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "system_partitioning_and_boundary_protection",
+          "controlId": "nist_sp_800_53_rev_5_1.family.system_partitioning_and_boundary_protection"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "NCSC CAF 4.0",
+            "anchorKinds": [
+              "objective",
+              "principle"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped production slice enforces customer and non-production separation and has no undeclared cross-environment paths in that declared boundary.",
+        "doesNotProve": [
+          "That every broader application-layer authorization path is otherwise correct",
+          "That every possible data-sharing arrangement outside the declared scope is eliminated",
+          "That legal or contractual tenancy boundaries are fully satisfied by this technical predicate alone"
+        ]
+      }
+    },
+    {
       "controlId": "oc.crypt-01",
       "title": "Encryption at rest enabled",
       "classification": "decidable",

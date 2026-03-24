@@ -7,6 +7,7 @@
 - Seed OSCAL projections for the same synthetic examples.
 - Conformance vectors derived from the same examples.
 - Draft linkage rules from proof-bundle claims into synthetic corridor control identifiers.
+- A machine-readable control-boundary file for the current synthetic corridor.
 
 ## What does not exist yet
 

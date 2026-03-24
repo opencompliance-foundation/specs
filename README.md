@@ -27,6 +27,7 @@ They are useful now for review and example generation. They are not yet a stable
 
 - `STATUS.md`
 - `VERSIONING.md`
+- `control-boundaries.json`
 - `artifacts/trust-surface-report.md`
 - `artifacts/proof-bundle.md`
 - `artifacts/witness-receipt.md`

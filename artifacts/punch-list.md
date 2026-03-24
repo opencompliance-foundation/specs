@@ -38,6 +38,8 @@ Optional:
 
 - `missing_machine_evidence`
 - `missing_attestation`
+- `failing_machine_evidence`
+- `failing_attestation`
 - `human_judgment_required`
 
 ## Rules

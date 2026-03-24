@@ -76,6 +76,7 @@
             "enum": [
               "proved",
               "attested",
+              "failed",
               "judgment_required",
               "evidence_missing"
             ]
@@ -101,6 +102,7 @@
       "required": [
         "proved",
         "attested",
+        "failed",
         "judgmentRequired",
         "evidenceMissing"
       ],
@@ -110,6 +112,10 @@
           "minimum": 0
         },
         "attested": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
           "type": "integer",
           "minimum": 0
         },

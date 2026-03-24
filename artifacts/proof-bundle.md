@@ -33,6 +33,7 @@ Each claim entry should include:
 
 - `proved`
 - `attested`
+- `failed`
 - `judgment_required`
 - `evidence_missing`
 

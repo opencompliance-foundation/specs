@@ -51,7 +51,7 @@ The public corridor is still draft and family-proxy only.
 - Exact reviewed source anchors are not yet published for the public corridor.
 - A private operational seed corpus can exist upstream of the public corridor, but it remains non-authoritative until decomposed and re-anchored to framework-native sources.
 - The first private ISO 27001 / SOC 2 seed-decomposition pilot has already promoted access-review closure, password-policy, a managed-web-application-firewall slice, configuration exceptions, patch exceptions and adequacy boundaries, incident-procedure attestations, vendor-term and vendor-adequacy boundaries, and a narrow encryption-at-rest slice into public `oc.*` controls and synthetic ExampleCo corridors.
-- That same pilot has now also promoted the network, transport, infrastructure-identity, segmentation, and storage-confidentiality extensions `oc.net-02`, `oc.net-03`, `oc.net-04`, `oc.id-04`, `oc.seg-01`, and `oc.crypt-01`, so the next depth work is no longer "publish the pending wave" but "use the new private ISO 27001 / SOC 2 framework-depth reports to choose the next availability, monitoring, or deeper exact-anchor slice."
+- That same pilot has now also promoted the network, transport, infrastructure-identity, segmentation, storage-confidentiality, and centralized-monitoring extensions `oc.net-02`, `oc.net-03`, `oc.net-04`, `oc.id-04`, `oc.seg-01`, `oc.crypt-01`, `oc.mon-01`, and `oc.mon-02`, so the next depth work is no longer "publish the pending wave" but "use the private ISO 27001 / SOC 2 framework-depth reports to choose the next availability, vulnerability-management, or deeper exact-anchor slice."
 
 ## State-of-the-art target
 

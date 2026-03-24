@@ -756,6 +756,234 @@
       }
     },
     {
+      "controlId": "oc.mon-01",
+      "title": "Scoped centralized monitoring enabled",
+      "classification": "decidable",
+      "evidenceClaimType": "central_monitoring_state",
+      "lean": {
+        "module": "OpenCompliance.Controls.Logging",
+        "predicate": "CentralizedMonitoringSatisfied",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim132_proved"
+        ]
+      },
+      "publicExamples": [
+        "medium",
+        "issued"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "logging_monitoring",
+          "controlId": "soc2.family.logging_monitoring"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "logging_and_monitoring",
+          "controlId": "iso27001.family.logging_and_monitoring"
+        },
+        {
+          "framework": "IRAP",
+          "family": "logging_monitoring",
+          "controlId": "irap.family.logging_monitoring"
+        },
+        {
+          "framework": "GDPR",
+          "family": "security_of_processing",
+          "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "family": "security_monitoring",
+          "controlId": "ncsc_caf_4_0.family.security_monitoring"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "security_continuous_monitoring",
+          "controlId": "nist_csf_2_0.family.security_continuous_monitoring"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "audit_and_accountability",
+          "controlId": "nist_sp_800_53_rev_5_1.family.audit_and_accountability"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "NCSC CAF 4.0",
+            "anchorKinds": [
+              "objective",
+              "principle"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped runtime forwards telemetry to the declared central monitoring sink and has alert rules enabled.",
+        "doesNotProve": [
+          "That monitoring coverage is complete for every asset outside the declared scope",
+          "That alert tuning or triage quality is adequate for every incident class"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.mon-02",
+      "title": "Monitoring review operations current",
+      "classification": "attestation",
+      "evidenceClaimType": "monitoring_review_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium",
+        "issued"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "logging_monitoring",
+          "controlId": "soc2.family.logging_monitoring"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "logging_and_monitoring",
+          "controlId": "iso27001.family.logging_and_monitoring"
+        },
+        {
+          "framework": "IRAP",
+          "family": "logging_monitoring",
+          "controlId": "irap.family.logging_monitoring"
+        },
+        {
+          "framework": "GDPR",
+          "family": "security_of_processing",
+          "controlId": "gdpr.family.security_of_processing"
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "family": "security_monitoring",
+          "controlId": "ncsc_caf_4_0.family.security_monitoring"
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "family": "security_continuous_monitoring",
+          "controlId": "nist_csf_2_0.family.security_continuous_monitoring"
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "family": "audit_and_accountability",
+          "controlId": "nist_sp_800_53_rev_5_1.family.audit_and_accountability"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "IRAP",
+            "anchorKinds": [
+              "ism_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "NCSC CAF 4.0",
+            "anchorKinds": [
+              "objective",
+              "principle"
+            ]
+          },
+          {
+            "framework": "NIST CSF 2.0",
+            "anchorKinds": [
+              "function_category_subcategory"
+            ]
+          },
+          {
+            "framework": "NIST SP 800-53 Rev. 5.1",
+            "anchorKinds": [
+              "control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a named human attestation states monitoring review cadence, ownership, and retention operations are current for the declared scope.",
+        "doesNotProve": [
+          "That every alert is analyzed correctly or on time",
+          "That the monitoring programme is adequate for every threat scenario"
+        ]
+      }
+    },
+    {
       "controlId": "oc.net-01",
       "title": "TLS ingress hardened",
       "classification": "decidable",

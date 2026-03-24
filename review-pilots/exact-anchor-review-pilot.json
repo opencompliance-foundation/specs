@@ -20,14 +20,14 @@
       "ISO/IEC 23894",
       "ISO/IEC 42005"
     ],
-    "controlsCovered": 24,
+    "controlsCovered": 26,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 119,
-    "publicSourceReviewed": 71,
+    "reviewEntries": 132,
+    "publicSourceReviewed": 80,
     "candidatePublicSourceUnreviewed": 14,
-    "blockedNonpublicSourceReview": 34
+    "blockedNonpublicSourceReview": 38
   },
   "controls": [
     {
@@ -810,6 +810,257 @@
           ],
           "blocker": "Exact SOC 2 logging anchor publication requires licensed or account-gated TSC review.",
           "rationale": "The public AICPA source establishes the existence of the TSC corpus and categories, but not a publishable exact logging crosswalk.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.mon-01",
+      "title": "Scoped centralized monitoring enabled",
+      "decompositionNote": "The corridor proves that scoped assets forward telemetry into the declared central monitoring sink and that detection rules are enabled, but it does not prove review quality or full monitoring adequacy.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1405",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow centralised-monitoring slice: scoped assets forward telemetry into the declared sink and monitoring rules are enabled. That is narrower than the whole event-logging and monitoring obligation but is a defensible subset of it.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for system monitoring",
+            "locator": "ISM-1405"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 32(1)(b)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Centralized telemetry forwarding and enabled monitoring rules support the ongoing confidentiality, integrity, availability, and resilience of the systems in scope, while remaining only one narrow technical slice of Article 32.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 32(1)(b)"
+          }
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "anchorType": "principle",
+          "anchorId": "Principle C1",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow machine-checkable subset of CAF security monitoring: telemetry reaches the declared sink and monitoring logic is turned on for the scoped assets.",
+          "authoritativeSource": {
+            "authority": "NCSC",
+            "documentId": "Cyber Assessment Framework v4.0 supplementary information",
+            "locator": "Principle C1 Security monitoring"
+          }
+        },
+        {
+          "framework": "NIST CSF 2.0",
+          "anchorType": "function_category_subcategory",
+          "anchorId": "PR.PS-04",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow subset of the CSF 2.0 outcome for generating logs and making them available for continuous monitoring.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "Cybersecurity Framework 2.0 Core",
+            "locator": "PR.PS-04"
+          }
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "anchorType": "control",
+          "anchorId": "SI-4",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor proves a narrow system-monitoring slice for the declared scope: telemetry reaches the monitoring plane and monitoring rules are enabled, without claiming the broader monitoring program is complete.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "SP 800-53 Rev. 5.1",
+            "locator": "SI-4"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 centralized-monitoring anchors require licensed source review.",
+          "rationale": "The new monitoring corridor stays honest about ISO exact-anchor incompleteness.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 centralized-monitoring anchors require licensed or account-gated TSC review.",
+          "rationale": "The public mapping remains explicit that SOC 2 exact anchors for the new monitoring corridor are still blocked.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.mon-02",
+      "title": "Monitoring review operations current",
+      "decompositionNote": "The corridor only proves that a named human attestation states monitoring review cadence, ownership, and retention operations are current for the declared scope.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1986",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's signed review-cadence and ownership attestation is a narrow documentary slice of timely event-log analysis and monitoring operations.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Guidelines for system monitoring",
+            "locator": "ISM-1986"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 32(1)(d)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "An attested monitoring review cadence and retained operational coverage is a narrow documentary support layer for the requirement to regularly test, assess, and evaluate the effectiveness of technical and organisational measures.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 32(1)(d)"
+          }
+        },
+        {
+          "framework": "NCSC CAF 4.0",
+          "anchorType": "principle",
+          "anchorId": "Principle C1",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's attested monitoring cadence and ownership layer is a narrow operational slice of CAF security monitoring without claiming that the whole monitoring objective is satisfied.",
+          "authoritativeSource": {
+            "authority": "NCSC",
+            "documentId": "Cyber Assessment Framework v4.0 supplementary information",
+            "locator": "Principle C1 Security monitoring"
+          }
+        },
+        {
+          "framework": "NIST SP 800-53 Rev. 5.1",
+          "anchorType": "control",
+          "anchorId": "AU-6",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's owner-attested monitoring-review operations are a narrow subset of the broader audit-review, analysis, and reporting control.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "SP 800-53 Rev. 5.1",
+            "locator": "AU-6"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 monitoring-operations anchors require licensed source review.",
+          "rationale": "The public exact-anchor layer still refuses to guess at ISO monitoring-review anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 monitoring-review anchors require licensed or account-gated TSC review.",
+          "rationale": "The project keeps the new monitoring-operations control honest by recording the blocker rather than publishing guessed SOC 2 anchors.",
           "authoritativeSource": {
             "authority": "AICPA",
             "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",

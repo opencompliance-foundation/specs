@@ -3100,6 +3100,726 @@
       }
     },
     {
+      "controlId": "oc.phys-04",
+      "title": "Facility cabling and utility documentation attested",
+      "classification": "attestation",
+      "evidenceClaimType": "facility_cabling_documentation_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_and_environmental_security",
+          "controlId": "iso27001.family.physical_and_environmental_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that current documentation exists for the scoped cabling routes, supporting utilities, and dependency points relevant to the systems in scope.",
+        "doesNotProve": [
+          "That the documented routes and utilities are complete for every dependency",
+          "That the documented protections are sufficient for all environmental or tampering risks"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.phys-05",
+      "title": "Supporting utility protection attested",
+      "classification": "attestation",
+      "evidenceClaimType": "supporting_utility_protection_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_and_environmental_security",
+          "controlId": "iso27001.family.physical_and_environmental_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that protection, maintenance, and contingency measures are attested as current for the scoped cabling routes and supporting utilities.",
+        "doesNotProve": [
+          "That the supporting-utility contingencies have been tested recently",
+          "That the protections are sufficient for the actual outage or tampering risks in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.phys-06",
+      "title": "Facility cabling and utility adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_and_environmental_security",
+          "controlId": "iso27001.family.physical_and_environmental_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for the sufficiency of cabling and supporting-utility safeguards in the scoped environment.",
+        "doesNotProve": [
+          "That the scoped facility and utility safeguards are complete",
+          "That the safeguards are sufficient for all environmental, tampering, or availability risks in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-07",
+      "title": "Security commitment terms attested",
+      "classification": "attestation",
+      "evidenceClaimType": "security_commitment_terms_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "supplier_relationships",
+          "controlId": "iso27001.family.supplier_relationships"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that current agreement language includes the scoped security commitments required for the customer or third-party relationships in scope.",
+        "doesNotProve": [
+          "That the commitments are monitored everywhere they should be",
+          "That the commitments are adequate for the actual service or transfer risks in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-08",
+      "title": "Security commitment governance attested",
+      "classification": "attestation",
+      "evidenceClaimType": "security_commitment_governance_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "supplier_relationships",
+          "controlId": "iso27001.family.supplier_relationships"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that ownership, review cadence, and exception handling are attested as current for the scoped security commitments in agreements.",
+        "doesNotProve": [
+          "That reviews are sufficient for every agreement variant",
+          "That every exception is justified or controlled adequately"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-09",
+      "title": "Security commitment adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "supplier_relationships",
+          "controlId": "iso27001.family.supplier_relationships"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped security commitments in agreements are sufficient for the actual service, transfer, and assurance risks in scope.",
+        "doesNotProve": [
+          "That agreement commitments are complete for every supplier or customer relationship",
+          "That the scoped commitments are sufficient for all downstream assurance needs"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-30",
+      "title": "ISMS context definition attested",
+      "classification": "attestation",
+      "evidenceClaimType": "isms_context_definition_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_context_and_scope",
+          "controlId": "iso27001.family.isms_context_and_scope"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current ISMS context definition attestation exists for the scoped organisation, environment, and boundary assumptions.",
+        "doesNotProve": [
+          "That the context definition is complete",
+          "That the scoped assumptions capture every material external or internal factor"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-31",
+      "title": "ISMS context review attested",
+      "classification": "attestation",
+      "evidenceClaimType": "isms_context_review_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_context_and_scope",
+          "controlId": "iso27001.family.isms_context_and_scope"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that context review, scope adjustment, and relevant factor updates are attested as current for the scoped ISMS.",
+        "doesNotProve": [
+          "That review triggers are sufficient",
+          "That the updated context model is still adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-32",
+      "title": "ISMS context adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_context_and_scope",
+          "controlId": "iso27001.family.isms_context_and_scope"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped ISMS context model is sufficient to frame the organisational, environmental, and boundary assumptions that matter.",
+        "doesNotProve": [
+          "That the context analysis is complete",
+          "That the scoped assumptions are sufficient for governance or risk decisions"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.proj-01",
+      "title": "Project security requirements attested",
+      "classification": "attestation",
+      "evidenceClaimType": "project_security_requirement_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "project_security",
+          "controlId": "iso27001.family.project_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current set of project-management security requirements is attested for the scoped project types and delivery model.",
+        "doesNotProve": [
+          "That the requirements cover every project risk",
+          "That the requirements are enforced across every project in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.proj-02",
+      "title": "Project security review attested",
+      "classification": "attestation",
+      "evidenceClaimType": "project_security_review_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "project_security",
+          "controlId": "iso27001.family.project_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that project security review, approval, and exception-handling records are attested as current for the scoped project portfolio.",
+        "doesNotProve": [
+          "That the reviews are sufficiently deep for every project",
+          "That the exceptions are justified or controlled adequately"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.proj-03",
+      "title": "Project security integration adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "project_security",
+          "controlId": "iso27001.family.project_security"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped project-management model integrates security sufficiently throughout the lifecycle in scope.",
+        "doesNotProve": [
+          "That the project-security model covers every lifecycle stage",
+          "That the scoped integration is sufficient for all project delivery risks"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ir-04",
+      "title": "Security concern intake attested",
+      "classification": "attestation",
+      "evidenceClaimType": "security_concern_intake_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "incident_response",
+          "controlId": "soc2.family.incident_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current intake path is attested for the scoped reported security concerns relevant to the service and operations in scope.",
+        "doesNotProve": [
+          "That all reporters know how to use the intake path",
+          "That every material concern is reported through it"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ir-05",
+      "title": "Security concern resolution follow-up attested",
+      "classification": "attestation",
+      "evidenceClaimType": "security_concern_resolution_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "incident_response",
+          "controlId": "soc2.family.incident_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that tracking, ownership, and resolution-follow-up records are attested as current for the scoped reported security concerns.",
+        "doesNotProve": [
+          "That every concern is resolved on time",
+          "That follow-up handling is sufficient for every issue class"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ir-06",
+      "title": "Security concern handling adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "incident_response",
+          "controlId": "soc2.family.incident_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped handling model for reported security concerns is sufficient to triage, resolve, and learn from the issues that matter.",
+        "doesNotProve": [
+          "That the scoped issue-handling process is complete",
+          "That the handling model is sufficient for every concern type or severity"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-10",
+      "title": "Outsourced development requirements attested",
+      "classification": "attestation",
+      "evidenceClaimType": "outsourced_development_requirement_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current set of security requirements is attested for the scoped outsourced-development relationships and delivery model.",
+        "doesNotProve": [
+          "That every outsourced development relationship is in scope",
+          "That the requirements are sufficient for the actual third-party development risks in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-11",
+      "title": "Outsourced development review attested",
+      "classification": "attestation",
+      "evidenceClaimType": "outsourced_development_review_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that review, oversight, and exception-handling records are attested as current for the scoped outsourced-development relationships.",
+        "doesNotProve": [
+          "That every supplier review is sufficiently deep",
+          "That every exception is justified or controlled adequately"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.vendor-12",
+      "title": "Outsourced development adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "vendor_management",
+          "controlId": "soc2.family.vendor_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped outsourced-development governance model is sufficient to control the third-party development risks that matter.",
+        "doesNotProve": [
+          "That outsourced-development governance is complete",
+          "That the scoped oversight model is sufficient for every supplier or delivery path"
+        ]
+      }
+    },
+    {
       "controlId": "oc.boundary-01",
       "title": "Default-deny network boundary in place",
       "classification": "decidable",

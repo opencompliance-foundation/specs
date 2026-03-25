@@ -26,13 +26,14 @@
 - Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 - A draft signed-artifact manifest format plus synthetic public example signature bundles over the issued and lifecycle packs.
 - Draft transparency-log and inclusion-proof artifacts plus public transparency outputs for the synthetic ExampleCo corridors.
+- A first verifier-release manifest schema plus a versioned public verifier bundle that stitches together the runtime, Lean corridor, specs, evidence schemas, conformance scripts, and current synthetic corridors into one replayable public release.
 - The exact-anchor review pilot now also covers 44 public controls across 25 frameworks and 212 review entries, including the public password-policy, managed-web-application-firewall, encryption-at-rest, service-account-key-hygiene, approved-region-boundary, data-subject-rights runbook, vendor-terms, vendor-adequacy, unique-infrastructure-identity, segmentation, incident-runbook, incident-escalation, repository-integrity, secure-baseline, configuration-exception, CI-policy, change-governance, access-review, patch-exception, AI provenance, AI evaluation, and AI data-quality-governance controls, keeping GDPR, IRAP, Cyber Essentials, NCSC CAF, and NIST SP 800-53 at reviewed status where public text supports it, candidate ISO AI mappings where only partial public material exists, and ISO 27001 / SOC 2 as explicit blockers where licensed review is still required.
 
 ## What does not exist yet
 
 - No normative schema registry.
 - No compatibility guarantees beyond `0.x` draft expectations.
-- No signed release process for these formats.
+- No production-grade release automation or independent release attestation beyond the current synthetic signed bundle.
 - No independent implementation conformance programme.
 - No externally reviewed clause-, Annex A-, criterion-, or point-of-focus anchor set for the public corridor yet.
 - No live-connector or real-organisation corridors yet for the newer Cyber Essentials and AI-governance controls.

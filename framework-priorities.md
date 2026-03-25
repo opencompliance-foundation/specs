@@ -32,6 +32,8 @@ Those seven give the best mix of:
 
 The UK ICO and NIST AI 600-1 layers are now reviewed in the public exact-anchor pilot rather than remaining backlog-only items.
 
+The IRAP layer is now also materially deeper than the first public wave: it covers reviewed exact anchors for secure baselines, configuration exceptions, CI policy, change governance, typed access-review exports and closure attestations, patch state, and patch exceptions in addition to the earlier identity, logging, network, recovery, incident, locality, and repository-integrity slices.
+
 ## Follow-on AI order
 
 The next layer after that is:

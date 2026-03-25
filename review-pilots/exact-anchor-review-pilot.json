@@ -26,14 +26,14 @@
       "NIST CSF 2.0",
       "NIST SP 800-53 Rev. 5.1"
     ],
-    "controlsCovered": 34,
+    "controlsCovered": 41,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 176,
-    "publicSourceReviewed": 112,
+    "reviewEntries": 202,
+    "publicSourceReviewed": 124,
     "candidatePublicSourceUnreviewed": 14,
-    "blockedNonpublicSourceReview": 50
+    "blockedNonpublicSourceReview": 64
   },
   "controls": [
     {
@@ -2346,6 +2346,40 @@
           }
         },
         {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1913; ISM-1914; ISM-1915; ISM-1916",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A typed secure-baseline export is a narrow machine-checkable slice of the public ISM controls that approved configurations are developed, implemented, and maintained for IT equipment, operating systems, user applications, and server applications.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-1913; ISM-1914; ISM-1915; ISM-1916"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1858; ISM-1409; ISM-1859; ISM-1412; ISM-1860; ISM-1246",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The same baseline-export corridor is also a narrow slice of the public ISM hardening controls for equipment, operating systems, browsers, office suites, PDF applications, and server applications, while leaving broader hardening-program adequacy out of scope.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-1858; ISM-1409; ISM-1859; ISM-1412; ISM-1860; ISM-1246"
+          }
+        },
+        {
           "framework": "ISO 27001",
           "anchorType": "licensed_framework_anchor",
           "relation": "undetermined",
@@ -2381,6 +2415,419 @@
           ],
           "blocker": "Exact SOC 2 secure-configuration anchors require licensed or account-gated TSC review.",
           "rationale": "The planned corridor records the blocker instead of publishing guessed SOC 2 hardening anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.cfg-02",
+      "title": "Configuration exceptions attested",
+      "decompositionNote": "The corridor only proves that a named attestation says the exception register is current and that no declared exception is already expired in the review window.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0912",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A current configuration-exception attestation is a narrow documentary slice of the public ISM requirement for a change and configuration management plan that tracks, documents, approves, and notifies routine and urgent configuration changes.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0912"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 configuration-exception anchors require licensed source review.",
+          "rationale": "The planned attestation corridor keeps the ISO blocker explicit rather than publishing guessed exception-governance anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 configuration-exception anchors require licensed or account-gated TSC review.",
+          "rationale": "The planned corridor records the blocker instead of implying the attested exception slice already has open-reviewed SOC 2 anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ci-01",
+      "title": "CI workflow policy constrained",
+      "decompositionNote": "This corridor would prove only that the scoped CI workflow requires review, trusted publishing, protected references, and environment approvals.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-2034",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A constrained CI workflow with review and environment-approval gates is a narrow enforceable slice of the public ISM control that security design decisions are documented and reviewed throughout the software development cycle.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-2034"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-2060",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "Required code review before trusted CI publication is a narrow technical slice of the public ISM control that code reviews are used to ensure software meets Secure by Design and secure programming practices.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-2060"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 secure-development and CI-policy anchors require licensed source review.",
+          "rationale": "The planned CI corridor keeps the ISO blocker explicit rather than publishing guessed build-pipeline anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 change-management and CI-policy anchors require licensed or account-gated TSC review.",
+          "rationale": "The planned CI corridor records the blocker instead of implying its review and publishing gates already have open-reviewed SOC 2 anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.change-01",
+      "title": "Production change control decomposition boundary",
+      "decompositionNote": "This control proves nothing directly. It exists to decompose a broad change-control area into machine-checkable and attested sub-obligations.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0912",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The decomposition boundary exists because the public ISM control combines baseline configuration, change request tracking, approvals, and notifications, which OpenCompliance intentionally splits into narrower machine and attested slices.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0912"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 change-control decomposition anchors require licensed source review.",
+          "rationale": "The boundary keeps the ISO blocker explicit instead of pretending the mixed change area is already fully open-reviewed.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 change-control decomposition anchors require licensed or account-gated TSC review.",
+          "rationale": "The boundary records the blocker rather than guessing at open SOC 2 anchors for the mixed change area.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.change-02",
+      "title": "Change review governance attested",
+      "decompositionNote": "The corridor only proves that a named attestation says the scoped change-review policy is approved and that an emergency change path is declared for the current review window.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0912",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "An attested approved change-review policy with an emergency path is a narrow documentary slice of the public ISM requirement for a change and configuration management plan that defines routine and urgent changes, approvals, and notifications.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0912"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 change-governance attestation anchors require licensed source review.",
+          "rationale": "The attested change-governance corridor keeps the ISO blocker explicit rather than publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 change-governance attestation anchors require licensed or account-gated TSC review.",
+          "rationale": "The corridor records the blocker instead of implying its emergency-change governance slice already has open-reviewed SOC 2 anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.id-02",
+      "title": "Typed periodic access review export present",
+      "decompositionNote": "The corridor only proves that a typed access-review export exists for the declared review window.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0407",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A typed periodic access-review export is a narrow machine-readable slice of the public ISM requirement to maintain a secure user-access record, specifically the facts about when access and level of access were last reviewed.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0407"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 access-review export anchors require licensed source review.",
+          "rationale": "The corridor keeps the ISO blocker explicit rather than publishing guessed review-record anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 access-review export anchors require licensed or account-gated TSC review.",
+          "rationale": "The corridor records the blocker instead of implying its typed review-export slice already has open-reviewed SOC 2 anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.id-03",
+      "title": "Access review closure attested",
+      "decompositionNote": "The corridor only proves that a named attestation states the declared access review completed for the scoped population and that no high-risk findings remain open in that attested window.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0407",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The closure attestation is a narrow accountable slice of the public ISM secure-access record requirement, specifically the facts that access changes, reviews, and withdrawals are tracked to completion for each user.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0407"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 access-review closure anchors require licensed source review.",
+          "rationale": "The attested closure corridor keeps the ISO blocker explicit rather than publishing guessed closure anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 access-review closure anchors require licensed or account-gated TSC review.",
+          "rationale": "The corridor records the blocker instead of implying its closure-signoff slice already has open-reviewed SOC 2 anchors.",
           "authoritativeSource": {
             "authority": "AICPA",
             "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
@@ -2446,6 +2893,40 @@
           }
         },
         {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-0298",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The corridor's typed patch-state export is a narrow machine-checkable slice of the public ISM requirement for a centralised and managed patching approach that maintains patch integrity and confirms updates have been applied successfully.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-0298"
+          }
+        },
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1690; ISM-1691; ISM-1692; ISM-1693; ISM-1694; ISM-1695; ISM-1696; ISM-1876; ISM-1877; ISM-1901",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The same corridor is also a narrow supported-version and overdue-fix slice of the public ISM patch-timeliness controls across online services, applications, office productivity software, and operating systems.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-1690; ISM-1691; ISM-1692; ISM-1693; ISM-1694; ISM-1695; ISM-1696; ISM-1876; ISM-1877; ISM-1901"
+          }
+        },
+        {
           "framework": "ISO 27001",
           "anchorType": "licensed_framework_anchor",
           "relation": "undetermined",
@@ -2481,6 +2962,72 @@
           ],
           "blocker": "Exact SOC 2 patch-management anchors require licensed or account-gated TSC review.",
           "rationale": "The planned corridor records the blocker rather than publishing guessed SOC 2 patch anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.patch-02",
+      "title": "Patch exceptions attested",
+      "decompositionNote": "The corridor only proves that a named human attestation says the patch exception register is current, compensating controls are declared, and no exception is already expired in the review window.",
+      "reviews": [
+        {
+          "framework": "IRAP",
+          "anchorType": "ism_control",
+          "anchorId": "ISM-1809",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "An attested patch-exception register with compensating controls is a narrow documentary slice of the public ISM control that unsupported systems which cannot be immediately removed or replaced must be protected by compensating controls.",
+          "authoritativeSource": {
+            "authority": "ACSC ISM",
+            "documentId": "Information security manual",
+            "locator": "ISM-1809"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 patch-exception anchors require licensed source review.",
+          "rationale": "The attested exception corridor keeps the ISO blocker explicit rather than publishing guessed exception-handling anchors.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 patch-exception anchors require licensed or account-gated TSC review.",
+          "rationale": "The corridor records the blocker instead of implying its attested exception slice already has open-reviewed SOC 2 anchors.",
           "authoritativeSource": {
             "authority": "AICPA",
             "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",

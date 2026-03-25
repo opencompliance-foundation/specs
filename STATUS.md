@@ -26,7 +26,7 @@
 - Draft lifecycle and composed-certificate artifacts for drift handling, delta recheck planning, and higher-level certificate composition.
 - A draft signed-artifact manifest format plus synthetic public example signature bundles over the issued and lifecycle packs.
 - Draft transparency-log and inclusion-proof artifacts plus public transparency outputs for the synthetic ExampleCo corridors.
-- The exact-anchor review pilot now also covers the public password-policy, managed-web-application-firewall, encryption-at-rest, service-account-key-hygiene, approved-region-boundary, data-subject-rights runbook, vendor-terms, vendor-adequacy, unique-infrastructure-identity, segmentation, incident-runbook, incident-escalation, and repository-integrity controls, keeping GDPR, IRAP, Cyber Essentials, NCSC CAF, and NIST SP 800-53 at reviewed status where public text supports it, and ISO 27001 / SOC 2 as explicit blockers where licensed review is still required.
+- The exact-anchor review pilot now also covers 41 public controls across 20 frameworks and 202 review entries, including the public password-policy, managed-web-application-firewall, encryption-at-rest, service-account-key-hygiene, approved-region-boundary, data-subject-rights runbook, vendor-terms, vendor-adequacy, unique-infrastructure-identity, segmentation, incident-runbook, incident-escalation, repository-integrity, secure-baseline, configuration-exception, CI-policy, change-governance, access-review, and patch-exception controls, keeping GDPR, IRAP, Cyber Essentials, NCSC CAF, and NIST SP 800-53 at reviewed status where public text supports it, and ISO 27001 / SOC 2 as explicit blockers where licensed review is still required.
 
 ## What does not exist yet
 

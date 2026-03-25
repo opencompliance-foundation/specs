@@ -25,7 +25,7 @@
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
           "candidate_public_source_unreviewed": 0,
-          "blocked_nonpublic_source_review": 25
+          "blocked_nonpublic_source_review": 32
         }
       },
       "mappedControlIds": [
@@ -108,8 +108,14 @@
         "oc.backup-01",
         "oc.boundary-01",
         "oc.cfg-01",
+        "oc.cfg-02",
+        "oc.change-01",
+        "oc.change-02",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
+        "oc.id-02",
+        "oc.id-03",
         "oc.id-04",
         "oc.id-05",
         "oc.ir-01",
@@ -124,6 +130,7 @@
         "oc.net-03",
         "oc.net-04",
         "oc.patch-01",
+        "oc.patch-02",
         "oc.rec-01",
         "oc.repo-01",
         "oc.seg-01",
@@ -164,7 +171,7 @@
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
           "candidate_public_source_unreviewed": 0,
-          "blocked_nonpublic_source_review": 25
+          "blocked_nonpublic_source_review": 32
         }
       },
       "mappedControlIds": [
@@ -247,8 +254,14 @@
         "oc.backup-01",
         "oc.boundary-01",
         "oc.cfg-01",
+        "oc.cfg-02",
+        "oc.change-01",
+        "oc.change-02",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
+        "oc.id-02",
+        "oc.id-03",
         "oc.id-04",
         "oc.id-05",
         "oc.ir-01",
@@ -263,6 +276,7 @@
         "oc.net-03",
         "oc.net-04",
         "oc.patch-01",
+        "oc.patch-02",
         "oc.rec-01",
         "oc.repo-01",
         "oc.seg-01",
@@ -384,7 +398,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Important for Australian government and regulated-enterprise pathways, especially for a legal-tech deployer pushing into Australia.",
-      "nextAction": "Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, and repository-integrity controls, then widen into secure configuration, patch governance, and change-control slices while keeping hosted shared-responsibility assumptions explicit.",
+      "nextAction": "Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, repository-integrity, secure configuration, change governance, access review, CI-policy, and patch-exception controls, then widen into the remaining hardening and judgment-boundary slices while keeping hosted shared-responsibility assumptions explicit.",
       "summary": {
         "mappedPublicControls": 31,
         "implementedPublicControls": 31,
@@ -396,7 +410,7 @@
           "judgment": 1
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 24,
+          "public_source_reviewed": 36,
           "candidate_public_source_unreviewed": 1,
           "blocked_nonpublic_source_review": 0
         }
@@ -470,8 +484,15 @@
       "reviewedControlIds": [
         "oc.backup-01",
         "oc.boundary-01",
+        "oc.cfg-01",
+        "oc.cfg-02",
+        "oc.change-01",
+        "oc.change-02",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
+        "oc.id-02",
+        "oc.id-03",
         "oc.id-04",
         "oc.id-05",
         "oc.ir-01",
@@ -485,6 +506,8 @@
         "oc.net-02",
         "oc.net-03",
         "oc.net-04",
+        "oc.patch-01",
+        "oc.patch-02",
         "oc.rec-01",
         "oc.repo-01",
         "oc.seg-01",
@@ -495,14 +518,14 @@
       ],
       "blockedControlIds": [],
       "nextDepthControlIds": [
-        "oc.cfg-01",
-        "oc.ci-01",
-        "oc.id-02",
-        "oc.patch-01",
-        "oc.change-01",
-        "oc.cfg-02",
-        "oc.change-02",
-        "oc.id-03"
+        "oc.patch-03",
+        "oc.backup-01",
+        "oc.boundary-01",
+        "oc.crypt-01",
+        "oc.id-01",
+        "oc.id-04",
+        "oc.id-05",
+        "oc.key-01"
       ]
     },
     {

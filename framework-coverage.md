@@ -11,7 +11,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Mapped public controls: `35`
 - Implemented public controls: `35`
 - Lean-backed public controls: `15`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `25`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
 - Operator benefit: Still the strongest customer-facing security management baseline for SaaS diligence and procurement.
 - Next action: Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`, `oc.log-01`
@@ -25,7 +25,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Mapped public controls: `35`
 - Implemented public controls: `35`
 - Lean-backed public controls: `15`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `25`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
 - Operator benefit: Directly relevant to US buyer assurance, trust-center narratives, and recurring security questionnaires.
 - Next action: Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`, `oc.log-01`
@@ -53,10 +53,10 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Mapped public controls: `31`
 - Implemented public controls: `31`
 - Lean-backed public controls: `16`
-- Exact anchors reviewed / candidate / blocked: `24` / `1` / `0`
+- Exact anchors reviewed / candidate / blocked: `36` / `1` / `0`
 - Operator benefit: Important for Australian government and regulated-enterprise pathways, especially for a legal-tech deployer pushing into Australia.
-- Next action: Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, and repository-integrity controls, then widen into secure configuration, patch governance, and change-control slices while keeping hosted shared-responsibility assumptions explicit.
-- Next depth controls: `oc.cfg-01`, `oc.ci-01`, `oc.id-02`, `oc.patch-01`, `oc.change-01`, `oc.cfg-02`, `oc.change-02`, `oc.id-03`
+- Next action: Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, repository-integrity, secure configuration, change governance, access review, CI-policy, and patch-exception controls, then widen into the remaining hardening and judgment-boundary slices while keeping hosted shared-responsibility assumptions explicit.
+- Next depth controls: `oc.patch-03`, `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`
 
 ## 5. EU AI Act
 

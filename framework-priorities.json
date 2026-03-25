@@ -41,7 +41,7 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "operatorBenefit": "Important for Australian government and regulated-enterprise pathways, especially for a legal-tech deployer pushing into Australia.",
-      "nextAction": "Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, and repository-integrity controls, then widen into secure configuration, patch governance, and change-control slices while keeping hosted shared-responsibility assumptions explicit."
+      "nextAction": "Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, repository-integrity, secure configuration, change governance, access review, CI-policy, and patch-exception controls, then widen into the remaining hardening and judgment-boundary slices while keeping hosted shared-responsibility assumptions explicit."
     },
     {
       "framework": "EU AI Act",

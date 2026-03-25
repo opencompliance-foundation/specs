@@ -2204,6 +2204,256 @@
       }
     },
     {
+      "controlId": "oc.rec-02",
+      "title": "Continuity plan attested",
+      "classification": "attestation",
+      "evidenceClaimType": "continuity_plan_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "backup_and_recovery",
+          "controlId": "soc2.family.backup_and_recovery"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "backup_and_recovery",
+          "controlId": "iso27001.family.backup_and_recovery"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a continuity-plan attestation exists with a declared owner, review window, and scoped critical-service coverage statement.",
+        "doesNotProve": [
+          "That the plan has been tested recently",
+          "That recovery objectives or dependency coverage are adequate"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.rec-03",
+      "title": "Continuity adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "backup_and_recovery",
+          "controlId": "soc2.family.backup_and_recovery"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "backup_and_recovery",
+          "controlId": "iso27001.family.backup_and_recovery"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for recovery objectives, dependency coverage, and exercised scenario sufficiency.",
+        "doesNotProve": [
+          "That recovery objectives are appropriate",
+          "That exercised scenarios cover the material failure modes in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.risk-04",
+      "title": "Risk management process attested",
+      "classification": "attestation",
+      "evidenceClaimType": "risk_management_process_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "risk_management",
+          "controlId": "soc2.family.risk_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "risk_management",
+          "controlId": "iso27001.family.risk_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current scoped risk-management process attestation exists with declared cadence or scope information.",
+        "doesNotProve": [
+          "That the assessment process is adequate",
+          "That a scheduled assessment was actually completed"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.risk-05",
+      "title": "Risk management cycle attested",
+      "classification": "attestation",
+      "evidenceClaimType": "risk_management_cycle_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "risk_management",
+          "controlId": "soc2.family.risk_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "risk_management",
+          "controlId": "iso27001.family.risk_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a scoped risk-management cycle attestation exists for recent assessment, review, treatment, or acceptance activity.",
+        "doesNotProve": [
+          "That the assessed risks were complete",
+          "That the follow-through on treatment is sufficient"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.risk-06",
+      "title": "Risk management adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "risk_management",
+          "controlId": "soc2.family.risk_management"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "risk_management",
+          "controlId": "iso27001.family.risk_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for periodic risk-assessment cadence, coverage, and follow-through.",
+        "doesNotProve": [
+          "That the risk register is complete",
+          "That the assessment cycle is sufficient for the risks in scope"
+        ]
+      }
+    },
+    {
       "controlId": "oc.train-01",
       "title": "Training completion record available",
       "classification": "attestation",
@@ -2657,6 +2907,195 @@
         "doesNotProve": [
           "That privacy by design is satisfied",
           "That product and legal judgment can be reduced to a narrow theorem"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.data-04",
+      "title": "Data retention and deletion policy attested",
+      "classification": "attestation",
+      "evidenceClaimType": "data_retention_deletion_policy_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "data_retention_and_deletion",
+          "controlId": "soc2.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "data_retention_and_deletion",
+          "controlId": "iso27001.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "GDPR",
+          "family": "storage_limitation_and_erasure",
+          "controlId": "gdpr.family.storage_limitation_and_erasure"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current retention-and-deletion policy attestation exists for the declared data classes and systems in scope.",
+        "doesNotProve": [
+          "That every retained copy is covered",
+          "That deletion behaviour is technically enforced across all holders"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.data-05",
+      "title": "Data retention schedule attested",
+      "classification": "attestation",
+      "evidenceClaimType": "data_retention_schedule_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "data_retention_and_deletion",
+          "controlId": "soc2.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "data_retention_and_deletion",
+          "controlId": "iso27001.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "GDPR",
+          "family": "storage_limitation_and_erasure",
+          "controlId": "gdpr.family.storage_limitation_and_erasure"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that retention schedules, exception handling, and secure deletion procedure attestation exist for the scoped lifecycle surface.",
+        "doesNotProve": [
+          "That schedules are enforced everywhere",
+          "That exceptions and downstream holders are fully governed"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.data-06",
+      "title": "Data retention and deletion adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "data_retention_and_deletion",
+          "controlId": "soc2.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "ISO 27001",
+          "family": "data_retention_and_deletion",
+          "controlId": "iso27001.family.data_retention_and_deletion"
+        },
+        {
+          "framework": "GDPR",
+          "family": "storage_limitation_and_erasure",
+          "controlId": "gdpr.family.storage_limitation_and_erasure"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          },
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for retention, deletion, copies, exceptions, and downstream holders of data.",
+        "doesNotProve": [
+          "That every copy is deleted on time",
+          "That the scoped retention-and-deletion program is sufficient for all regulatory and operational needs"
         ]
       }
     },

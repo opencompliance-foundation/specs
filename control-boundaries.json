@@ -3896,6 +3896,271 @@
           "That the wider transparency program is complete"
         ]
       }
+    },
+    {
+      "controlId": "oc.ai-06",
+      "title": "AI content provenance metadata configured",
+      "classification": "decidable",
+      "evidenceClaimType": "ai_content_provenance_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "NIST AI 100-4",
+          "family": "provenance_data_tracking",
+          "controlId": "nist_ai_100_4.family.provenance_data_tracking"
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "family": "transparency_and_content_provenance",
+          "controlId": "nist_ai_600_1.family.transparency_and_content_provenance"
+        },
+        {
+          "framework": "EU AI Act",
+          "family": "ai_generated_content_transparency",
+          "controlId": "eu_ai_act.family.ai_generated_content_transparency"
+        },
+        {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "family": "disclosure_of_ai_and_ai_generated_content",
+          "controlId": "australia_voluntary_ai_safety_standard.guardrail_6"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "documented_information_and_communication",
+          "controlId": "iso_iec_42001.family.documented_information_and_communication"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "NIST AI 100-4",
+            "anchorKinds": [
+              "section",
+              "appendix"
+            ]
+          },
+          {
+            "framework": "NIST AI 600-1 Generative AI Profile",
+            "anchorKinds": [
+              "profile_action",
+              "risk"
+            ]
+          },
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "Australia Voluntary AI Safety Standard",
+            "anchorKinds": [
+              "guardrail"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped generated-content pipeline emits machine-readable provenance metadata or an equivalent origin-history marker for AI-generated or AI-modified outputs in the current configuration snapshot.",
+        "doesNotProve": [
+          "That provenance survives every downstream transformation or repost",
+          "That every consumer validates or understands the provenance signal"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-07",
+      "title": "AI evaluation design and findings documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_evaluation_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "NIST AI 700-2",
+          "family": "testing_assessment_and_measurement_layers",
+          "controlId": "nist_ai_700_2.family.testing_assessment_and_measurement_layers"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "measurement_and_evaluation",
+          "controlId": "nist_ai_rmf_1_0.family.measurement_and_evaluation"
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "family": "evaluation_and_guardrail_testing",
+          "controlId": "nist_ai_600_1.family.evaluation_and_guardrail_testing"
+        },
+        {
+          "framework": "ISO/IEC 5338",
+          "family": "ai_system_lifecycle_process_evaluation",
+          "controlId": "iso_iec_5338.family.ai_system_lifecycle_process_evaluation"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_process",
+          "controlId": "iso_iec_42005.family.impact_assessment_process"
+        },
+        {
+          "framework": "ISO/IEC AWI 25704",
+          "family": "process_assessment_model_for_ai_lifecycle",
+          "controlId": "iso_iec_awi_25704.family.process_assessment_model_for_ai_lifecycle"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "NIST AI 700-2",
+            "anchorKinds": [
+              "section",
+              "figure",
+              "appendix"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "NIST AI 600-1 Generative AI Profile",
+            "anchorKinds": [
+              "profile_action",
+              "risk"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 5338",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC AWI 25704",
+            "anchorKinds": [
+              "abstract",
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped AI system has documented evaluation scenarios, testing levels, findings capture, and an owner or review window for the recorded results.",
+        "doesNotProve": [
+          "That the evaluation design is sufficiently adversarial, representative, or statistically sound",
+          "That the reported findings cover every real-world risk or impact"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-08",
+      "title": "AI data quality and lineage governance documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_data_quality_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "EU AI Act",
+          "family": "data_and_data_governance",
+          "controlId": "eu_ai_act.family.data_and_data_governance"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "data_quality_and_relevance",
+          "controlId": "nist_ai_rmf_1_0.family.data_quality_and_relevance"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "data_governance_and_quality",
+          "controlId": "iso_iec_42001.family.data_governance_and_quality"
+        },
+        {
+          "framework": "ISO/IEC 5259-5",
+          "family": "data_quality_governance_for_ml",
+          "controlId": "iso_iec_5259_5.family.data_quality_governance_for_ml"
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "family": "training_grounding_and_reference_data",
+          "controlId": "nist_ai_600_1.family.training_grounding_and_reference_data"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "EU AI Act",
+            "anchorKinds": [
+              "article",
+              "annex"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 5259-5",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "NIST AI 600-1 Generative AI Profile",
+            "anchorKinds": [
+              "profile_action",
+              "risk"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped AI system has named data sources or categories, lineage notes, quality criteria, and an owner or steward for review.",
+        "doesNotProve": [
+          "That the underlying data is lawful, representative, or free from bias",
+          "That the documented data-quality criteria are sufficient for the intended use"
+        ]
+      }
     }
   ],
   "auxiliaryClaims": [

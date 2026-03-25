@@ -14,25 +14,30 @@
       "UK AI Cyber Security Code of Practice",
       "NIST AI RMF 1.0",
       "NIST AI 600-1 Generative AI Profile",
+      "NIST AI 100-4",
+      "ISO/IEC 5338",
       "ISO/IEC 42001",
       "ISO/IEC 42005",
+      "ISO/IEC 5259-5",
       "Australia Voluntary AI Safety Standard",
       "ETSI EN 304 223",
       "ETSI TS 104 008",
       "ISO/IEC 23894",
+      "NIST AI 700-2",
       "EU GPAI Code of Practice",
+      "ISO/IEC AWI 25704",
       "Cyber Essentials",
       "NCSC CAF 4.0",
       "NIST CSF 2.0",
       "NIST SP 800-53 Rev. 5.1"
     ],
-    "controlsCovered": 41,
+    "controlsCovered": 44,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 202,
-    "publicSourceReviewed": 124,
-    "candidatePublicSourceUnreviewed": 14,
+    "reviewEntries": 212,
+    "publicSourceReviewed": 129,
+    "candidatePublicSourceUnreviewed": 19,
     "blockedNonpublicSourceReview": 64
   },
   "controls": [
@@ -4023,6 +4028,202 @@
             "authority": "NIST",
             "documentId": "NIST AI 600-1",
             "locator": "MS-2.8-003"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-06",
+      "title": "AI content provenance metadata configured",
+      "decompositionNote": "This planned corridor would prove only that the scoped generated-content pipeline emits machine-readable provenance metadata or an equivalent origin-history marker for AI-generated or AI-modified outputs in the current configuration snapshot.",
+      "reviews": [
+        {
+          "framework": "NIST AI 100-4",
+          "anchorType": "section",
+          "anchorId": "3.1; Appendix C",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned provenance-metadata control is a narrow implementation slice of NIST AI 100-4's provenance-data-tracking layer, which records origins and history using watermarking and metadata approaches.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 100-4",
+            "locator": "3.1 Provenance Data Tracking; Appendix C"
+          }
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "anchorType": "action_id",
+          "anchorId": "MS-2.8-003",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned provenance-metadata control is a narrower, more machine-checkable slice of the GenAI profile action to use digital content transparency solutions that preserve traceability for generated or modified content.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 600-1",
+            "locator": "MS-2.8-003"
+          }
+        },
+        {
+          "framework": "EU AI Act",
+          "anchorType": "article",
+          "anchorId": "Article 50",
+          "relation": "intersects-with",
+          "mappingMethod": "functional",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm whether the provenance-metadata corridor should remain a narrower subset of the broader AI-generated-content disclosure duty before promoting this as a reviewed AI Act anchor.",
+          "rationale": "Article 50 clearly overlaps with provenance and labeling expectations, but the planned control is stronger and more specific than a generic disclosure marker.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "Regulation (EU) 2024/1689",
+            "locator": "Article 50"
+          }
+        },
+        {
+          "framework": "Australia Voluntary AI Safety Standard",
+          "anchorType": "guardrail",
+          "anchorId": "Guardrail 6",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned provenance-metadata control is a narrow implementation slice of the Australian guardrail requiring disclosure of AI and AI-generated content.",
+          "authoritativeSource": {
+            "authority": "Australian Government Department of Industry, Science and Resources",
+            "documentId": "Voluntary AI Safety Standard",
+            "locator": "Guardrail 6"
+          }
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "anchorType": "clause",
+          "anchorId": "7.4;7.5.3;B.8.5",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm the candidate communication and documented-information clauses against licensed ISO/IEC 42001 text before promoting them beyond crosswalk-derived status.",
+          "rationale": "Public crosswalk material suggests overlap with communication and documented-information duties, but exact clause publication still needs licensed ISO review.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "AI RMF to ISO/IEC 42001 crosswalk",
+            "locator": "Govern 4.2 / information for interested parties"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-07",
+      "title": "AI evaluation design and findings documented",
+      "decompositionNote": "This planned corridor would only prove that a signed attestation states the scoped AI system has documented evaluation scenarios, testing levels, findings capture, and an owner or review window for the recorded results.",
+      "reviews": [
+        {
+          "framework": "NIST AI 700-2",
+          "anchorType": "section",
+          "anchorId": "1;2;3;5; Fig. 1",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned AI-evaluation control is a narrow documentary slice of ARIA's testing, assessment, and measurement layers, which explicitly combine human testing, annotation, and transparent measurement for AI risk and impact evaluation.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 700-2",
+            "locator": "Sections 1, 2, 3, and 5; Figure 1"
+          }
+        },
+        {
+          "framework": "ISO/IEC 5338",
+          "anchorType": "abstract",
+          "anchorId": "Abstract",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Keep the lifecycle-process overlap as candidate-only until licensed ISO/IEC 5338 review can confirm the right clause-grade anchors for evaluation and improvement work.",
+          "rationale": "The public ISO/IEC 5338 abstract says the standard defines processes that support definition, control, management, execution, and improvement across AI system life cycle stages, which overlaps with documented evaluation design and findings handling.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC 5338:2023",
+            "locator": "Abstract"
+          }
+        },
+        {
+          "framework": "ISO/IEC AWI 25704",
+          "anchorType": "abstract",
+          "anchorId": "Abstract",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Treat this only as a public draft pointer until the process-assessment model matures and the underlying lifecycle-control layer is richer.",
+          "rationale": "The public draft abstract explicitly frames the document as a process assessment model for collecting evidence about AI process capability, which overlaps with documented evaluation design and findings evidence.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC AWI 25704",
+            "locator": "Abstract"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-08",
+      "title": "AI data quality and lineage governance documented",
+      "decompositionNote": "This planned corridor would only prove that a signed attestation states the scoped AI system has named data sources or categories, lineage notes, quality criteria, and an owner or steward for review.",
+      "reviews": [
+        {
+          "framework": "EU AI Act",
+          "anchorType": "article",
+          "anchorId": "Article 10",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The planned data-quality-governance attestation is a narrow documentary slice of the AI Act's data and data-governance obligations for relevant AI systems.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "Regulation (EU) 2024/1689",
+            "locator": "Article 10"
+          }
+        },
+        {
+          "framework": "ISO/IEC 5259-5",
+          "anchorType": "abstract",
+          "anchorId": "What is ISO/IEC 5259-5?",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Use the public summary to keep the planned governance control focused, but do not promote clause-grade anchors until licensed ISO/IEC 5259-5 review exists.",
+          "rationale": "The public ISO summary says ISO/IEC 5259-5 provides a governance framework for overseeing and directing data quality across the data life cycle, which overlaps with documented lineage, quality criteria, and stewardship.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC 5259-5:2025",
+            "locator": "What is ISO/IEC 5259-5?"
           }
         }
       ]

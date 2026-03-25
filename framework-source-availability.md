@@ -26,6 +26,10 @@ It exists to keep the mapping corpus honest.
   Public function-outcome anchors are feasible.
 - `NIST AI 600-1 Generative AI Profile`
   Public GenAI profile risks and actions are feasible.
+- `NIST AI 100-4`
+  Public section- and appendix-level anchors are feasible for synthetic-content transparency and provenance controls.
+- `NIST AI 700-2`
+  Public section-, figure-, and appendix-level anchors are feasible for documented AI evaluation and measurement controls.
 - `NIST SP 800-218A`
   Public secure-development practice anchors for GenAI and dual-use foundation models are feasible.
 - `UK ICO AI and data protection guidance`
@@ -43,10 +47,14 @@ It exists to keep the mapping corpus honest.
 
 - `ISO/IEC 42001`
   Public NIST crosswalk material provides strong candidate clause references, but exact publication still needs licensed-source confirmation.
+- `ISO/IEC 5338`
+  Public summaries are useful for candidate lifecycle-process mappings, but exact clause-grade publication still needs licensed review.
 - `ISO/IEC 23894`
   Public crosswalk material is useful for candidate alignment, but not yet strong enough for reviewed exact-anchor publication without licensed review.
 - `ISO/IEC 42005`
   Public crosswalk material is useful for candidate alignment, but not yet strong enough for reviewed exact-anchor publication without licensed review.
+- `ISO/IEC 5259-5`
+  Public summaries are useful for candidate data-quality-governance mappings, but exact clause-grade publication still needs licensed review.
 - `ISO/IEC 42006`
   Public descriptions make the standard strategically relevant, but exact clause-grade publication still needs licensed review.
 
@@ -61,6 +69,8 @@ It exists to keep the mapping corpus honest.
 
 - `NIST AI 800-1`
   Public draft guidance exists, but it is still draft and should not yet be treated as a stable exact-anchor target.
+- `ISO/IEC AWI 25704`
+  The public draft abstract is useful as a candidate pointer for future process-assessment artifacts, but the project is still under development and not yet a mature exact-anchor target.
 - `ETSI TS 104 008`
   The specification is public and usable, but it is new enough that OpenCompliance should treat it as a strategic design input before claiming mature control coverage against it.
 

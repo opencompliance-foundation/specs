@@ -3820,6 +3820,612 @@
       }
     },
     {
+      "controlId": "oc.gov-33",
+      "title": "ISMS stakeholder register attested",
+      "classification": "attestation",
+      "evidenceClaimType": "isms_stakeholder_register_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_stakeholder_management",
+          "controlId": "iso27001.family.isms_stakeholder_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current register or inventory exists for the scoped interested parties and stakeholder groups relevant to the ISMS.",
+        "doesNotProve": [
+          "That every materially relevant stakeholder is captured",
+          "That the stakeholder inventory is sufficient for governance or audit needs"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-34",
+      "title": "ISMS stakeholder obligations attested",
+      "classification": "attestation",
+      "evidenceClaimType": "isms_stakeholder_obligation_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_stakeholder_management",
+          "controlId": "iso27001.family.isms_stakeholder_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that stakeholder expectations, obligations, and review ownership are attested as current for the scoped ISMS surface.",
+        "doesNotProve": [
+          "That every expectation is interpreted correctly",
+          "That the stakeholder review model is sufficient for every obligation change"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-35",
+      "title": "ISMS stakeholder management adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "isms_stakeholder_management",
+          "controlId": "iso27001.family.isms_stakeholder_management"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped stakeholder-management model captures the interested parties and expectations that materially affect the ISMS.",
+        "doesNotProve": [
+          "That the stakeholder model is complete",
+          "That the scoped obligations and expectations are sufficient for all governance decisions"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-36",
+      "title": "Corrective action process attested",
+      "classification": "attestation",
+      "evidenceClaimType": "corrective_action_process_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "continual_improvement_and_corrective_action",
+          "controlId": "iso27001.family.continual_improvement_and_corrective_action"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current continual-improvement and corrective-action process is attested for the scoped ISMS surface.",
+        "doesNotProve": [
+          "That the process captures every significant issue",
+          "That the process is sufficient to drive meaningful improvement"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-37",
+      "title": "Corrective action follow-up attested",
+      "classification": "attestation",
+      "evidenceClaimType": "corrective_action_followup_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "continual_improvement_and_corrective_action",
+          "controlId": "iso27001.family.continual_improvement_and_corrective_action"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that nonconformities, corrective-action ownership, and remediation follow-up records are attested as current for the scoped improvement cycle.",
+        "doesNotProve": [
+          "That every corrective action is effective",
+          "That remediation follow-up is sufficient for every nonconformity"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-38",
+      "title": "Continual improvement adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "continual_improvement_and_corrective_action",
+          "controlId": "iso27001.family.continual_improvement_and_corrective_action"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped continual-improvement and corrective-action loop is sufficient to identify, prioritise, and close meaningful ISMS issues.",
+        "doesNotProve": [
+          "That the improvement loop is complete",
+          "That the scoped corrective-action model is sufficient for all issue classes"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.cpl-01",
+      "title": "Compliance requirement register attested",
+      "classification": "attestation",
+      "evidenceClaimType": "compliance_requirement_register_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "compliance_requirements",
+          "controlId": "iso27001.family.compliance_requirements"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current register of scoped legal, regulatory, contractual, and compliance requirements is attested for the ISMS surface in scope.",
+        "doesNotProve": [
+          "That every materially relevant requirement is captured",
+          "That the register is sufficient for every downstream control mapping"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.cpl-02",
+      "title": "Compliance requirement review attested",
+      "classification": "attestation",
+      "evidenceClaimType": "compliance_requirement_review_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "compliance_requirements",
+          "controlId": "iso27001.family.compliance_requirements"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that requirement review cadence, update ownership, and change-handling records are attested as current for the scoped compliance inventory.",
+        "doesNotProve": [
+          "That review triggers are sufficient",
+          "That every requirement change is reflected everywhere it should be"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.cpl-03",
+      "title": "Compliance inventory adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "compliance_requirements",
+          "controlId": "iso27001.family.compliance_requirements"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped compliance-requirement inventory is sufficient to cover the legal, regulatory, and contractual obligations that materially affect the ISMS.",
+        "doesNotProve": [
+          "That the inventory is complete",
+          "That the scoped register is sufficient for all audit and governance needs"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-39",
+      "title": "Intellectual property policy attested",
+      "classification": "attestation",
+      "evidenceClaimType": "intellectual_property_policy_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "intellectual_property_rights",
+          "controlId": "iso27001.family.intellectual_property_rights"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "ethics_and_integrity",
+          "controlId": "soc2.family.ethics_and_integrity"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current policy or documented requirement set is attested for the scoped intellectual-property rights obligations affecting the service and workforce in scope.",
+        "doesNotProve": [
+          "That the policy covers every proprietary or third-party rights risk",
+          "That the documented obligations are enforced in every relevant workflow"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-40",
+      "title": "Intellectual property issue handling attested",
+      "classification": "attestation",
+      "evidenceClaimType": "intellectual_property_issue_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "intellectual_property_rights",
+          "controlId": "iso27001.family.intellectual_property_rights"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "ethics_and_integrity",
+          "controlId": "soc2.family.ethics_and_integrity"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that ownership, issue tracking, and handling rules are attested as current for the scoped intellectual-property rights obligations.",
+        "doesNotProve": [
+          "That every infringement or misuse issue is detected",
+          "That the handling model is sufficient for every intellectual-property risk in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.gov-41",
+      "title": "Intellectual property adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "intellectual_property_rights",
+          "controlId": "iso27001.family.intellectual_property_rights"
+        },
+        {
+          "framework": "SOC 2",
+          "family": "ethics_and_integrity",
+          "controlId": "soc2.family.ethics_and_integrity"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          },
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped intellectual-property posture is sufficient to protect proprietary material and avoid misuse of third-party rights in scope.",
+        "doesNotProve": [
+          "That the intellectual-property posture is complete",
+          "That the scoped protections and handling rules are sufficient for every rights scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.remote-01",
+      "title": "Remote access posture declared",
+      "classification": "decidable",
+      "evidenceClaimType": "remote_access_posture_state",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "remote_working",
+          "controlId": "iso27001.family.remote_working"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that scoped remote access traverses the declared remote-access path and device posture boundary for the systems in scope.",
+        "doesNotProve": [
+          "That the remote path is technically enforced on every device",
+          "That the declared posture boundary is sufficient for every remote-working risk in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.remote-02",
+      "title": "Remote working procedure attested",
+      "classification": "attestation",
+      "evidenceClaimType": "remote_working_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "remote_working",
+          "controlId": "iso27001.family.remote_working"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current remote-working procedure is attested for device handling, workspace expectations, and incident reporting for the scoped workforce.",
+        "doesNotProve": [
+          "That every worker follows the procedure",
+          "That the procedure is sufficient for the actual remote-working risk in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.remote-03",
+      "title": "Remote working adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "remote_working",
+          "controlId": "iso27001.family.remote_working"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped remote-working boundary, access path, and procedural expectations are sufficient for the systems, data, and workforce risk in scope.",
+        "doesNotProve": [
+          "That the remote-working model is complete",
+          "That the scoped remote controls are sufficient for every workforce or data scenario"
+        ]
+      }
+    },
+    {
       "controlId": "oc.boundary-01",
       "title": "Default-deny network boundary in place",
       "classification": "decidable",

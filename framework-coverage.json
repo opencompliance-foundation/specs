@@ -16,7 +16,7 @@
         "mappedPublicControls": 35,
         "implementedPublicControls": 35,
         "plannedPublicControls": 0,
-        "leanBackedPublicControls": 15,
+        "leanBackedPublicControls": 21,
         "routeCounts": {
           "decidable": 21,
           "attestation": 11,
@@ -141,12 +141,12 @@
       "nextDepthControlIds": [
         "oc.backup-01",
         "oc.boundary-01",
+        "oc.cfg-01",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
-        "oc.id-04",
-        "oc.id-05",
-        "oc.key-01",
-        "oc.log-01"
+        "oc.id-02",
+        "oc.id-04"
       ]
     },
     {
@@ -162,7 +162,7 @@
         "mappedPublicControls": 35,
         "implementedPublicControls": 35,
         "plannedPublicControls": 0,
-        "leanBackedPublicControls": 15,
+        "leanBackedPublicControls": 21,
         "routeCounts": {
           "decidable": 21,
           "attestation": 11,
@@ -287,12 +287,12 @@
       "nextDepthControlIds": [
         "oc.backup-01",
         "oc.boundary-01",
+        "oc.cfg-01",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
-        "oc.id-04",
-        "oc.id-05",
-        "oc.key-01",
-        "oc.log-01"
+        "oc.id-02",
+        "oc.id-04"
       ]
     },
     {
@@ -403,7 +403,7 @@
         "mappedPublicControls": 31,
         "implementedPublicControls": 31,
         "plannedPublicControls": 0,
-        "leanBackedPublicControls": 16,
+        "leanBackedPublicControls": 21,
         "routeCounts": {
           "decidable": 21,
           "attestation": 8,
@@ -521,11 +521,11 @@
         "oc.patch-03",
         "oc.backup-01",
         "oc.boundary-01",
+        "oc.cfg-01",
+        "oc.ci-01",
         "oc.crypt-01",
         "oc.id-01",
-        "oc.id-04",
-        "oc.id-05",
-        "oc.key-01"
+        "oc.id-02"
       ]
     },
     {
@@ -541,7 +541,7 @@
         "mappedPublicControls": 7,
         "implementedPublicControls": 5,
         "plannedPublicControls": 2,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 2,
           "attestation": 5,
@@ -605,7 +605,7 @@
         "mappedPublicControls": 3,
         "implementedPublicControls": 3,
         "plannedPublicControls": 0,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 1,
           "attestation": 2,
@@ -701,7 +701,7 @@
         "mappedPublicControls": 7,
         "implementedPublicControls": 5,
         "plannedPublicControls": 2,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 1,
           "attestation": 6,
@@ -760,7 +760,7 @@
         "mappedPublicControls": 7,
         "implementedPublicControls": 4,
         "plannedPublicControls": 3,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 2,
           "attestation": 5,
@@ -797,9 +797,9 @@
       "candidateControlIds": [],
       "blockedControlIds": [],
       "nextDepthControlIds": [
+        "oc.ai-05",
         "oc.ai-07",
         "oc.ai-08",
-        "oc.ai-05",
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-04",
@@ -895,7 +895,7 @@
         "mappedPublicControls": 7,
         "implementedPublicControls": 5,
         "plannedPublicControls": 2,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 2,
           "attestation": 5,
@@ -1044,7 +1044,7 @@
         "mappedPublicControls": 6,
         "implementedPublicControls": 5,
         "plannedPublicControls": 1,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 2,
           "attestation": 4,
@@ -1297,7 +1297,7 @@
         "mappedPublicControls": 1,
         "implementedPublicControls": 1,
         "plannedPublicControls": 0,
-        "leanBackedPublicControls": 0,
+        "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 1,
           "attestation": 0,

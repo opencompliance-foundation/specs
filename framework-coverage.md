@@ -10,11 +10,11 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `35`
 - Implemented public controls: `35`
-- Lean-backed public controls: `15`
+- Lean-backed public controls: `21`
 - Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
 - Operator benefit: Still the strongest customer-facing security management baseline for SaaS diligence and procurement.
 - Next action: Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.
-- Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`, `oc.log-01`
+- Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
 
 ## 2. SOC 2
 
@@ -24,11 +24,11 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `35`
 - Implemented public controls: `35`
-- Lean-backed public controls: `15`
+- Lean-backed public controls: `21`
 - Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
 - Operator benefit: Directly relevant to US buyer assurance, trust-center narratives, and recurring security questionnaires.
 - Next action: Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.
-- Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`, `oc.log-01`
+- Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
 
 ## 3. GDPR
 
@@ -52,11 +52,11 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `31`
 - Implemented public controls: `31`
-- Lean-backed public controls: `16`
+- Lean-backed public controls: `21`
 - Exact anchors reviewed / candidate / blocked: `36` / `1` / `0`
 - Operator benefit: Important for Australian government and regulated-enterprise pathways, especially for a legal-tech deployer pushing into Australia.
 - Next action: Maintain the public exact-anchor layer across identity, password, key, locality, boundary, logging, recovery, incident, repository-integrity, secure configuration, change governance, access review, CI-policy, and patch-exception controls, then widen into the remaining hardening and judgment-boundary slices while keeping hosted shared-responsibility assumptions explicit.
-- Next depth controls: `oc.patch-03`, `oc.backup-01`, `oc.boundary-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`
+- Next depth controls: `oc.patch-03`, `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`
 
 ## 5. EU AI Act
 
@@ -66,7 +66,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `7`
 - Implemented public controls: `5`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `5` / `3` / `0`
 - Operator benefit: Most important binding AI governance regime for EU-facing deployments and for any provable AI transparency or oversight story.
 - Next action: Keep the current reviewed articles for risk, oversight, monitoring, and transparency, and only promote the remaining documentation-heavy Article 11 and logging-heavy Article 12 candidates once the typed corridor grows beyond simple signed attestations.
@@ -80,7 +80,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `3`
 - Implemented public controls: `3`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `3` / `0` / `0`
 - Operator benefit: Highly relevant where AI use intersects with personal data, transparency, and UK-regulator expectations.
 - Next action: Use the reviewed governance, rights, and transparency anchors now in the pilot, but keep monitoring the guidance refresh triggered by the Data (Use and Access) Act before treating the guidance text as stable long-term anchor inventory.
@@ -108,7 +108,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `7`
 - Implemented public controls: `5`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `4` / `0` / `0`
 - Operator benefit: Strong voluntary structure for operational AI governance, especially when the company wants a rigorous internal control language without waiting for certification.
 - Next action: Keep using it as the backbone public exact-anchor layer for the AI corridor while the GenAI-specific, ETSI, and ISO candidate layers deepen around it.
@@ -122,11 +122,11 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `7`
 - Implemented public controls: `4`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `5` / `0` / `0`
 - Operator benefit: Directly relevant for generative-AI deployments and complements the core NIST AI RMF with GenAI-specific risk treatment.
 - Next action: Use the reviewed GenAI anchors for context, risk governance, post-deployment monitoring, and content transparency as the first deployer-grade GenAI exact-anchor layer, then widen into additional GAI actions when the fixture corridor grows beyond the current documentary scope.
-- Next depth controls: `oc.ai-07`, `oc.ai-08`, `oc.ai-05`, `oc.ai-01`, `oc.ai-02`, `oc.ai-04`, `oc.ai-06`
+- Next depth controls: `oc.ai-05`, `oc.ai-07`, `oc.ai-08`, `oc.ai-01`, `oc.ai-02`, `oc.ai-04`, `oc.ai-06`
 
 ## 10. NIST AI 100-4
 
@@ -164,7 +164,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `crosswalk_candidate_only`
 - Mapped public controls: `7`
 - Implemented public controls: `5`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `0` / `6` / `0`
 - Operator benefit: Most obvious management-system-style target for organisations that want AI governance to look certifiable and auditable.
 - Next action: Keep publishing only crosswalk-derived candidate anchors until licensed clause review exists.
@@ -206,7 +206,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `6`
 - Implemented public controls: `5`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `6` / `0` / `0`
 - Operator benefit: Relevant for Australian deployments and especially useful because it is deployer-oriented and openly structured as ten guardrails.
 - Next action: Keep treating it as the Australian public-anchor bridge for context, risk, oversight, monitoring, and disclosure controls, then add more operational slices only when the public AI corridor includes live evaluation and deployment evidence.
@@ -289,7 +289,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `1`
 - Implemented public controls: `1`
-- Lean-backed public controls: `0`
+- Lean-backed public controls: `1`
 - Exact anchors reviewed / candidate / blocked: `1` / `0` / `0`
 - Operator benefit: Important if a legal-tech deployer ever trains, fine-tunes, or meaningfully distributes general-purpose models instead of only deploying third-party models.
 - Next action: Keep it in the review layer but avoid over-prioritising it unless the operating model changes toward GPAI provider responsibilities.

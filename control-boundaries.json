@@ -161,7 +161,13 @@
       "title": "Typed periodic access review export present",
       "classification": "decidable",
       "evidenceClaimType": "access_review_export",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Identity",
+        "predicate": "TypedPeriodicAccessReviewExportPresent",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim112_proved"
+        ]
+      },
       "publicExamples": [
         "medium",
         "issued"
@@ -1626,7 +1632,13 @@
       "title": "Default branch protections enforced",
       "classification": "decidable",
       "evidenceClaimType": "repo_branch_protection",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Development",
+        "predicate": "DefaultBranchProtectionsEnforced",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim113_proved"
+        ]
+      },
       "publicExamples": [
         "medium"
       ],
@@ -1689,7 +1701,13 @@
       "title": "CI workflow policy constrained",
       "classification": "decidable",
       "evidenceClaimType": "ci_workflow_policy",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Development",
+        "predicate": "CiWorkflowPolicyConstrained",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim114_proved"
+        ]
+      },
       "publicExamples": [
         "medium"
       ],
@@ -2750,7 +2768,13 @@
       "title": "Secure baseline configuration export present",
       "classification": "decidable",
       "evidenceClaimType": "secure_configuration_state",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Configuration",
+        "predicate": "SecureConfigurationBaselineSatisfied",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim603_proved"
+        ]
+      },
       "publicExamples": [
         "cyber-baseline"
       ],
@@ -2944,7 +2968,13 @@
       "title": "Supported security updates current",
       "classification": "decidable",
       "evidenceClaimType": "security_update_state",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Patching",
+        "predicate": "SupportedSecurityUpdatesCurrent",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim604_proved"
+        ]
+      },
       "publicExamples": [
         "cyber-baseline"
       ],
@@ -3235,7 +3265,13 @@
       "title": "Endpoint malware protection baseline enabled",
       "classification": "decidable",
       "evidenceClaimType": "malware_protection_state",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.Endpoint",
+        "predicate": "MalwareProtectionBaselineSatisfied",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim605_proved"
+        ]
+      },
       "publicExamples": [
         "cyber-baseline"
       ],
@@ -3792,7 +3828,13 @@
       "title": "AI-generated content disclosure mechanism configured",
       "classification": "decidable",
       "evidenceClaimType": "ai_content_labeling_state",
-      "lean": null,
+      "lean": {
+        "module": "OpenCompliance.Controls.AI",
+        "predicate": "AiGeneratedContentDisclosureConfigured",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim705_proved"
+        ]
+      },
       "publicExamples": [
         "ai-governance"
       ],

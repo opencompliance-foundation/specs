@@ -39,6 +39,7 @@ They are useful now for review and example generation. The public synthetic Exam
 - `framework-priorities.md`
 - `framework-coverage.json`
 - `framework-coverage.md`
+- `actor-trust-policies.json`
 - `control-boundaries.json`
 - `review-pilots/README.md`
 - `review-pilots/exact-anchor-review-pilot.json`
@@ -52,5 +53,6 @@ They are useful now for review and example generation. The public synthetic Exam
 - `artifacts/revocation.md`
 - `artifacts/public-example-pack.md`
 - `schemas/control-boundaries.schema.json`
+- `schemas/actor-trust-policies.schema.json`
 - `schemas/exact-anchor-review-pilot.schema.json`
 - `schemas/*.schema.json`

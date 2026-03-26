@@ -22,12 +22,32 @@
       "type": "object",
       "required": [
         "signerId",
+        "signerType",
+        "signerRole",
+        "trustPolicyId",
         "keyId",
         "algorithm",
         "publicKeyPath"
       ],
       "properties": {
         "signerId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signerType": {
+          "type": "string",
+          "enum": [
+            "verifier_service",
+            "independent_witness",
+            "human",
+            "delegated_approver"
+          ]
+        },
+        "signerRole": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trustPolicyId": {
           "type": "string",
           "minLength": 1
         },

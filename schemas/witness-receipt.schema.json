@@ -10,6 +10,7 @@
     "verifierVersion",
     "replayBundleId",
     "replayResult",
+    "witness",
     "checkedArtifacts"
   ],
   "properties": {
@@ -39,6 +40,36 @@
         "exact_match",
         "digest_mismatch"
       ]
+    },
+    "witness": {
+      "type": "object",
+      "required": [
+        "witnessId",
+        "witnessType",
+        "witnessRole",
+        "trustPolicyId"
+      ],
+      "properties": {
+        "witnessId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "witnessType": {
+          "type": "string",
+          "enum": [
+            "independent_witness"
+          ]
+        },
+        "witnessRole": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trustPolicyId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
     },
     "checkedArtifacts": {
       "type": "array",

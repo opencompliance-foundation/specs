@@ -13,7 +13,8 @@
     "includedFixtures",
     "includedRoots",
     "verifierContractPath",
-    "signedArtifactManifestPath"
+    "signedArtifactManifestPath",
+    "releaseAttestationPath"
   ],
   "properties": {
     "$schema": {
@@ -94,6 +95,10 @@
       "minLength": 1
     },
     "signedArtifactManifestPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "releaseAttestationPath": {
       "type": "string",
       "minLength": 1
     },

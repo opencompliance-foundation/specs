@@ -1,6 +1,6 @@
 # Framework Priorities
 
-This file records the order in which OpenCompliance should deepen framework work.
+This file records the order in which OpenCompliance should deepen framework work for real software startups, not just for a narrow AI-governance story.
 
 ## Core order
 
@@ -9,36 +9,48 @@ This file records the order in which OpenCompliance should deepen framework work
 3. `GDPR`
 4. `IRAP`
 
-That order reflects the product thesis and the current buyer reality around SaaS diligence.
+That order still reflects the core product thesis and the clearest buyer-assurance path: first the main security-management and trust-reporting regimes, then the first public exact-anchor legal/privacy layers.
+
+## Privacy and cloud extensions
+
+- `ISO/IEC 27701`
+- `ISO/IEC 27017`
+- `ISO/IEC 27018`
+
+These are the next ISO-family layers that matter for ordinary SaaS startups once the base ISO 27001 and GDPR story exists: privacy management, cloud security, and cloud privacy.
+
+## Open baseline control frameworks
+
+- `NIST CSF 2.0`
+- `Cyber Essentials`
+- `NCSC CAF 4.0`
+- `NIST SP 800-53 Rev. 5.1`
+
+These are the best openly reviewable frameworks for expressing a startup cyber baseline without waiting for licensed-source review.
+
+## Operational and resilience follow-ons
+
+- `ISO 22301`
+- `ISO/IEC 20000-1`
+- `ISO 9001`
+
+These should follow after the first security/privacy/cloud layer, because they matter once the company is maturing its continuity, service operations, and broader management system posture.
 
 ## Immediate AI order
 
-After the core four, the next serious AI wave is:
+- `EU AI Act`
+- `UK ICO AI and data protection guidance`
+- `UK AI Cyber Security Code of Practice`
+- `NIST AI RMF 1.0`
+- `NIST AI 600-1 Generative AI Profile`
+- `NIST AI 100-4`
+- `ISO/IEC 5338`
+- `ISO/IEC 42001`
+- `ISO/IEC 42005`
 
-1. `EU AI Act`
-2. `UK ICO AI and data protection guidance`
-3. `UK AI Cyber Security Code of Practice`
-4. `NIST AI RMF 1.0`
-5. `NIST AI 600-1 Generative AI Profile`
-6. `NIST AI 100-4`
-7. `ISO/IEC 5338`
-8. `ISO/IEC 42001`
-9. `ISO/IEC 42005`
-
-Those nine give the best mix of:
-
-- binding or regulator-grade obligations,
-- deployer relevance,
-- public exact-anchor feasibility,
-- and usefulness for the current OpenCompliance corridor.
-
-The UK ICO and NIST AI 600-1 layers are now reviewed in the public exact-anchor pilot rather than remaining backlog-only items. NIST AI 100-4 now has its first reviewed public anchor as well, but OpenCompliance still treats the resulting provenance layer as a planned control rather than pretending the broader synthetic-content problem is already solved.
-
-The IRAP layer is now also materially deeper than the first public wave: it covers reviewed exact anchors for secure baselines, configuration exceptions, CI policy, change governance, typed access-review exports and closure attestations, patch state, and patch exceptions in addition to the earlier identity, logging, network, recovery, incident, locality, and repository-integrity slices.
+This remains the main AI wave: one binding EU regime, one UK privacy-regulator lens, one UK AI security baseline, one strong NIST governance backbone, one GenAI profile, one provenance-focused transparency layer, and the most relevant ISO AI governance candidates.
 
 ## Follow-on AI order
-
-The next layer after that is:
 
 - `ISO/IEC 5259-5`
 - `Australia Voluntary AI Safety Standard`
@@ -47,14 +59,20 @@ The next layer after that is:
 - `ISO/IEC 23894`
 - `NIST SP 800-218A`
 - `NIST AI 700-2`
-
-These matter for AI data governance, AI security, continuous conformity, evaluation, and regional expansion. Australia plus the two ETSI entries already have reviewed public anchors in the pilot, and NIST AI 700-2 now has its first reviewed evaluation anchor, even though they still sit behind the immediate AI order for deeper implementation work.
-
-## Special-case provider layer
-
 - `EU GPAI Code of Practice`
 
-This layer is already public and reviewed for the current disclosure-marker control, but it is still narrow and provider-oriented, so it is not the first place to spend the next full operator-depth round.
+These matter for AI data governance, continuous conformity, evaluation, secure development, and regional expansion, but they sit behind the immediate AI order for most startup operators.
+
+## Triggered market-entry regimes
+
+- `PCI DSS`
+- `NIS2`
+- `Cyber Resilience Act`
+- `HIPAA Security Rule`
+- `FedRAMP`
+- `DORA`
+
+These are not universal for every startup, but they become mandatory or commercially decisive once the company enters the relevant payment, healthcare, government, financial-sector, critical-infrastructure, or EU product market.
 
 ## Watch list
 
@@ -62,4 +80,4 @@ This layer is already public and reviewed for the current disclosure-marker cont
 - `ISO/IEC AWI 25704`
 - `ISO/IEC 42006`
 
-These are still useful, but they are not the first place to spend the next deep implementation round. `ISO/IEC AWI 25704` is especially worth tracking because its public draft abstract already points toward process-capability evidence for AI life cycle work, but it is still too early to treat it as a mature exact-anchor target.
+These remain strategically relevant, but they are not the next place to spend the deepest implementation effort.

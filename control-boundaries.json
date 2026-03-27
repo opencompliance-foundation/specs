@@ -2209,7 +2209,9 @@
       "classification": "attestation",
       "evidenceClaimType": "continuity_plan_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -2259,7 +2261,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -2309,7 +2313,9 @@
       "classification": "attestation",
       "evidenceClaimType": "risk_management_process_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -2359,7 +2365,9 @@
       "classification": "attestation",
       "evidenceClaimType": "risk_management_cycle_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -2409,7 +2417,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -2916,7 +2926,9 @@
       "classification": "attestation",
       "evidenceClaimType": "data_retention_deletion_policy_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -4426,6 +4438,690 @@
       }
     },
     {
+      "controlId": "oc.conduct-01",
+      "title": "Workforce code-of-conduct acknowledgement attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "code_of_conduct_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "workforce_conduct",
+          "controlId": "iso27001.family.workforce_conduct"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current signed code-of-conduct acknowledgement is attested for the declared workforce population in scope.",
+        "doesNotProve": [
+          "That every individual actually behaves in accordance with the code",
+          "That the declared population scope is sufficient for every third-party or workforce risk in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.conduct-02",
+      "title": "Workforce conduct governance attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "conduct_governance_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "workforce_conduct",
+          "controlId": "iso27001.family.workforce_conduct"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that conduct refresh triggers, disciplinary pathways, and exception governance are attested as current for the declared workforce population in scope.",
+        "doesNotProve": [
+          "That the conduct governance model is applied consistently in practice",
+          "That the scoped disciplinary pathways are sufficient for every behavioural or security risk in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.conduct-03",
+      "title": "Workforce conduct adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "workforce_conduct",
+          "controlId": "iso27001.family.workforce_conduct"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped conduct expectations, refresh triggers, and disciplinary pathways are sufficient for the workforce or contractor risks in scope.",
+        "doesNotProve": [
+          "That the conduct model is complete",
+          "That the declared conduct controls are sufficient for every behavioural, access, or security scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.hr-13",
+      "title": "Disciplinary policy attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "disciplinary_policy_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "disciplinary_process",
+          "controlId": "iso27001.family.disciplinary_process"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current disciplinary policy or corrective-action rule is attested for the declared workforce populations in scope.",
+        "doesNotProve": [
+          "That the policy is enforced consistently",
+          "That the disciplinary model is proportionate or sufficient for every breach scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.hr-14",
+      "title": "Disciplinary action attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "disciplinary_action_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "disciplinary_process",
+          "controlId": "iso27001.family.disciplinary_process"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that disciplinary or corrective-action records are attested as current for the declared review window where scoped breaches required them.",
+        "doesNotProve": [
+          "That every relevant breach was detected",
+          "That the disciplinary response was timely, consistent, or sufficient"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.hr-15",
+      "title": "Disciplinary enforcement adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "disciplinary_process",
+          "controlId": "iso27001.family.disciplinary_process"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped disciplinary process is credible, timely, and proportionate for the breaches that matter.",
+        "doesNotProve": [
+          "That the disciplinary process is complete",
+          "That the scoped corrective-action model is sufficient for every conduct or control breach"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.audit-01",
+      "title": "Internal audit program attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "internal_audit_program_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "internal_audit_program",
+          "controlId": "iso27001.family.internal_audit_program"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current internal-audit program and schedule are attested for the scoped control surface.",
+        "doesNotProve": [
+          "That the audit program is independent enough",
+          "That the audit schedule covers every materially relevant area"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.audit-02",
+      "title": "Internal audit execution attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "internal_audit_execution_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "internal_audit_program",
+          "controlId": "iso27001.family.internal_audit_program"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that audit execution records, findings, and tracked follow-up are attested as current for the scoped audit cycle.",
+        "doesNotProve": [
+          "That the audit findings were resolved adequately",
+          "That the executed audit work was sufficiently deep or independent"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.audit-03",
+      "title": "Internal audit adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "internal_audit_program",
+          "controlId": "iso27001.family.internal_audit_program"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped internal-audit model is independent enough, frequent enough, and broad enough for the assurance risks in scope.",
+        "doesNotProve": [
+          "That the audit model is complete",
+          "That the scoped audit coverage is sufficient for every assurance or governance need"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ops-04",
+      "title": "Customer support channel attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "customer_support_channel_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "customer_support_operations",
+          "controlId": "soc2.family.customer_support_operations"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that current customer support channels are attested as documented and reachable for the scoped service surface.",
+        "doesNotProve": [
+          "That customers will receive timely or effective support",
+          "That the scoped channels are sufficient for every customer or incident scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ops-05",
+      "title": "Customer support governance attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "customer_support_governance_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "customer_support_operations",
+          "controlId": "soc2.family.customer_support_operations"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that support staffing, escalation ownership, and response-governance rules are attested as current for the scoped service surface.",
+        "doesNotProve": [
+          "That escalation paths are exercised effectively",
+          "That the support governance model is sufficient for the actual service risks in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ops-06",
+      "title": "Customer support adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "SOC 2",
+          "family": "customer_support_operations",
+          "controlId": "soc2.family.customer_support_operations"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "SOC 2",
+            "anchorKinds": [
+              "criterion",
+              "point_of_focus"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped customer support model provides the right channels, escalation speed, and coverage for the customers and services in scope.",
+        "doesNotProve": [
+          "That the support model is complete",
+          "That the scoped channels and escalation paths are sufficient for every customer, availability, or incident scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.phys-01",
+      "title": "Clear desk and screen policy attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "clear_desk_screen_policy_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_workspace_hygiene",
+          "controlId": "iso27001.family.physical_workspace_hygiene"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a current clear desk and clear screen policy is attested for the scoped workforce and physical work areas.",
+        "doesNotProve": [
+          "That the policy is followed consistently",
+          "That the scoped policy is sufficient for every physical disclosure or shoulder-surfing risk"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.phys-02",
+      "title": "Clear desk and screen coverage attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "clear_desk_screen_coverage_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_workspace_hygiene",
+          "controlId": "iso27001.family.physical_workspace_hygiene"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that policy communication, acknowledgement, and practical coverage are attested as current for the scoped work areas and actor groups.",
+        "doesNotProve": [
+          "That the communicated controls are practiced consistently",
+          "That the declared coverage is sufficient for every physical workspace in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.phys-03",
+      "title": "Clear desk and screen adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "physical_workspace_hygiene",
+          "controlId": "iso27001.family.physical_workspace_hygiene"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped clear desk and screen controls are strong enough for the exposure and shoulder-surfing risks in scope.",
+        "doesNotProve": [
+          "That the workspace-control model is complete",
+          "That the scoped desk and screen controls are sufficient for every location or exposure scenario"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.intel-01",
+      "title": "Security community participation attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "security_community_membership_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "security_community_participation",
+          "controlId": "iso27001.family.security_community_participation"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that current membership or participation records are attested for the scoped external security or special-interest groups.",
+        "doesNotProve": [
+          "That the external groups are relevant enough to the actual threat landscape",
+          "That participation is frequent or effective enough to matter operationally"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.intel-02",
+      "title": "Security community output handling attestation",
+      "classification": "attestation",
+      "evidenceClaimType": "security_community_output_review_attestation",
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "security_community_participation",
+          "controlId": "iso27001.family.security_community_participation"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that ownership, review cadence, and dissemination handling are attested as current for the scoped external security inputs.",
+        "doesNotProve": [
+          "That the organization acts on external insights effectively",
+          "That the dissemination model is sufficient for every threat, product, or control surface in scope"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.intel-03",
+      "title": "Security community participation adequacy boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [],
+      "sourceMappings": [
+        {
+          "framework": "ISO 27001",
+          "family": "security_community_participation",
+          "controlId": "iso27001.family.security_community_participation"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "ISO 27001",
+            "anchorKinds": [
+              "clause",
+              "annex_a_control"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit adequacy boundary for whether the scoped external security-community participation is relevant, timely, and broad enough for the threat landscape in scope.",
+        "doesNotProve": [
+          "That the external-intelligence model is complete",
+          "That the scoped memberships and follow-up practices are sufficient for every threat, supplier, or customer exposure"
+        ]
+      }
+    },
+    {
       "controlId": "oc.boundary-01",
       "title": "Default-deny network boundary in place",
       "classification": "decidable",
@@ -5709,8 +6405,16 @@
       "title": "AI content provenance metadata configured",
       "classification": "decidable",
       "evidenceClaimType": "ai_content_provenance_state",
-      "lean": null,
-      "publicExamples": [],
+      "lean": {
+        "module": "OpenCompliance.Controls.AI",
+        "predicate": "AiContentProvenanceConfigured",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim706_proved"
+        ]
+      },
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "NIST AI 100-4",
@@ -5795,7 +6499,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_evaluation_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "NIST AI 700-2",
@@ -5891,7 +6597,9 @@
       "classification": "attestation",
       "evidenceClaimType": "ai_data_quality_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "ai-governance"
+      ],
       "sourceMappings": [
         {
           "framework": "EU AI Act",

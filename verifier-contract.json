@@ -1,10 +1,10 @@
 {
   "$schema": "https://opencompliancefoundation.com/specs/schemas/verifier-contract.schema.json",
-  "contractId": "opencompliance-public-verifier-contract-v6",
-  "contractVersion": 6,
-  "verifierVersion": "opencompliance-verifier/0.9.3",
-  "releaseId": "opencompliance-verifier-0.9.3",
-  "releaseGeneratedAt": "2026-03-27T06:01:45Z",
+  "contractId": "opencompliance-public-verifier-contract-v7",
+  "contractVersion": 7,
+  "verifierVersion": "opencompliance-verifier/0.9.5",
+  "releaseId": "opencompliance-verifier-0.9.5",
+  "releaseGeneratedAt": "2026-03-27T22:35:00Z",
   "bundleLayoutVersion": 1,
   "includedFixtures": [
     "minimal",
@@ -85,6 +85,12 @@
       "relativeTo": "releaseRoot",
       "path": "open-specs/connector-ingress-profiles.json",
       "schema": "https://opencompliancefoundation.com/specs/schemas/connector-ingress-profiles.schema.json",
+      "required": true
+    },
+    "trustRootProfiles": {
+      "relativeTo": "releaseRoot",
+      "path": "open-specs/trust-root-profiles.json",
+      "schema": "https://opencompliancefoundation.com/specs/schemas/trust-root-profiles.schema.json",
       "required": true
     }
   },
@@ -294,6 +300,7 @@
     "The public verifier contract covers runtime-consumed claims, typed boundary metadata, release artifacts, and per-fixture output expectations.",
     "The local Verify API is now part of the contract surface, but it is still scoped to the current synthetic corridor shapes and known OSCAL seeds rather than arbitrary live-organisation bundles.",
     "The release-level attestation artifact records bundle self-replay and transparency verification under an explicit witness identity, while the signed bundle manifest remains a separate verification surface.",
-    "System-export evidence claims are now constrained by a published connector-ingress registry keyed to registered system actor identities, but live-evidence verifier ingress and non-synthetic attestation roots remain future work."
+    "System-export evidence claims are now constrained by a published connector-ingress registry keyed to registered system actor identities, and the release line now also carries explicit trust-root profiles for synthetic fallback versus environment-supplied release and witness identities.",
+    "The public reference release still uses synthetic trust roots by default; live publication roots are now an implemented but opt-in path rather than an undocumented future idea."
   ]
 }

@@ -31,14 +31,14 @@
       "EU GPAI Code of Practice",
       "ISO/IEC AWI 25704"
     ],
-    "controlsCovered": 44,
+    "controlsCovered": 47,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 212,
-    "publicSourceReviewed": 129,
+    "reviewEntries": 224,
+    "publicSourceReviewed": 135,
     "candidatePublicSourceUnreviewed": 19,
-    "blockedNonpublicSourceReview": 64
+    "blockedNonpublicSourceReview": 70
   },
   "controls": [
     {
@@ -4224,6 +4224,255 @@
             "authority": "ISO",
             "documentId": "ISO/IEC 5259-5:2025",
             "locator": "What is ISO/IEC 5259-5?"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.data-04",
+      "title": "Data retention and deletion policy attested",
+      "decompositionNote": "This control only proves that a signed attestation says a retention-and-deletion policy exists for the scoped data classes and systems. It does not prove technical enforcement of every retention limit or deletion workflow.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 5(1)(e)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A documented retention-and-deletion policy is a narrow documentary slice of the GDPR storage-limitation principle, but it is not equivalent to storage limitation in operation.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 5(1)(e)"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph",
+          "anchorId": "Article 25(2)",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A scoped policy is one documentary input into data-protection-by-default choices around retention, but it does not settle whether the implemented defaults are appropriate.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 25(2)"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 retention-policy anchors require licensed source review.",
+          "rationale": "The public corpus should keep the ISO retention/deletion mapping honest until the licensed text is reviewed.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 retention-and-deletion policy anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer should not publish guessed SOC 2 retention-policy anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.data-05",
+      "title": "Data retention schedule attested",
+      "decompositionNote": "This control only proves that a signed attestation says retention schedules, exception handling, and secure deletion procedures exist for the scoped lifecycle surface. It does not prove runtime enforcement against every copy or downstream holder.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 5(1)(e)",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A defined retention schedule is a narrow documentary slice of the storage-limitation principle because it records how long scoped data should be kept.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 5(1)(e)"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 17(1)(a)",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A retention schedule and secure deletion procedure intersect with the erasure right because they help govern when personal data is no longer necessary for the original purpose.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 17(1)(a)"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 retention-schedule anchors require licensed source review.",
+          "rationale": "The public corpus should not publish guessed ISO retention-schedule anchors from non-public text.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 retention-schedule anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 retention/deletion blocker explicit instead of implying a reviewed exact anchor.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.data-06",
+      "title": "Data retention and deletion adequacy boundary",
+      "decompositionNote": "This control is intentionally judgment-routed. The corridor records whether a named reviewer accepted responsibility for the scoped retention and deletion adequacy judgment and keeps that judgment separate from the narrower policy and schedule attestations.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph_subpoint",
+          "anchorId": "Article 5(1)(e)",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The adequacy boundary captures the explicit human judgment about whether scoped retention and deletion arrangements actually satisfy storage limitation in practice.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 5(1)(e)"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article_paragraph",
+          "anchorId": "Article 17(1)",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "The adequacy judgment intersects with the erasure right because it concerns whether scoped deletion paths, exceptions, and downstream holders are governed sufficiently to support Article 17 outcomes.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "CELEX:02016R0679-20160504",
+            "locator": "Article 17(1)"
+          }
+        },
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 retention-adequacy anchors require licensed source review.",
+          "rationale": "The public corpus should keep the ISO retention/deletion adequacy blocker explicit until licensed review exists.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 retention/deletion adequacy anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 adequacy blocker explicit instead of publishing guessed anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
           }
         }
       ]

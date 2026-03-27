@@ -310,6 +310,20 @@
       "notes": "Synthetic witness identity for release-bundle attestation."
     },
     {
+      "identityId": "oc-live-release-witness",
+      "actorType": "independent_witness",
+      "defaultActorRole": "independent_replay_witness",
+      "defaultSignerRole": "independent_replay_witness",
+      "trustPolicyIds": [
+        "oc.trust.independent-witness"
+      ],
+      "surfaces": [
+        "release_attestation"
+      ],
+      "synthetic": false,
+      "notes": "Non-synthetic witness identity placeholder for environment-supplied or externally trusted release attestation roots."
+    },
+    {
       "identityId": "oc-synthetic-signer",
       "actorType": "verifier_service",
       "defaultActorRole": "release_signer",
@@ -325,6 +339,23 @@
       ],
       "synthetic": true,
       "notes": "Synthetic verifier-service signing identity for public artifact bundles."
+    },
+    {
+      "identityId": "oc-live-release-signer",
+      "actorType": "verifier_service",
+      "defaultActorRole": "release_signer",
+      "defaultSignerRole": "release_signer",
+      "trustPolicyIds": [
+        "oc.trust.verifier-service"
+      ],
+      "surfaces": [
+        "signed_artifact"
+      ],
+      "keyIds": [
+        "env-supplied"
+      ],
+      "synthetic": false,
+      "notes": "Non-synthetic verifier-service signing identity placeholder for environment-supplied or externally trusted publication roots."
     },
     {
       "identityId": "operations-owner@exampleco.test",

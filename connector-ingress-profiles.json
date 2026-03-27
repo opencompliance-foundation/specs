@@ -3,10 +3,11 @@
   "profiles": [
     {
       "profileId": "ai-disclosure-exporter",
-      "description": "Synthetic ingress profile for machine-checkable AI disclosure exports.",
+      "description": "Synthetic ingress profile for machine-checkable AI disclosure and provenance exports.",
       "actorIdentityId": "ai-disclosure-exporter",
       "allowedClaimTypes": [
-        "ai_content_labeling_state"
+        "ai_content_labeling_state",
+        "ai_content_provenance_state"
       ],
       "allowedSourceSystems": [
         "example-assistant-gateway"

@@ -8,10 +8,10 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Priority tier: `core_now`
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
-- Mapped public controls: `70`
-- Implemented public controls: `35`
+- Mapped public controls: `85`
+- Implemented public controls: `38`
 - Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `35`
 - Operator benefit: Still the strongest customer-facing security management baseline for SaaS diligence and procurement.
 - Next action: Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
@@ -22,10 +22,10 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Priority tier: `core_now`
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
-- Mapped public controls: `55`
-- Implemented public controls: `35`
+- Mapped public controls: `58`
+- Implemented public controls: `38`
 - Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `32`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `35`
 - Operator benefit: Directly relevant to US buyer assurance, trust-center narratives, and recurring security questionnaires.
 - Next action: Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
@@ -39,7 +39,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Mapped public controls: `20`
 - Implemented public controls: `17`
 - Lean-backed public controls: `11`
-- Exact anchors reviewed / candidate / blocked: `17` / `0` / `0`
+- Exact anchors reviewed / candidate / blocked: `23` / `0` / `0`
 - Operator benefit: Directly relevant to UK and EU personal-data handling, customer diligence, and AI systems that process personal data.
 - Next action: Maintain the reviewed article-level layer across security of processing, transfer boundaries, data-subject-rights operations, and processor governance, then widen from the current deployer corridor into privacy-by-design and AI-adjacent rights handling.
 - Next depth controls: `oc.crypt-01`, `oc.id-01`, `oc.id-04`, `oc.id-05`, `oc.key-01`, `oc.loc-01`, `oc.mon-01`, `oc.net-01`

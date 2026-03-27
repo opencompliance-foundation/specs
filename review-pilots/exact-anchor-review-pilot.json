@@ -9,6 +9,10 @@
       "SOC 2",
       "GDPR",
       "IRAP",
+      "NIST CSF 2.0",
+      "Cyber Essentials",
+      "NCSC CAF 4.0",
+      "NIST SP 800-53 Rev. 5.1",
       "EU AI Act",
       "UK ICO AI and data protection guidance",
       "UK AI Cyber Security Code of Practice",
@@ -25,11 +29,7 @@
       "ISO/IEC 23894",
       "NIST AI 700-2",
       "EU GPAI Code of Practice",
-      "ISO/IEC AWI 25704",
-      "Cyber Essentials",
-      "NCSC CAF 4.0",
-      "NIST CSF 2.0",
-      "NIST SP 800-53 Rev. 5.1"
+      "ISO/IEC AWI 25704"
     ],
     "controlsCovered": 44,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."

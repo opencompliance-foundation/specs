@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T05:44:58Z",
+  "generatedAt": "2026-03-28T12:30:00Z",
   "purpose": "Public-safe status view for the first U.S. sector-regime depth wave inside OpenCompliance. It shows the current narrow overlap for HIPAA Privacy and Breach, GLBA and NYDFS, and CCPA/CPRA without pretending that the whole regulatory corpus is already mechanised.",
   "programs": [
     {
@@ -13,16 +13,17 @@
           "priorityTier": "market_triggered",
           "sourceAvailability": "public_exact_feasible",
           "openComplianceState": "priority_backlog",
-          "mappedPublicControls": 1,
-          "implementedPublicControls": 1,
+          "mappedPublicControls": 2,
+          "implementedPublicControls": 2,
           "plannedPublicControls": 0,
           "leanBackedPublicControls": 0,
           "exactAnchorStatusCounts": {
-            "public_source_reviewed": 1,
+            "public_source_reviewed": 2,
             "candidate_public_source_unreviewed": 0,
             "blocked_nonpublic_source_review": 0
           },
           "nextDepthControlIds": [
+            "oc.privacy-04",
             "oc.vendor-02"
           ]
         },
@@ -50,17 +51,17 @@
       "summary": {
         "frameworksInScope": 2,
         "frameworksWithCurrentMappings": 2,
-        "uniqueMappedPublicControls": 3,
-        "uniqueImplementedPublicControls": 3,
+        "uniqueMappedPublicControls": 4,
+        "uniqueImplementedPublicControls": 4,
         "uniquePlannedPublicControls": 0,
         "uniqueLeanBackedPublicControls": 0,
-        "reviewedExactAnchorEntries": 3,
+        "reviewedExactAnchorEntries": 4,
         "candidateExactAnchorEntries": 0,
         "blockedExactAnchorEntries": 0,
-        "nextDepthControlCount": 3,
+        "nextDepthControlCount": 4,
         "routeCounts": {
           "decidable": 0,
-          "attestation": 3,
+          "attestation": 4,
           "judgment": 0,
           "mixed": 0
         }
@@ -78,7 +79,7 @@
           "id": "public_control_normalization",
           "title": "Public-control normalization",
           "status": "partial",
-          "summary": "3 unique public controls currently overlap this program, with 3 already exercised by fixtures.",
+          "summary": "4 unique public controls currently overlap this program, with 4 already exercised by fixtures.",
           "remainingWork": "Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.",
           "blockedBy": []
         },
@@ -86,7 +87,7 @@
           "id": "exact_anchor_review",
           "title": "Reviewed exact-anchor corridor",
           "status": "partial",
-          "summary": "The current wave records 3 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.",
+          "summary": "The current wave records 4 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.",
           "remainingWork": "Increase reviewed exact-anchor coverage while keeping gaps explicit and resisting family-proxy inflation.",
           "blockedBy": []
         },
@@ -94,7 +95,7 @@
           "id": "typed_claim_coverage",
           "title": "Typed claim coverage",
           "status": "partial",
-          "summary": "The current overlap splits into 0 decidable, 3 attestation, and 0 judgment controls.",
+          "summary": "The current overlap splits into 0 decidable, 4 attestation, and 0 judgment controls.",
           "remainingWork": "Close the next typed evidence and attestation gaps before widening the public verifier surface for these regimes.",
           "blockedBy": []
         },
@@ -110,7 +111,7 @@
           "id": "fixture_rollout",
           "title": "Fixture rollout",
           "status": "complete",
-          "summary": "3 of 3 mapped controls currently appear in public fixture corridors.",
+          "summary": "4 of 4 mapped controls currently appear in public fixture corridors.",
           "remainingWork": "Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.",
           "blockedBy": []
         },
@@ -273,12 +274,12 @@
           "priorityTier": "market_triggered",
           "sourceAvailability": "public_exact_feasible",
           "openComplianceState": "priority_backlog",
-          "mappedPublicControls": 5,
-          "implementedPublicControls": 5,
+          "mappedPublicControls": 6,
+          "implementedPublicControls": 6,
           "plannedPublicControls": 0,
           "leanBackedPublicControls": 0,
           "exactAnchorStatusCounts": {
-            "public_source_reviewed": 5,
+            "public_source_reviewed": 6,
             "candidate_public_source_unreviewed": 0,
             "blocked_nonpublic_source_review": 0
           },
@@ -286,6 +287,7 @@
             "oc.data-04",
             "oc.data-05",
             "oc.privacy-01",
+            "oc.privacy-04",
             "oc.vendor-02",
             "oc.data-06"
           ]
@@ -294,17 +296,17 @@
       "summary": {
         "frameworksInScope": 1,
         "frameworksWithCurrentMappings": 1,
-        "uniqueMappedPublicControls": 5,
-        "uniqueImplementedPublicControls": 5,
+        "uniqueMappedPublicControls": 6,
+        "uniqueImplementedPublicControls": 6,
         "uniquePlannedPublicControls": 0,
         "uniqueLeanBackedPublicControls": 0,
-        "reviewedExactAnchorEntries": 5,
+        "reviewedExactAnchorEntries": 6,
         "candidateExactAnchorEntries": 0,
         "blockedExactAnchorEntries": 0,
-        "nextDepthControlCount": 5,
+        "nextDepthControlCount": 6,
         "routeCounts": {
           "decidable": 0,
-          "attestation": 4,
+          "attestation": 5,
           "judgment": 1,
           "mixed": 0
         }
@@ -322,7 +324,7 @@
           "id": "public_control_normalization",
           "title": "Public-control normalization",
           "status": "partial",
-          "summary": "5 unique public controls currently overlap this program, with 5 already exercised by fixtures.",
+          "summary": "6 unique public controls currently overlap this program, with 6 already exercised by fixtures.",
           "remainingWork": "Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.",
           "blockedBy": []
         },
@@ -330,7 +332,7 @@
           "id": "exact_anchor_review",
           "title": "Reviewed exact-anchor corridor",
           "status": "partial",
-          "summary": "The current wave records 5 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.",
+          "summary": "The current wave records 6 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.",
           "remainingWork": "Increase reviewed exact-anchor coverage while keeping gaps explicit and resisting family-proxy inflation.",
           "blockedBy": []
         },
@@ -338,7 +340,7 @@
           "id": "typed_claim_coverage",
           "title": "Typed claim coverage",
           "status": "partial",
-          "summary": "The current overlap splits into 0 decidable, 4 attestation, and 1 judgment controls.",
+          "summary": "The current overlap splits into 0 decidable, 5 attestation, and 1 judgment controls.",
           "remainingWork": "Close the next typed evidence and attestation gaps before widening the public verifier surface for these regimes.",
           "blockedBy": []
         },
@@ -354,7 +356,7 @@
           "id": "fixture_rollout",
           "title": "Fixture rollout",
           "status": "complete",
-          "summary": "5 of 5 mapped controls currently appear in public fixture corridors.",
+          "summary": "6 of 6 mapped controls currently appear in public fixture corridors.",
           "remainingWork": "Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.",
           "blockedBy": []
         },

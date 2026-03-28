@@ -6,15 +6,15 @@ This file is a public-safe status view for the first U.S. sector-regime depth wa
 
 - Frameworks in scope: `2`
 - Frameworks with current mappings: `2`
-- Unique mapped public controls: `3`
-- Unique implemented public controls: `3`
-- Reviewed exact-anchor entries: `3`
+- Unique mapped public controls: `4`
+- Unique implemented public controls: `4`
+- Reviewed exact-anchor entries: `4`
 - Candidate exact-anchor entries: `0`
 - Blocked exact-anchor entries: `0`
 
 ### Frameworks
 
-- `HIPAA Privacy Rule`: mapped `1`, implemented `1`, exact-reviewed `1`
+- `HIPAA Privacy Rule`: mapped `2`, implemented `2`, exact-reviewed `2`
 - `HIPAA Breach Notification Rule`: mapped `2`, implemented `2`, exact-reviewed `2`
 
 ### Workstreams
@@ -23,19 +23,19 @@ This file is a public-safe status view for the first U.S. sector-regime depth wa
   - Current state: The current wave tracks 2 public-source frameworks and already has 2 with normalized public-control overlap.
   - Remaining work: Widen the current narrow overlap into a fuller obligation graph without collapsing rights, notification, and documentary requirements into fake machine proof.
 - `Public-control normalization`: `partial`
-  - Current state: 3 unique public controls currently overlap this program, with 3 already exercised by fixtures.
+  - Current state: 4 unique public controls currently overlap this program, with 4 already exercised by fixtures.
   - Remaining work: Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.
 - `Reviewed exact-anchor corridor`: `partial`
-  - Current state: The current wave records 3 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.
+  - Current state: The current wave records 4 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.
   - Remaining work: Increase reviewed exact-anchor coverage while keeping gaps explicit and resisting family-proxy inflation.
 - `Typed claim coverage`: `partial`
-  - Current state: The current overlap splits into 0 decidable, 3 attestation, and 0 judgment controls.
+  - Current state: The current overlap splits into 0 decidable, 4 attestation, and 0 judgment controls.
   - Remaining work: Close the next typed evidence and attestation gaps before widening the public verifier surface for these regimes.
 - `Lean coverage`: `not_started`
   - Current state: 0 currently overlapped controls are Lean-backed in the public corridor.
   - Remaining work: Keep Lean usage narrow and technical: only widen it where the regime obligation really reduces to a decidable systems claim.
 - `Fixture rollout`: `complete`
-  - Current state: 3 of 3 mapped controls currently appear in public fixture corridors.
+  - Current state: 4 of 4 mapped controls currently appear in public fixture corridors.
   - Remaining work: Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.
 - `External review`: `program_defined`
   - Current state: A dedicated sector-regime review program now defines the reviewer roles and pass gates for health, finance, and California privacy-law scrutiny.
@@ -84,15 +84,15 @@ This file is a public-safe status view for the first U.S. sector-regime depth wa
 
 - Frameworks in scope: `1`
 - Frameworks with current mappings: `1`
-- Unique mapped public controls: `5`
-- Unique implemented public controls: `5`
-- Reviewed exact-anchor entries: `5`
+- Unique mapped public controls: `6`
+- Unique implemented public controls: `6`
+- Reviewed exact-anchor entries: `6`
 - Candidate exact-anchor entries: `0`
 - Blocked exact-anchor entries: `0`
 
 ### Frameworks
 
-- `CCPA/CPRA`: mapped `5`, implemented `5`, exact-reviewed `5`
+- `CCPA/CPRA`: mapped `6`, implemented `6`, exact-reviewed `6`
 
 ### Workstreams
 
@@ -100,19 +100,19 @@ This file is a public-safe status view for the first U.S. sector-regime depth wa
   - Current state: The current wave tracks 1 public-source frameworks and already has 1 with normalized public-control overlap.
   - Remaining work: Widen the current narrow overlap into a fuller obligation graph without collapsing rights, notification, and documentary requirements into fake machine proof.
 - `Public-control normalization`: `partial`
-  - Current state: 5 unique public controls currently overlap this program, with 5 already exercised by fixtures.
+  - Current state: 6 unique public controls currently overlap this program, with 6 already exercised by fixtures.
   - Remaining work: Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.
 - `Reviewed exact-anchor corridor`: `partial`
-  - Current state: The current wave records 5 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.
+  - Current state: The current wave records 6 reviewed exact-anchor entries and 0 candidate entries across the in-scope frameworks.
   - Remaining work: Increase reviewed exact-anchor coverage while keeping gaps explicit and resisting family-proxy inflation.
 - `Typed claim coverage`: `partial`
-  - Current state: The current overlap splits into 0 decidable, 4 attestation, and 1 judgment controls.
+  - Current state: The current overlap splits into 0 decidable, 5 attestation, and 1 judgment controls.
   - Remaining work: Close the next typed evidence and attestation gaps before widening the public verifier surface for these regimes.
 - `Lean coverage`: `not_started`
   - Current state: 0 currently overlapped controls are Lean-backed in the public corridor.
   - Remaining work: Keep Lean usage narrow and technical: only widen it where the regime obligation really reduces to a decidable systems claim.
 - `Fixture rollout`: `complete`
-  - Current state: 5 of 5 mapped controls currently appear in public fixture corridors.
+  - Current state: 6 of 6 mapped controls currently appear in public fixture corridors.
   - Remaining work: Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.
 - `External review`: `program_defined`
   - Current state: A dedicated sector-regime review program now defines the reviewer roles and pass gates for health, finance, and California privacy-law scrutiny.

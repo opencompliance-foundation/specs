@@ -3102,6 +3102,199 @@
       }
     },
     {
+      "controlId": "oc.privacy-03",
+      "title": "Lawful basis and purpose register current",
+      "classification": "attestation",
+      "evidenceClaimType": "lawful_basis_register_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium",
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "lawful_basis_and_purpose_limitation",
+          "controlId": "gdpr.family.lawful_basis_and_purpose_limitation"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "lawfulness_and_purpose_governance",
+          "controlId": "ico_ai_guidance.family.lawfulness_and_purpose_governance"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_inputs",
+          "controlId": "iso_iec_42005.family.impact_assessment_inputs"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states a scoped register records processing purposes, assigns a lawful basis, and is current for the declared review window.",
+        "doesNotProve": [
+          "That the selected lawful basis is legally correct for every use case",
+          "That purpose boundaries are exhaustive across every present or future workflow"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.privacy-04",
+      "title": "Privacy notice and rights contact published",
+      "classification": "attestation",
+      "evidenceClaimType": "privacy_notice_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "transparency_and_notices",
+          "controlId": "gdpr.family.transparency_and_notices"
+        },
+        {
+          "framework": "HIPAA Privacy Rule",
+          "family": "notice_of_privacy_practices",
+          "controlId": "hipaa_privacy_rule.family.notice_of_privacy_practices"
+        },
+        {
+          "framework": "CCPA/CPRA",
+          "family": "notice_at_collection_and_privacy_policy",
+          "controlId": "ccpa_cpra.family.notice_at_collection_and_privacy_policy"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "HIPAA Privacy Rule",
+            "anchorKinds": [
+              "cfr_section",
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "CCPA/CPRA",
+            "anchorKinds": [
+              "statute_section",
+              "regulation_section"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped notice is published, lists categories or purposes, and links people to the current rights or contact path.",
+        "doesNotProve": [
+          "That the notice is complete, readable, or jurisdiction-perfect in every channel",
+          "That downstream operational rights handling actually meets every statutory deadline"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.privacy-05",
+      "title": "Privacy impact assessment current",
+      "classification": "attestation",
+      "evidenceClaimType": "privacy_impact_assessment_attestation",
+      "lean": null,
+      "publicExamples": [
+        "medium",
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "privacy_impact_assessment",
+          "controlId": "gdpr.family.privacy_impact_assessment"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "data_protection_impact_assessment",
+          "controlId": "ico_ai_guidance.family.data_protection_impact_assessment"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_process",
+          "controlId": "iso_iec_42005.family.impact_assessment_process"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states a scoped privacy or AI impact assessment exists, has a named sign-off owner, and is current for the declared review window.",
+        "doesNotProve": [
+          "That the assessment is legally sufficient or complete",
+          "That every identified risk has been eliminated or reduced to an acceptable level"
+        ]
+      }
+    },
+    {
       "controlId": "oc.data-04",
       "title": "Data retention and deletion policy attested",
       "classification": "attestation",
@@ -7025,6 +7218,143 @@
         "doesNotProve": [
           "That the underlying data is lawful, representative, or free from bias",
           "That the documented data-quality criteria are sufficient for the intended use"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-09",
+      "title": "High-impact human review triggers documented",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_human_review_trigger_attestation",
+      "lean": null,
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "automated_decision_human_review",
+          "controlId": "gdpr.family.automated_decision_human_review"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "human_review_and_contestability",
+          "controlId": "ico_ai_guidance.family.human_review_and_contestability"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "human_oversight_and_fallback",
+          "controlId": "nist_ai_rmf_1_0.family.human_oversight_and_fallback"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "human_oversight_and_response",
+          "controlId": "iso_iec_42001.family.human_oversight_and_response"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "human_review_and_impact_response",
+          "controlId": "iso_iec_42005.family.human_review_and_impact_response"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped AI-assisted decision path has documented trigger criteria for human review, assigned review ownership, and a contest or override path.",
+        "doesNotProve": [
+          "That human review is sufficiently independent, informed, or timely in practice",
+          "That every significant-effect outcome is correctly detected and routed"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-10",
+      "title": "Automated-decision legality and contestability boundary",
+      "classification": "judgment",
+      "evidenceClaimType": null,
+      "lean": null,
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "automated_decision_and_rights_boundary",
+          "controlId": "gdpr.family.automated_decision_and_rights_boundary"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "automated_decision_adequacy",
+          "controlId": "ico_ai_guidance.family.automated_decision_adequacy"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Nothing mechanically. This control is an explicit legal and product-adequacy boundary for whether significant-effect automated decisions, exceptions, contestability, and human intervention are governed sufficiently for the use case in scope.",
+        "doesNotProve": [
+          "That Article 22 or equivalent rights rules are satisfied",
+          "That the deployed human-review arrangement is legally or ethically sufficient for every case"
         ]
       }
     }

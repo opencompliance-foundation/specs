@@ -508,22 +508,24 @@
       "operatorBenefit": "Directly relevant to UK and EU personal-data handling, customer diligence, and AI systems that process personal data.",
       "nextAction": "Maintain the reviewed article-level layer across security of processing, transfer boundaries, data-subject-rights operations, and processor governance, then widen from the current deployer corridor into privacy-by-design and AI-adjacent rights handling.",
       "summary": {
-        "mappedPublicControls": 20,
-        "implementedPublicControls": 20,
+        "mappedPublicControls": 25,
+        "implementedPublicControls": 25,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 11,
         "routeCounts": {
           "decidable": 11,
-          "attestation": 6,
-          "judgment": 3
+          "attestation": 10,
+          "judgment": 4
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 23,
+          "public_source_reviewed": 30,
           "candidate_public_source_unreviewed": 0,
           "blocked_nonpublic_source_review": 0
         }
       },
       "mappedControlIds": [
+        "oc.ai-09",
+        "oc.ai-10",
         "oc.crypt-01",
         "oc.data-04",
         "oc.data-05",
@@ -539,6 +541,9 @@
         "oc.net-04",
         "oc.privacy-01",
         "oc.privacy-02",
+        "oc.privacy-03",
+        "oc.privacy-04",
+        "oc.privacy-05",
         "oc.seg-01",
         "oc.vendor-01",
         "oc.vendor-02",
@@ -546,6 +551,8 @@
         "oc.web-01"
       ],
       "implementedControlIds": [
+        "oc.ai-09",
+        "oc.ai-10",
         "oc.crypt-01",
         "oc.data-04",
         "oc.data-05",
@@ -561,6 +568,9 @@
         "oc.net-04",
         "oc.privacy-01",
         "oc.privacy-02",
+        "oc.privacy-03",
+        "oc.privacy-04",
+        "oc.privacy-05",
         "oc.seg-01",
         "oc.vendor-01",
         "oc.vendor-02",
@@ -568,6 +578,8 @@
         "oc.web-01"
       ],
       "reviewedControlIds": [
+        "oc.ai-09",
+        "oc.ai-10",
         "oc.crypt-01",
         "oc.data-04",
         "oc.data-05",
@@ -583,6 +595,9 @@
         "oc.net-04",
         "oc.privacy-01",
         "oc.privacy-02",
+        "oc.privacy-03",
+        "oc.privacy-04",
+        "oc.privacy-05",
         "oc.seg-01",
         "oc.vendor-01",
         "oc.vendor-02",
@@ -1352,17 +1367,17 @@
       "operatorBenefit": "Highly relevant where AI use intersects with personal data, transparency, and UK-regulator expectations.",
       "nextAction": "Use the reviewed governance, rights, and transparency anchors now in the pilot, but keep monitoring guidance refreshes before treating the text as a fully stable long-term anchor inventory.",
       "summary": {
-        "mappedPublicControls": 3,
-        "implementedPublicControls": 3,
+        "mappedPublicControls": 7,
+        "implementedPublicControls": 7,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 1,
-          "attestation": 2,
-          "judgment": 0
+          "attestation": 5,
+          "judgment": 1
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 3,
+          "public_source_reviewed": 7,
           "candidate_public_source_unreviewed": 0,
           "blocked_nonpublic_source_review": 0
         }
@@ -1370,24 +1385,40 @@
       "mappedControlIds": [
         "oc.ai-01",
         "oc.ai-03",
-        "oc.ai-05"
+        "oc.ai-05",
+        "oc.ai-09",
+        "oc.ai-10",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "implementedControlIds": [
         "oc.ai-01",
         "oc.ai-03",
-        "oc.ai-05"
+        "oc.ai-05",
+        "oc.ai-09",
+        "oc.ai-10",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "reviewedControlIds": [
         "oc.ai-01",
         "oc.ai-03",
-        "oc.ai-05"
+        "oc.ai-05",
+        "oc.ai-09",
+        "oc.ai-10",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "candidateControlIds": [],
       "blockedControlIds": [],
       "nextDepthControlIds": [
         "oc.ai-05",
         "oc.ai-01",
-        "oc.ai-03"
+        "oc.ai-03",
+        "oc.ai-09",
+        "oc.privacy-03",
+        "oc.privacy-05",
+        "oc.ai-10"
       ]
     },
     {
@@ -1448,17 +1479,17 @@
       "operatorBenefit": "Strong voluntary structure for operational AI governance, especially when the company wants a rigorous internal control language without waiting for certification.",
       "nextAction": "Keep using it as the backbone public exact-anchor layer for the AI corridor while the GenAI-specific, ETSI, and ISO candidate layers deepen around it.",
       "summary": {
-        "mappedPublicControls": 7,
-        "implementedPublicControls": 7,
+        "mappedPublicControls": 8,
+        "implementedPublicControls": 8,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 1,
         "routeCounts": {
           "decidable": 1,
-          "attestation": 6,
+          "attestation": 7,
           "judgment": 0
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 4,
+          "public_source_reviewed": 5,
           "candidate_public_source_unreviewed": 0,
           "blocked_nonpublic_source_review": 0
         }
@@ -1470,7 +1501,8 @@
         "oc.ai-04",
         "oc.ai-05",
         "oc.ai-07",
-        "oc.ai-08"
+        "oc.ai-08",
+        "oc.ai-09"
       ],
       "implementedControlIds": [
         "oc.ai-01",
@@ -1479,13 +1511,15 @@
         "oc.ai-04",
         "oc.ai-05",
         "oc.ai-07",
-        "oc.ai-08"
+        "oc.ai-08",
+        "oc.ai-09"
       ],
       "reviewedControlIds": [
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-03",
-        "oc.ai-04"
+        "oc.ai-04",
+        "oc.ai-09"
       ],
       "candidateControlIds": [],
       "blockedControlIds": [],
@@ -1496,7 +1530,8 @@
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-03",
-        "oc.ai-04"
+        "oc.ai-04",
+        "oc.ai-09"
       ]
     },
     {
@@ -1651,18 +1686,18 @@
       "operatorBenefit": "Most obvious management-system-style target for organisations that want AI governance to look certifiable and auditable.",
       "nextAction": "Keep publishing only crosswalk-derived candidate anchors until licensed clause review exists.",
       "summary": {
-        "mappedPublicControls": 7,
-        "implementedPublicControls": 7,
+        "mappedPublicControls": 8,
+        "implementedPublicControls": 8,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 2,
         "routeCounts": {
           "decidable": 2,
-          "attestation": 5,
+          "attestation": 6,
           "judgment": 0
         },
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
-          "candidate_public_source_unreviewed": 6,
+          "candidate_public_source_unreviewed": 7,
           "blocked_nonpublic_source_review": 0
         }
       },
@@ -1673,7 +1708,8 @@
         "oc.ai-04",
         "oc.ai-05",
         "oc.ai-06",
-        "oc.ai-08"
+        "oc.ai-08",
+        "oc.ai-09"
       ],
       "implementedControlIds": [
         "oc.ai-01",
@@ -1682,7 +1718,8 @@
         "oc.ai-04",
         "oc.ai-05",
         "oc.ai-06",
-        "oc.ai-08"
+        "oc.ai-08",
+        "oc.ai-09"
       ],
       "reviewedControlIds": [],
       "candidateControlIds": [
@@ -1691,7 +1728,8 @@
         "oc.ai-03",
         "oc.ai-04",
         "oc.ai-05",
-        "oc.ai-06"
+        "oc.ai-06",
+        "oc.ai-09"
       ],
       "blockedControlIds": [],
       "nextDepthControlIds": [
@@ -1701,7 +1739,8 @@
         "oc.ai-02",
         "oc.ai-03",
         "oc.ai-04",
-        "oc.ai-08"
+        "oc.ai-08",
+        "oc.ai-09"
       ]
     },
     {
@@ -1714,18 +1753,18 @@
       "operatorBenefit": "Useful for impact-assessment depth and for turning AI risk work into a more explicit, reviewable artifact chain.",
       "nextAction": "Use it to shape impact-assessment-oriented claim types and candidate exact-anchor plans.",
       "summary": {
-        "mappedPublicControls": 4,
-        "implementedPublicControls": 4,
+        "mappedPublicControls": 7,
+        "implementedPublicControls": 7,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 0,
         "routeCounts": {
           "decidable": 0,
-          "attestation": 4,
+          "attestation": 7,
           "judgment": 0
         },
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
-          "candidate_public_source_unreviewed": 3,
+          "candidate_public_source_unreviewed": 6,
           "blocked_nonpublic_source_review": 0
         }
       },
@@ -1733,26 +1772,38 @@
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-04",
-        "oc.ai-07"
+        "oc.ai-07",
+        "oc.ai-09",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "implementedControlIds": [
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-04",
-        "oc.ai-07"
+        "oc.ai-07",
+        "oc.ai-09",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "reviewedControlIds": [],
       "candidateControlIds": [
         "oc.ai-01",
         "oc.ai-02",
-        "oc.ai-04"
+        "oc.ai-04",
+        "oc.ai-09",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ],
       "blockedControlIds": [],
       "nextDepthControlIds": [
         "oc.ai-01",
         "oc.ai-02",
         "oc.ai-04",
-        "oc.ai-07"
+        "oc.ai-07",
+        "oc.ai-09",
+        "oc.privacy-03",
+        "oc.privacy-05"
       ]
     },
     {
@@ -2293,33 +2344,37 @@
       "operatorBenefit": "Essential for healthcare startups that need role, use-and-disclosure, minimum-necessary, and patient-rights boundaries alongside security safeguards.",
       "nextAction": "Treat it as the privacy-operations companion to the HIPAA Security Rule, starting with rights handling, disclosures, workforce access, and business-associate boundaries.",
       "summary": {
-        "mappedPublicControls": 1,
-        "implementedPublicControls": 1,
+        "mappedPublicControls": 2,
+        "implementedPublicControls": 2,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 0,
         "routeCounts": {
           "decidable": 0,
-          "attestation": 1,
+          "attestation": 2,
           "judgment": 0
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 1,
+          "public_source_reviewed": 2,
           "candidate_public_source_unreviewed": 0,
           "blocked_nonpublic_source_review": 0
         }
       },
       "mappedControlIds": [
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "implementedControlIds": [
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "reviewedControlIds": [
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "candidateControlIds": [],
       "blockedControlIds": [],
       "nextDepthControlIds": [
+        "oc.privacy-04",
         "oc.vendor-02"
       ]
     },
@@ -2501,17 +2556,17 @@
       "operatorBenefit": "Important for consumer-facing startups operating in California or meeting California thresholds, especially where notices, rights, sharing, and retention become commercially material.",
       "nextAction": "Treat it as the main US state privacy-law companion to GDPR and start with rights, notices, retention, service-provider, and sharing boundaries.",
       "summary": {
-        "mappedPublicControls": 5,
-        "implementedPublicControls": 5,
+        "mappedPublicControls": 6,
+        "implementedPublicControls": 6,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 0,
         "routeCounts": {
           "decidable": 0,
-          "attestation": 4,
+          "attestation": 5,
           "judgment": 1
         },
         "exactAnchorStatusCounts": {
-          "public_source_reviewed": 5,
+          "public_source_reviewed": 6,
           "candidate_public_source_unreviewed": 0,
           "blocked_nonpublic_source_review": 0
         }
@@ -2521,6 +2576,7 @@
         "oc.data-05",
         "oc.data-06",
         "oc.privacy-01",
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "implementedControlIds": [
@@ -2528,6 +2584,7 @@
         "oc.data-05",
         "oc.data-06",
         "oc.privacy-01",
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "reviewedControlIds": [
@@ -2535,6 +2592,7 @@
         "oc.data-05",
         "oc.data-06",
         "oc.privacy-01",
+        "oc.privacy-04",
         "oc.vendor-02"
       ],
       "candidateControlIds": [],
@@ -2543,6 +2601,7 @@
         "oc.data-04",
         "oc.data-05",
         "oc.privacy-01",
+        "oc.privacy-04",
         "oc.vendor-02",
         "oc.data-06"
       ]

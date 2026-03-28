@@ -2,8 +2,8 @@
   "$schema": "https://opencompliancefoundation.com/specs/schemas/verifier-contract.schema.json",
   "contractId": "opencompliance-public-verifier-contract-v7",
   "contractVersion": 7,
-  "verifierVersion": "opencompliance-verifier/0.9.7",
-  "releaseId": "opencompliance-verifier-0.9.7",
+  "verifierVersion": "opencompliance-verifier/0.9.8",
+  "releaseId": "opencompliance-verifier-0.9.8",
   "releaseGeneratedAt": "2026-03-28T06:34:36Z",
   "bundleLayoutVersion": 1,
   "includedFixtures": [

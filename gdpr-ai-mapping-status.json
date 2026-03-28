@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T05:44:58Z",
+  "generatedAt": "2026-03-28T12:30:00Z",
   "purpose": "Public-safe status view for the GDPR full-mapping programme and the current ISO AI standards mapping wave inside OpenCompliance. It records what is already mapped, what remains candidate-only, and where the remaining work is widening, not inventing, the public-control layer.",
   "programs": [
     {
@@ -9,17 +9,49 @@
       "sourceAvailability": "public_exact_feasible",
       "openComplianceState": "public_exact_anchor_review_available",
       "summary": {
-        "mappedPublicControls": 20,
-        "implementedPublicControls": 20,
+        "mappedPublicControls": 25,
+        "implementedPublicControls": 25,
         "plannedPublicControls": 0,
         "leanBackedPublicControls": 11,
-        "familyRolloutEntries": 6,
-        "reviewedExactAnchorEntries": 23,
+        "familyRolloutEntries": 11,
+        "reviewedExactAnchorEntries": 30,
         "candidateExactAnchorEntries": 0,
         "blockedExactAnchorEntries": 0,
         "nextDepthControlCount": 8
       },
       "familyRollout": [
+        {
+          "family": "automated_decision_and_rights_boundary",
+          "mappedControls": 1,
+          "implementedControls": 1,
+          "plannedControls": 0,
+          "leanBackedControls": 0,
+          "routeCounts": {
+            "decidable": 0,
+            "attestation": 0,
+            "judgment": 1,
+            "mixed": 0
+          },
+          "controlIds": [
+            "oc.ai-10"
+          ]
+        },
+        {
+          "family": "automated_decision_human_review",
+          "mappedControls": 1,
+          "implementedControls": 1,
+          "plannedControls": 0,
+          "leanBackedControls": 0,
+          "routeCounts": {
+            "decidable": 0,
+            "attestation": 1,
+            "judgment": 0,
+            "mixed": 0
+          },
+          "controlIds": [
+            "oc.ai-09"
+          ]
+        },
         {
           "family": "data_locality_and_transfer_boundary",
           "mappedControls": 1,
@@ -53,6 +85,22 @@
           ]
         },
         {
+          "family": "lawful_basis_and_purpose_limitation",
+          "mappedControls": 1,
+          "implementedControls": 1,
+          "plannedControls": 0,
+          "leanBackedControls": 0,
+          "routeCounts": {
+            "decidable": 0,
+            "attestation": 1,
+            "judgment": 0,
+            "mixed": 0
+          },
+          "controlIds": [
+            "oc.privacy-03"
+          ]
+        },
+        {
           "family": "privacy_by_design_and_default",
           "mappedControls": 1,
           "implementedControls": 1,
@@ -66,6 +114,22 @@
           },
           "controlIds": [
             "oc.privacy-02"
+          ]
+        },
+        {
+          "family": "privacy_impact_assessment",
+          "mappedControls": 1,
+          "implementedControls": 1,
+          "plannedControls": 0,
+          "leanBackedControls": 0,
+          "routeCounts": {
+            "decidable": 0,
+            "attestation": 1,
+            "judgment": 0,
+            "mixed": 0
+          },
+          "controlIds": [
+            "oc.privacy-05"
           ]
         },
         {
@@ -129,6 +193,22 @@
             "oc.data-05",
             "oc.data-06"
           ]
+        },
+        {
+          "family": "transparency_and_notices",
+          "mappedControls": 1,
+          "implementedControls": 1,
+          "plannedControls": 0,
+          "leanBackedControls": 0,
+          "routeCounts": {
+            "decidable": 0,
+            "attestation": 1,
+            "judgment": 0,
+            "mixed": 0
+          },
+          "controlIds": [
+            "oc.privacy-04"
+          ]
         }
       ],
       "workstreams": [
@@ -136,7 +216,7 @@
           "id": "authoritative_public_law_decomposition",
           "title": "Article-level and obligation-level decomposition",
           "status": "public_exact_layer_available",
-          "summary": "GDPR already has a public exact-anchor corridor with 23 reviewed anchor entries across the current promoted controls.",
+          "summary": "GDPR already has a public exact-anchor corridor with 30 reviewed anchor entries across the current promoted controls.",
           "remainingWork": "Widen from the current security, transfer, rights, processor, and retention corridor into broader privacy-by-design, lawful-basis, and automated-decision boundaries without losing article-level precision.",
           "blockedBy": []
         },
@@ -144,7 +224,7 @@
           "id": "public_control_normalization",
           "title": "Public-control normalization",
           "status": "complete",
-          "summary": "20 public controls map to GDPR, with 20 already exercised by public fixtures and 0 still planned.",
+          "summary": "25 public controls map to GDPR, with 25 already exercised by public fixtures and 0 still planned.",
           "remainingWork": "Promote or retire the remaining planned GDPR controls so the public ontology is explicit about coverage boundaries.",
           "blockedBy": []
         },
@@ -168,7 +248,7 @@
           "id": "fixture_rollout",
           "title": "Fixture and evidence rollout",
           "status": "complete",
-          "summary": "6 GDPR families are visible in rollout matrices, but 20 of 20 mapped controls are currently fixture-backed.",
+          "summary": "11 GDPR families are visible in rollout matrices, but 25 of 25 mapped controls are currently fixture-backed.",
           "remainingWork": "Turn the remaining planned GDPR controls into replayable fixture-backed corridors instead of leaving them as silent backlog.",
           "blockedBy": []
         },
@@ -193,11 +273,11 @@
         "frameworksInScope": 11,
         "frameworksWithCurrentMappings": 5,
         "frameworksWithoutCurrentMappings": 6,
-        "uniqueMappedPublicControls": 8,
-        "uniqueImplementedPublicControls": 8,
+        "uniqueMappedPublicControls": 11,
+        "uniqueImplementedPublicControls": 11,
         "uniquePlannedPublicControls": 0,
         "uniqueLeanBackedPublicControls": 2,
-        "candidateExactAnchorEntries": 13,
+        "candidateExactAnchorEntries": 17,
         "reviewedExactAnchorEntries": 0,
         "blockedExactAnchorEntries": 0,
         "draftWatchListFrameworks": 1
@@ -209,13 +289,13 @@
           "priorityTier": "ai_now",
           "sourceAvailability": "crosswalk_candidate",
           "openComplianceState": "crosswalk_candidate_only",
-          "mappedPublicControls": 7,
-          "implementedPublicControls": 7,
+          "mappedPublicControls": 8,
+          "implementedPublicControls": 8,
           "plannedPublicControls": 0,
           "leanBackedPublicControls": 2,
           "exactAnchorStatusCounts": {
             "public_source_reviewed": 0,
-            "candidate_public_source_unreviewed": 6,
+            "candidate_public_source_unreviewed": 7,
             "blocked_nonpublic_source_review": 0
           },
           "nextDepthControlIds": [
@@ -225,7 +305,8 @@
             "oc.ai-02",
             "oc.ai-03",
             "oc.ai-04",
-            "oc.ai-08"
+            "oc.ai-08",
+            "oc.ai-09"
           ]
         },
         {
@@ -234,20 +315,23 @@
           "priorityTier": "ai_now",
           "sourceAvailability": "crosswalk_candidate",
           "openComplianceState": "crosswalk_candidate_only",
-          "mappedPublicControls": 4,
-          "implementedPublicControls": 4,
+          "mappedPublicControls": 7,
+          "implementedPublicControls": 7,
           "plannedPublicControls": 0,
           "leanBackedPublicControls": 0,
           "exactAnchorStatusCounts": {
             "public_source_reviewed": 0,
-            "candidate_public_source_unreviewed": 3,
+            "candidate_public_source_unreviewed": 6,
             "blocked_nonpublic_source_review": 0
           },
           "nextDepthControlIds": [
             "oc.ai-01",
             "oc.ai-02",
             "oc.ai-04",
-            "oc.ai-07"
+            "oc.ai-07",
+            "oc.ai-09",
+            "oc.privacy-03",
+            "oc.privacy-05"
           ]
         },
         {
@@ -424,7 +508,7 @@
           "id": "candidate_mapping_coverage",
           "title": "Candidate mapping coverage",
           "status": "partial",
-          "summary": "8 unique public controls currently overlap the tracked ISO AI wave, while 6 tracked frameworks still have no normalized public-control coverage.",
+          "summary": "11 unique public controls currently overlap the tracked ISO AI wave, while 6 tracked frameworks still have no normalized public-control coverage.",
           "remainingWork": "Normalize the remaining AI ISO frameworks into narrow public controls only where the mapping boundary is concrete enough to stay honest.",
           "blockedBy": []
         },
@@ -432,7 +516,7 @@
           "id": "exact_anchor_review",
           "title": "Candidate exact-anchor review",
           "status": "candidate_layer_available",
-          "summary": "The current ISO AI wave records 13 candidate exact-anchor entries and 0 publicly reviewed entries across the tracked frameworks.",
+          "summary": "The current ISO AI wave records 17 candidate exact-anchor entries and 0 publicly reviewed entries across the tracked frameworks.",
           "remainingWork": "Convert candidate-only ISO AI mappings into reviewed or explicitly blocked records once licensed review or stronger public crosswalk material exists.",
           "blockedBy": [
             "licensed_exact_anchor_review"
@@ -458,7 +542,7 @@
           "id": "fixture_rollout",
           "title": "Fixture and evidence rollout",
           "status": "partial",
-          "summary": "8 unique mapped controls in the AI ISO wave are currently exercised by public fixtures.",
+          "summary": "11 unique mapped controls in the AI ISO wave are currently exercised by public fixtures.",
           "remainingWork": "Turn the next AI ISO candidate controls into fixture-backed outputs instead of leaving them as documentation-only backlog.",
           "blockedBy": []
         },

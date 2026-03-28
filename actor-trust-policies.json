@@ -27,7 +27,13 @@
         "human"
       ],
       "requiredSignerRoles": [
+        "compliance_owner",
+        "customer_support_owner",
+        "ethics_owner",
+        "isms_owner",
         "platform_recovery_owner",
+        "project_security_owner",
+        "remote_working_owner",
         "security_training_owner"
       ],
       "delegationRequired": false

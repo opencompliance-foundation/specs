@@ -267,6 +267,23 @@
       ]
     },
     {
+      "profileId": "remote-access-exporter",
+      "description": "Synthetic ingress profile for remote-access posture exports.",
+      "actorIdentityId": "remote-access-exporter",
+      "allowedClaimTypes": [
+        "remote_access_posture_state"
+      ],
+      "allowedSourceSystems": [
+        "example-remote-access"
+      ],
+      "allowedCollectionMethods": [
+        "synthetic_export"
+      ],
+      "allowedSourcePathPrefixes": [
+        "exports/remote"
+      ]
+    },
+    {
       "profileId": "repo-policy-exporter",
       "description": "Synthetic ingress profile for repository protection exports.",
       "actorIdentityId": "repo-policy-exporter",

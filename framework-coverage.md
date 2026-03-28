@@ -9,9 +9,9 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `85`
-- Implemented public controls: `52`
-- Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `38`
+- Implemented public controls: `85`
+- Lean-backed public controls: `22`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `71`
 - Operator benefit: Still the strongest customer-facing security management baseline for SaaS diligence and procurement.
 - Next action: Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
@@ -23,9 +23,9 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `58`
-- Implemented public controls: `52`
+- Implemented public controls: `58`
 - Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `44`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `50`
 - Operator benefit: Directly relevant to US buyer assurance, trust-center narratives, and recurring security questionnaires.
 - Next action: Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`

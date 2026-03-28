@@ -114,6 +114,20 @@
       "notes": "Synthetic exporter for backup schedule state."
     },
     {
+      "identityId": "compliance-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "compliance_owner",
+      "defaultSignerRole": "compliance_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic compliance inventory owner for ExampleCo."
+    },
+    {
       "identityId": "ci-policy-exporter",
       "actorType": "system",
       "defaultActorRole": null,
@@ -196,6 +210,20 @@
       ],
       "synthetic": true,
       "notes": "Synthetic IAM export identity."
+    },
+    {
+      "identityId": "isms-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "isms_owner",
+      "defaultSignerRole": "isms_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic ISMS stakeholder owner for ExampleCo."
     },
     {
       "identityId": "identity-governance-owner@exampleco.test",
@@ -386,6 +414,20 @@
       "notes": "Synthetic patch and update export identity."
     },
     {
+      "identityId": "project-security-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "project_security_owner",
+      "defaultSignerRole": "project_security_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic project security owner for ExampleCo."
+    },
+    {
       "identityId": "platform-lead",
       "actorType": "human",
       "defaultActorRole": "platform_recovery_owner",
@@ -456,6 +498,34 @@
       "notes": "Synthetic repository-policy export identity."
     },
     {
+      "identityId": "remote-access-exporter",
+      "actorType": "system",
+      "defaultActorRole": null,
+      "defaultSignerRole": null,
+      "trustPolicyIds": [
+        "oc.trust.system-export"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic remote-access posture export identity."
+    },
+    {
+      "identityId": "remote-work-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "remote_working_owner",
+      "defaultSignerRole": "remote_working_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic remote-working owner for ExampleCo."
+    },
+    {
       "identityId": "security-manager",
       "actorType": "human",
       "defaultActorRole": "security_training_owner",
@@ -510,6 +580,34 @@
       ],
       "synthetic": true,
       "notes": "Synthetic storage-configuration export identity."
+    },
+    {
+      "identityId": "customer-support-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "customer_support_owner",
+      "defaultSignerRole": "customer_support_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic customer support owner for ExampleCo."
+    },
+    {
+      "identityId": "ethics-owner@exampleco.test",
+      "actorType": "human",
+      "defaultActorRole": "ethics_owner",
+      "defaultSignerRole": "ethics_owner",
+      "trustPolicyIds": [
+        "oc.trust.human-owner-attestation"
+      ],
+      "surfaces": [
+        "evidence_claim"
+      ],
+      "synthetic": true,
+      "notes": "Synthetic ethics and IP governance owner for ExampleCo."
     }
   ]
 }

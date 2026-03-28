@@ -5,8 +5,8 @@ This file is a public-safe status view for the GDPR full-mapping programme and t
 ## GDPR full-mapping program
 
 - Mapped public controls: `20`
-- Implemented public controls: `18`
-- Planned public controls: `2`
+- Implemented public controls: `20`
+- Planned public controls: `0`
 - Lean-backed public controls: `11`
 - Reviewed exact-anchor entries: `23`
 - Family rollout entries: `6`
@@ -16,17 +16,17 @@ This file is a public-safe status view for the GDPR full-mapping programme and t
 - `Article-level and obligation-level decomposition`: `public_exact_layer_available`
   - Current state: GDPR already has a public exact-anchor corridor with 23 reviewed anchor entries across the current promoted controls.
   - Remaining work: Widen from the current security, transfer, rights, processor, and retention corridor into broader privacy-by-design, lawful-basis, and automated-decision boundaries without losing article-level precision.
-- `Public-control normalization`: `partial`
-  - Current state: 20 public controls map to GDPR, with 18 already exercised by public fixtures and 2 still planned.
+- `Public-control normalization`: `complete`
+  - Current state: 20 public controls map to GDPR, with 20 already exercised by public fixtures and 0 still planned.
   - Remaining work: Promote or retire the remaining planned GDPR controls so the public ontology is explicit about coverage boundaries.
-- `Typed claim coverage`: `partial`
+- `Typed claim coverage`: `complete`
   - Current state: The current GDPR corridor is already typed, but future privacy-design and retention slices still need explicit claim contracts before promotion.
   - Remaining work: Define typed evidence and attestation shapes for the remaining planned GDPR controls before widening the verifier surface.
 - `Lean coverage for decidable GDPR atoms`: `complete_for_current_corridor`
   - Current state: 11 Lean-backed public controls now cover the current decidable GDPR corridor.
   - Remaining work: Keep Lean coverage aligned as the GDPR corridor widens into additional public-law obligations and rights workflows.
-- `Fixture and evidence rollout`: `partial`
-  - Current state: 6 GDPR families are visible in rollout matrices, but 18 of 20 mapped controls are currently fixture-backed.
+- `Fixture and evidence rollout`: `complete`
+  - Current state: 6 GDPR families are visible in rollout matrices, but 20 of 20 mapped controls are currently fixture-backed.
   - Remaining work: Turn the remaining planned GDPR controls into replayable fixture-backed corridors instead of leaving them as silent backlog.
 - `External privacy and public-law review`: `program_defined`
   - Current state: A sibling GDPR and AI review program now defines the public-law, rights, and AI-specialist scrutiny path for this wave.

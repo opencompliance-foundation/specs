@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T03:21:22Z",
+  "generatedAt": "2026-03-28T05:44:58Z",
   "purpose": "Public-safe status view for the first U.S. sector-regime depth wave inside OpenCompliance. It shows the current narrow overlap for HIPAA Privacy and Breach, GLBA and NYDFS, and CCPA/CPRA without pretending that the whole regulatory corpus is already mechanised.",
   "programs": [
     {
@@ -139,8 +139,8 @@
           "sourceAvailability": "public_exact_feasible",
           "openComplianceState": "priority_backlog",
           "mappedPublicControls": 6,
-          "implementedPublicControls": 5,
-          "plannedPublicControls": 1,
+          "implementedPublicControls": 6,
+          "plannedPublicControls": 0,
           "leanBackedPublicControls": 3,
           "exactAnchorStatusCounts": {
             "public_source_reviewed": 6,
@@ -151,9 +151,9 @@
             "oc.id-01",
             "oc.log-01",
             "oc.net-01",
+            "oc.data-05",
             "oc.ir-01",
-            "oc.vendor-02",
-            "oc.data-05"
+            "oc.vendor-02"
           ]
         },
         {
@@ -163,8 +163,8 @@
           "sourceAvailability": "public_exact_feasible",
           "openComplianceState": "priority_backlog",
           "mappedPublicControls": 7,
-          "implementedPublicControls": 6,
-          "plannedPublicControls": 1,
+          "implementedPublicControls": 7,
+          "plannedPublicControls": 0,
           "leanBackedPublicControls": 3,
           "exactAnchorStatusCounts": {
             "public_source_reviewed": 7,
@@ -175,10 +175,10 @@
             "oc.id-01",
             "oc.log-01",
             "oc.net-01",
+            "oc.data-05",
             "oc.ir-01",
             "oc.ir-02",
-            "oc.vendor-02",
-            "oc.data-05"
+            "oc.vendor-02"
           ]
         }
       ],
@@ -186,8 +186,8 @@
         "frameworksInScope": 2,
         "frameworksWithCurrentMappings": 2,
         "uniqueMappedPublicControls": 7,
-        "uniqueImplementedPublicControls": 6,
-        "uniquePlannedPublicControls": 1,
+        "uniqueImplementedPublicControls": 7,
+        "uniquePlannedPublicControls": 0,
         "uniqueLeanBackedPublicControls": 3,
         "reviewedExactAnchorEntries": 13,
         "candidateExactAnchorEntries": 0,
@@ -213,7 +213,7 @@
           "id": "public_control_normalization",
           "title": "Public-control normalization",
           "status": "partial",
-          "summary": "7 unique public controls currently overlap this program, with 6 already exercised by fixtures.",
+          "summary": "7 unique public controls currently overlap this program, with 7 already exercised by fixtures.",
           "remainingWork": "Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.",
           "blockedBy": []
         },
@@ -244,8 +244,8 @@
         {
           "id": "fixture_rollout",
           "title": "Fixture rollout",
-          "status": "partial",
-          "summary": "6 of 7 mapped controls currently appear in public fixture corridors.",
+          "status": "complete",
+          "summary": "7 of 7 mapped controls currently appear in public fixture corridors.",
           "remainingWork": "Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.",
           "blockedBy": []
         },
@@ -274,8 +274,8 @@
           "sourceAvailability": "public_exact_feasible",
           "openComplianceState": "priority_backlog",
           "mappedPublicControls": 5,
-          "implementedPublicControls": 3,
-          "plannedPublicControls": 2,
+          "implementedPublicControls": 5,
+          "plannedPublicControls": 0,
           "leanBackedPublicControls": 0,
           "exactAnchorStatusCounts": {
             "public_source_reviewed": 5,
@@ -284,9 +284,9 @@
           },
           "nextDepthControlIds": [
             "oc.data-04",
+            "oc.data-05",
             "oc.privacy-01",
             "oc.vendor-02",
-            "oc.data-05",
             "oc.data-06"
           ]
         }
@@ -295,8 +295,8 @@
         "frameworksInScope": 1,
         "frameworksWithCurrentMappings": 1,
         "uniqueMappedPublicControls": 5,
-        "uniqueImplementedPublicControls": 3,
-        "uniquePlannedPublicControls": 2,
+        "uniqueImplementedPublicControls": 5,
+        "uniquePlannedPublicControls": 0,
         "uniqueLeanBackedPublicControls": 0,
         "reviewedExactAnchorEntries": 5,
         "candidateExactAnchorEntries": 0,
@@ -322,7 +322,7 @@
           "id": "public_control_normalization",
           "title": "Public-control normalization",
           "status": "partial",
-          "summary": "5 unique public controls currently overlap this program, with 3 already exercised by fixtures.",
+          "summary": "5 unique public controls currently overlap this program, with 5 already exercised by fixtures.",
           "remainingWork": "Promote the next narrow controls only when their route, exact-anchor, and claim-schema boundaries are stable enough to stay honest.",
           "blockedBy": []
         },
@@ -353,8 +353,8 @@
         {
           "id": "fixture_rollout",
           "title": "Fixture rollout",
-          "status": "partial",
-          "summary": "3 of 5 mapped controls currently appear in public fixture corridors.",
+          "status": "complete",
+          "summary": "5 of 5 mapped controls currently appear in public fixture corridors.",
           "remainingWork": "Turn the next rights, vendor, breach, and retention slices into replayable fixture-backed corridors instead of documentation-only backlog.",
           "blockedBy": []
         },

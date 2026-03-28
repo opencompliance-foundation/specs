@@ -9,9 +9,9 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `85`
-- Implemented public controls: `41`
+- Implemented public controls: `52`
 - Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `35`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `38`
 - Operator benefit: Still the strongest customer-facing security management baseline for SaaS diligence and procurement.
 - Next action: Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
@@ -23,9 +23,9 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `blocked_nonpublic_source_review`
 - OpenCompliance state: `private_seed_depth_and_public_family_proxy`
 - Mapped public controls: `58`
-- Implemented public controls: `41`
+- Implemented public controls: `52`
 - Lean-backed public controls: `21`
-- Exact anchors reviewed / candidate / blocked: `0` / `0` / `35`
+- Exact anchors reviewed / candidate / blocked: `0` / `0` / `44`
 - Operator benefit: Directly relevant to US buyer assurance, trust-center narratives, and recurring security questionnaires.
 - Next action: Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.
 - Next depth controls: `oc.backup-01`, `oc.boundary-01`, `oc.cfg-01`, `oc.ci-01`, `oc.crypt-01`, `oc.id-01`, `oc.id-02`, `oc.id-04`
@@ -37,7 +37,7 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `public_exact_feasible`
 - OpenCompliance state: `public_exact_anchor_review_available`
 - Mapped public controls: `20`
-- Implemented public controls: `18`
+- Implemented public controls: `20`
 - Lean-backed public controls: `11`
 - Exact anchors reviewed / candidate / blocked: `23` / `0` / `0`
 - Operator benefit: Directly relevant to UK and EU personal-data handling, customer diligence, and AI systems that process personal data.
@@ -542,12 +542,12 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `public_exact_feasible`
 - OpenCompliance state: `priority_backlog`
 - Mapped public controls: `6`
-- Implemented public controls: `5`
+- Implemented public controls: `6`
 - Lean-backed public controls: `3`
 - Exact anchors reviewed / candidate / blocked: `6` / `0` / `0`
 - Operator benefit: Relevant for fintech and financial-service startups that qualify as financial institutions and need a concrete customer-information security baseline.
 - Next action: Treat it as a fintech trigger regime and start with overlap to risk assessment, access, vendor oversight, encryption, and incident-response controls.
-- Next depth controls: `oc.id-01`, `oc.log-01`, `oc.net-01`, `oc.ir-01`, `oc.vendor-02`, `oc.data-05`
+- Next depth controls: `oc.id-01`, `oc.log-01`, `oc.net-01`, `oc.data-05`, `oc.ir-01`, `oc.vendor-02`
 
 ## 41. NYDFS 23 NYCRR Part 500
 
@@ -556,12 +556,12 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `public_exact_feasible`
 - OpenCompliance state: `priority_backlog`
 - Mapped public controls: `7`
-- Implemented public controls: `6`
+- Implemented public controls: `7`
 - Lean-backed public controls: `3`
 - Exact anchors reviewed / candidate / blocked: `7` / `0` / `0`
 - Operator benefit: Important for startups serving or becoming covered entities in New York financial services, where cybersecurity governance, controls, and notifications become regulator-facing obligations.
 - Next action: Treat it as a financial-sector trigger regime and begin with governance, access, MFA, vulnerability management, incident reporting, and third-party risk overlap.
-- Next depth controls: `oc.id-01`, `oc.log-01`, `oc.net-01`, `oc.ir-01`, `oc.ir-02`, `oc.vendor-02`, `oc.data-05`
+- Next depth controls: `oc.id-01`, `oc.log-01`, `oc.net-01`, `oc.data-05`, `oc.ir-01`, `oc.ir-02`, `oc.vendor-02`
 
 ## 42. CCPA/CPRA
 
@@ -570,12 +570,12 @@ This file is a public-safe coverage summary derived from the framework prioritie
 - Source availability: `public_exact_feasible`
 - OpenCompliance state: `priority_backlog`
 - Mapped public controls: `5`
-- Implemented public controls: `3`
+- Implemented public controls: `5`
 - Lean-backed public controls: `0`
 - Exact anchors reviewed / candidate / blocked: `5` / `0` / `0`
 - Operator benefit: Important for consumer-facing startups operating in California or meeting California thresholds, especially where notices, rights, sharing, and retention become commercially material.
 - Next action: Treat it as the main US state privacy-law companion to GDPR and start with rights, notices, retention, service-provider, and sharing boundaries.
-- Next depth controls: `oc.data-04`, `oc.privacy-01`, `oc.vendor-02`, `oc.data-05`, `oc.data-06`
+- Next depth controls: `oc.data-04`, `oc.data-05`, `oc.privacy-01`, `oc.vendor-02`, `oc.data-06`
 
 ## 43. COPPA
 

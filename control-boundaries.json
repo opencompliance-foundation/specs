@@ -3184,7 +3184,9 @@
       "classification": "attestation",
       "evidenceClaimType": "data_retention_schedule_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3281,7 +3283,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3356,7 +3360,9 @@
       "classification": "attestation",
       "evidenceClaimType": "facility_cabling_documentation_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3368,8 +3374,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3394,7 +3400,9 @@
       "classification": "attestation",
       "evidenceClaimType": "supporting_utility_protection_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3406,8 +3414,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3432,7 +3440,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3444,8 +3454,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3470,7 +3480,9 @@
       "classification": "attestation",
       "evidenceClaimType": "security_commitment_terms_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3487,8 +3499,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3520,7 +3532,9 @@
       "classification": "attestation",
       "evidenceClaimType": "security_commitment_governance_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3537,8 +3551,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3570,7 +3584,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3587,8 +3603,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3620,7 +3636,9 @@
       "classification": "attestation",
       "evidenceClaimType": "isms_context_definition_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3632,8 +3650,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3658,7 +3676,9 @@
       "classification": "attestation",
       "evidenceClaimType": "isms_context_review_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3670,8 +3690,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3696,7 +3716,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "ISO 27001",
@@ -3708,8 +3730,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3746,8 +3768,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "ISO 27001",
@@ -3848,7 +3870,9 @@
       "classification": "attestation",
       "evidenceClaimType": "security_concern_intake_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3860,8 +3884,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3886,7 +3910,9 @@
       "classification": "attestation",
       "evidenceClaimType": "security_concern_resolution_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3898,8 +3924,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3924,7 +3950,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3936,8 +3964,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -3962,7 +3990,9 @@
       "classification": "attestation",
       "evidenceClaimType": "outsourced_development_requirement_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -3974,8 +4004,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -4000,7 +4030,9 @@
       "classification": "attestation",
       "evidenceClaimType": "outsourced_development_review_attestation",
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -4012,8 +4044,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",
@@ -4038,7 +4070,9 @@
       "classification": "judgment",
       "evidenceClaimType": null,
       "lean": null,
-      "publicExamples": [],
+      "publicExamples": [
+        "medium"
+      ],
       "sourceMappings": [
         {
           "framework": "SOC 2",
@@ -4050,8 +4084,8 @@
         "currentAnchorKind": "family_proxy",
         "relation": "subset-of",
         "mappingMethod": "semantic",
-        "reviewStatus": "draft_unreviewed",
-        "confidence": "low",
+        "reviewStatus": "blocked_nonpublic_source_review",
+        "confidence": "withheld",
         "targetAnchorPlans": [
           {
             "framework": "SOC 2",

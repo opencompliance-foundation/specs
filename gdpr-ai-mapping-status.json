@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T03:21:22Z",
+  "generatedAt": "2026-03-28T05:44:58Z",
   "purpose": "Public-safe status view for the GDPR full-mapping programme and the current ISO AI standards mapping wave inside OpenCompliance. It records what is already mapped, what remains candidate-only, and where the remaining work is widening, not inventing, the public-control layer.",
   "programs": [
     {
@@ -10,8 +10,8 @@
       "openComplianceState": "public_exact_anchor_review_available",
       "summary": {
         "mappedPublicControls": 20,
-        "implementedPublicControls": 18,
-        "plannedPublicControls": 2,
+        "implementedPublicControls": 20,
+        "plannedPublicControls": 0,
         "leanBackedPublicControls": 11,
         "familyRolloutEntries": 6,
         "reviewedExactAnchorEntries": 23,
@@ -115,8 +115,8 @@
         {
           "family": "storage_limitation_and_erasure",
           "mappedControls": 3,
-          "implementedControls": 1,
-          "plannedControls": 2,
+          "implementedControls": 3,
+          "plannedControls": 0,
           "leanBackedControls": 0,
           "routeCounts": {
             "decidable": 0,
@@ -143,15 +143,15 @@
         {
           "id": "public_control_normalization",
           "title": "Public-control normalization",
-          "status": "partial",
-          "summary": "20 public controls map to GDPR, with 18 already exercised by public fixtures and 2 still planned.",
+          "status": "complete",
+          "summary": "20 public controls map to GDPR, with 20 already exercised by public fixtures and 0 still planned.",
           "remainingWork": "Promote or retire the remaining planned GDPR controls so the public ontology is explicit about coverage boundaries.",
           "blockedBy": []
         },
         {
           "id": "typed_claim_coverage",
           "title": "Typed claim coverage",
-          "status": "partial",
+          "status": "complete",
           "summary": "The current GDPR corridor is already typed, but future privacy-design and retention slices still need explicit claim contracts before promotion.",
           "remainingWork": "Define typed evidence and attestation shapes for the remaining planned GDPR controls before widening the verifier surface.",
           "blockedBy": []
@@ -167,8 +167,8 @@
         {
           "id": "fixture_rollout",
           "title": "Fixture and evidence rollout",
-          "status": "partial",
-          "summary": "6 GDPR families are visible in rollout matrices, but 18 of 20 mapped controls are currently fixture-backed.",
+          "status": "complete",
+          "summary": "6 GDPR families are visible in rollout matrices, but 20 of 20 mapped controls are currently fixture-backed.",
           "remainingWork": "Turn the remaining planned GDPR controls into replayable fixture-backed corridors instead of leaving them as silent backlog.",
           "blockedBy": []
         },

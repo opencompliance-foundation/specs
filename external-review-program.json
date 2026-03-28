@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T03:21:22Z",
+  "generatedAt": "2026-03-28T05:44:58Z",
   "purpose": "Define the external review and conformance path for ISO 27001 and SOC 2 mapping work inside OpenCompliance.",
   "targetFrameworks": [
     "ISO 27001",

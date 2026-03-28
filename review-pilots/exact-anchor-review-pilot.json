@@ -36,14 +36,14 @@
       "CCPA/CPRA",
       "ISO/IEC AWI 25704"
     ],
-    "controlsCovered": 47,
+    "controlsCovered": 56,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 245,
+    "reviewEntries": 257,
     "publicSourceReviewed": 156,
     "candidatePublicSourceUnreviewed": 19,
-    "blockedNonpublicSourceReview": 70
+    "blockedNonpublicSourceReview": 82
   },
   "controls": [
     {
@@ -4835,6 +4835,321 @@
             "authority": "California Legislature",
             "documentId": "California Consumer Privacy Act / CPRA amendments",
             "locator": "Cal. Civ. Code 1798.100(a)(3)"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-07",
+      "title": "Security commitment terms attested",
+      "decompositionNote": "This control only proves that a signed attestation says scoped supplier or service agreements contain the required security commitments for the declared review window. It does not prove those commitments are complete, monitored everywhere, or sufficient for all services in scope.",
+      "reviews": [
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 security-commitment-term anchors require licensed source review.",
+          "rationale": "The public corpus should not publish guessed ISO supplier-agreement anchors from non-public text.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-commitment-term anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 supplier-commitment blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-08",
+      "title": "Security commitment governance attested",
+      "decompositionNote": "This control only proves that a signed attestation says ownership, review cadence, and exception handling are current for the scoped security commitments in agreements. It does not prove that the review model is sufficient or that every exception is justified.",
+      "reviews": [
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 security-commitment-governance anchors require licensed source review.",
+          "rationale": "The public corpus should not publish guessed ISO supplier-governance anchors from non-public text.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-commitment-governance anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 supplier-governance blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-09",
+      "title": "Security commitment adequacy boundary",
+      "decompositionNote": "This control is intentionally judgment-routed. The corridor records whether a named reviewer accepted responsibility for the adequacy of the scoped security commitments and keeps that adequacy judgment separate from narrower agreement-term and governance attestations.",
+      "reviews": [
+        {
+          "framework": "ISO 27001",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "clause",
+            "annex_a_control"
+          ],
+          "blocker": "Exact ISO 27001 security-commitment-adequacy anchors require licensed source review.",
+          "rationale": "The public corpus should keep the ISO supplier-commitment adequacy blocker explicit until licensed review exists.",
+          "authoritativeSource": {
+            "authority": "ISO/SC27",
+            "documentId": "ISO/IEC 27001",
+            "locator": "Public structural material only"
+          }
+        },
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-commitment-adequacy anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 supplier-commitment adequacy blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-10",
+      "title": "Outsourced development requirements attested",
+      "decompositionNote": "This control only proves that a signed attestation says current security requirements exist for the scoped outsourced-development relationships. It does not prove those requirements are complete, adopted by every supplier, or sufficient for the full delivery risk.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 outsourced-development requirement anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 outsourced-development blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-11",
+      "title": "Outsourced development review attested",
+      "decompositionNote": "This control only proves that a signed attestation says review, oversight, and exception handling are current for the scoped outsourced-development relationships. It does not prove the adequacy of that review model.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 outsourced-development review anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 outsourced-development oversight blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.vendor-12",
+      "title": "Outsourced development adequacy boundary",
+      "decompositionNote": "This control is intentionally judgment-routed. The corridor records whether a named reviewer accepted responsibility for the adequacy of the scoped outsourced-development model and keeps that judgment separate from narrower requirement and oversight attestations.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 outsourced-development adequacy anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 outsourced-development adequacy blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ir-04",
+      "title": "Security concern intake attested",
+      "decompositionNote": "This control only proves that a signed attestation says a current intake path exists for the scoped reported security concerns. It does not prove every reporter uses the intake path or that every concern reaches the right queue.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-concern-intake anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 concern-intake blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ir-05",
+      "title": "Security concern resolution follow-up attested",
+      "decompositionNote": "This control only proves that a signed attestation says tracking, ownership, and resolution follow-up are current for the scoped reported security concerns. It does not prove every concern is resolved on time or with sufficient depth.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-concern-resolution anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 concern-resolution blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ir-06",
+      "title": "Security concern handling adequacy boundary",
+      "decompositionNote": "This control is intentionally judgment-routed. The corridor records whether a named reviewer accepted responsibility for the adequacy of the scoped security-concern handling model and keeps that judgment separate from narrower intake and follow-up attestations.",
+      "reviews": [
+        {
+          "framework": "SOC 2",
+          "anchorType": "licensed_framework_anchor",
+          "relation": "undetermined",
+          "mappingMethod": "semantic",
+          "reviewStatus": "blocked_nonpublic_source_review",
+          "confidence": "withheld",
+          "sourceAvailability": "licensed_text_required",
+          "externalReviewState": "not_started",
+          "candidateAnchorKinds": [
+            "criterion",
+            "point_of_focus"
+          ],
+          "blocker": "Exact SOC 2 security-concern-handling adequacy anchors require licensed or account-gated Trust Services Criteria review.",
+          "rationale": "The public mapping layer keeps the SOC 2 concern-handling adequacy blocker explicit instead of publishing guessed exact anchors.",
+          "authoritativeSource": {
+            "authority": "AICPA",
+            "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
+            "locator": "Category structure only"
           }
         }
       ]

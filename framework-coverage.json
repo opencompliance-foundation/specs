@@ -14,8 +14,8 @@
       "nextAction": "Continue private seed decomposition, promote the remaining availability and vulnerability-management slices, and keep blocker-aware exact-anchor review explicit.",
       "summary": {
         "mappedPublicControls": 85,
-        "implementedPublicControls": 41,
-        "plannedPublicControls": 44,
+        "implementedPublicControls": 52,
+        "plannedPublicControls": 33,
         "leanBackedPublicControls": 21,
         "routeCounts": {
           "decidable": 22,
@@ -25,7 +25,7 @@
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
           "candidate_public_source_unreviewed": 0,
-          "blocked_nonpublic_source_review": 35
+          "blocked_nonpublic_source_review": 38
         }
       },
       "mappedControlIds": [
@@ -125,6 +125,11 @@
         "oc.ci-01",
         "oc.crypt-01",
         "oc.data-04",
+        "oc.data-05",
+        "oc.data-06",
+        "oc.gov-30",
+        "oc.gov-31",
+        "oc.gov-32",
         "oc.id-01",
         "oc.id-02",
         "oc.id-03",
@@ -144,6 +149,9 @@
         "oc.patch-01",
         "oc.patch-02",
         "oc.patch-03",
+        "oc.phys-04",
+        "oc.phys-05",
+        "oc.phys-06",
         "oc.rec-01",
         "oc.rec-02",
         "oc.rec-03",
@@ -156,6 +164,9 @@
         "oc.vendor-01",
         "oc.vendor-02",
         "oc.vendor-03",
+        "oc.vendor-07",
+        "oc.vendor-08",
+        "oc.vendor-09",
         "oc.web-01"
       ],
       "reviewedControlIds": [],
@@ -195,6 +206,9 @@
         "oc.seg-01",
         "oc.vendor-02",
         "oc.vendor-03",
+        "oc.vendor-07",
+        "oc.vendor-08",
+        "oc.vendor-09",
         "oc.web-01"
       ],
       "nextDepthControlIds": [
@@ -219,8 +233,8 @@
       "nextAction": "Continue private seed decomposition and publish only blocker-aware narrow control mappings until licensed criterion review exists.",
       "summary": {
         "mappedPublicControls": 58,
-        "implementedPublicControls": 41,
-        "plannedPublicControls": 17,
+        "implementedPublicControls": 52,
+        "plannedPublicControls": 6,
         "leanBackedPublicControls": 21,
         "routeCounts": {
           "decidable": 21,
@@ -230,7 +244,7 @@
         "exactAnchorStatusCounts": {
           "public_source_reviewed": 0,
           "candidate_public_source_unreviewed": 0,
-          "blocked_nonpublic_source_review": 35
+          "blocked_nonpublic_source_review": 44
         }
       },
       "mappedControlIds": [
@@ -303,6 +317,8 @@
         "oc.ci-01",
         "oc.crypt-01",
         "oc.data-04",
+        "oc.data-05",
+        "oc.data-06",
         "oc.id-01",
         "oc.id-02",
         "oc.id-03",
@@ -310,6 +326,9 @@
         "oc.id-05",
         "oc.ir-01",
         "oc.ir-02",
+        "oc.ir-04",
+        "oc.ir-05",
+        "oc.ir-06",
         "oc.key-01",
         "oc.log-01",
         "oc.malware-01",
@@ -334,6 +353,12 @@
         "oc.vendor-01",
         "oc.vendor-02",
         "oc.vendor-03",
+        "oc.vendor-07",
+        "oc.vendor-08",
+        "oc.vendor-09",
+        "oc.vendor-10",
+        "oc.vendor-11",
+        "oc.vendor-12",
         "oc.web-01"
       ],
       "reviewedControlIds": [],
@@ -357,6 +382,9 @@
         "oc.id-05",
         "oc.ir-01",
         "oc.ir-02",
+        "oc.ir-04",
+        "oc.ir-05",
+        "oc.ir-06",
         "oc.key-01",
         "oc.log-01",
         "oc.malware-01",
@@ -373,6 +401,12 @@
         "oc.seg-01",
         "oc.vendor-02",
         "oc.vendor-03",
+        "oc.vendor-07",
+        "oc.vendor-08",
+        "oc.vendor-09",
+        "oc.vendor-10",
+        "oc.vendor-11",
+        "oc.vendor-12",
         "oc.web-01"
       ],
       "nextDepthControlIds": [
@@ -397,8 +431,8 @@
       "nextAction": "Maintain the reviewed article-level layer across security of processing, transfer boundaries, data-subject-rights operations, and processor governance, then widen from the current deployer corridor into privacy-by-design and AI-adjacent rights handling.",
       "summary": {
         "mappedPublicControls": 20,
-        "implementedPublicControls": 18,
-        "plannedPublicControls": 2,
+        "implementedPublicControls": 20,
+        "plannedPublicControls": 0,
         "leanBackedPublicControls": 11,
         "routeCounts": {
           "decidable": 11,
@@ -436,6 +470,8 @@
       "implementedControlIds": [
         "oc.crypt-01",
         "oc.data-04",
+        "oc.data-05",
+        "oc.data-06",
         "oc.id-01",
         "oc.id-04",
         "oc.id-05",
@@ -2264,8 +2300,8 @@
       "nextAction": "Treat it as a fintech trigger regime and start with overlap to risk assessment, access, vendor oversight, encryption, and incident-response controls.",
       "summary": {
         "mappedPublicControls": 6,
-        "implementedPublicControls": 5,
-        "plannedPublicControls": 1,
+        "implementedPublicControls": 6,
+        "plannedPublicControls": 0,
         "leanBackedPublicControls": 3,
         "routeCounts": {
           "decidable": 3,
@@ -2287,6 +2323,7 @@
         "oc.vendor-02"
       ],
       "implementedControlIds": [
+        "oc.data-05",
         "oc.id-01",
         "oc.ir-01",
         "oc.log-01",
@@ -2307,9 +2344,9 @@
         "oc.id-01",
         "oc.log-01",
         "oc.net-01",
+        "oc.data-05",
         "oc.ir-01",
-        "oc.vendor-02",
-        "oc.data-05"
+        "oc.vendor-02"
       ]
     },
     {
@@ -2323,8 +2360,8 @@
       "nextAction": "Treat it as a financial-sector trigger regime and begin with governance, access, MFA, vulnerability management, incident reporting, and third-party risk overlap.",
       "summary": {
         "mappedPublicControls": 7,
-        "implementedPublicControls": 6,
-        "plannedPublicControls": 1,
+        "implementedPublicControls": 7,
+        "plannedPublicControls": 0,
         "leanBackedPublicControls": 3,
         "routeCounts": {
           "decidable": 3,
@@ -2347,6 +2384,7 @@
         "oc.vendor-02"
       ],
       "implementedControlIds": [
+        "oc.data-05",
         "oc.id-01",
         "oc.ir-01",
         "oc.ir-02",
@@ -2369,10 +2407,10 @@
         "oc.id-01",
         "oc.log-01",
         "oc.net-01",
+        "oc.data-05",
         "oc.ir-01",
         "oc.ir-02",
-        "oc.vendor-02",
-        "oc.data-05"
+        "oc.vendor-02"
       ]
     },
     {
@@ -2386,8 +2424,8 @@
       "nextAction": "Treat it as the main US state privacy-law companion to GDPR and start with rights, notices, retention, service-provider, and sharing boundaries.",
       "summary": {
         "mappedPublicControls": 5,
-        "implementedPublicControls": 3,
-        "plannedPublicControls": 2,
+        "implementedPublicControls": 5,
+        "plannedPublicControls": 0,
         "leanBackedPublicControls": 0,
         "routeCounts": {
           "decidable": 0,
@@ -2409,6 +2447,8 @@
       ],
       "implementedControlIds": [
         "oc.data-04",
+        "oc.data-05",
+        "oc.data-06",
         "oc.privacy-01",
         "oc.vendor-02"
       ],
@@ -2423,9 +2463,9 @@
       "blockedControlIds": [],
       "nextDepthControlIds": [
         "oc.data-04",
+        "oc.data-05",
         "oc.privacy-01",
         "oc.vendor-02",
-        "oc.data-05",
         "oc.data-06"
       ]
     },

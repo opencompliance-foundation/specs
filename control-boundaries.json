@@ -7357,6 +7357,379 @@
           "That the deployed human-review arrangement is legally or ethically sufficient for every case"
         ]
       }
+    },
+    {
+      "controlId": "oc.privacy-06",
+      "title": "Privacy notice publication state captured",
+      "classification": "decidable",
+      "evidenceClaimType": "privacy_notice_publication_state",
+      "lean": {
+        "module": "OpenCompliance.Controls.AI",
+        "predicate": "PrivacyNoticePublicationStateCaptured",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim716_proved"
+        ]
+      },
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "transparency_and_notices",
+          "controlId": "gdpr.family.transparency_and_notices"
+        },
+        {
+          "framework": "HIPAA Privacy Rule",
+          "family": "notice_of_privacy_practices",
+          "controlId": "hipaa_privacy_rule.family.notice_of_privacy_practices"
+        },
+        {
+          "framework": "CCPA/CPRA",
+          "family": "notice_at_collection_and_privacy_policy",
+          "controlId": "ccpa_cpra.family.notice_at_collection_and_privacy_policy"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "transparency_and_explainability",
+          "controlId": "ico_ai_guidance.family.transparency_and_explainability"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "HIPAA Privacy Rule",
+            "anchorKinds": [
+              "cfr_section",
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "CCPA/CPRA",
+            "anchorKinds": [
+              "statute_section",
+              "regulation_section"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped AI-assisted surface publishes a reachable privacy notice snapshot that lists categories or purposes and links people to the active rights path.",
+        "doesNotProve": [
+          "That the notice is complete, readable, or jurisdiction-perfect in every interface and language",
+          "That downstream rights operations or deadlines are always met in practice"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-11",
+      "title": "AI task envelope bounded",
+      "classification": "decidable",
+      "evidenceClaimType": "ai_task_envelope_state",
+      "lean": {
+        "module": "OpenCompliance.Controls.AI",
+        "predicate": "AiTaskEnvelopeBounded",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim713_proved"
+        ]
+      },
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "context_and_intended_use",
+          "controlId": "nist_ai_rmf_1_0.family.context_and_intended_use"
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "family": "task_envelopes_and_use_case_boundaries",
+          "controlId": "nist_ai_600_1.family.task_envelopes_and_use_case_boundaries"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "lawfulness_and_purpose_governance",
+          "controlId": "ico_ai_guidance.family.lawfulness_and_purpose_governance"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "impact_assessment_inputs",
+          "controlId": "iso_iec_42005.family.impact_assessment_inputs"
+        },
+        {
+          "framework": "ISO/IEC 23053",
+          "family": "task_and_pipeline_boundaries",
+          "controlId": "iso_iec_23053.family.task_and_pipeline_boundaries"
+        },
+        {
+          "framework": "ISO/IEC TS 6254",
+          "family": "metadata_and_data_contracts",
+          "controlId": "iso_iec_ts_6254.family.metadata_and_data_contracts"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "NIST AI 600-1 Generative AI Profile",
+            "anchorKinds": [
+              "profile_action",
+              "risk"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 23053",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC TS 6254",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped AI-assisted operation publishes a typed task envelope declaring purpose, bounded tool classes, bounded data classes, a retention class, and a human-review linkage.",
+        "doesNotProve": [
+          "That the chosen envelope is legally or ethically sufficient for every future task",
+          "That the surrounding agent architecture cannot exceed the declared envelope outside the scoped control plane"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-12",
+      "title": "AI rights-ready run trace retained",
+      "classification": "decidable",
+      "evidenceClaimType": "ai_rights_ready_run_trace_state",
+      "lean": {
+        "module": "OpenCompliance.Controls.AI",
+        "predicate": "AiRightsReadyRunTraceRetained",
+        "exampleTheorems": [
+          "OpenCompliance.Examples.exClaim714_proved"
+        ]
+      },
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "automated_decision_human_review",
+          "controlId": "gdpr.family.automated_decision_human_review"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "human_review_and_contestability",
+          "controlId": "ico_ai_guidance.family.human_review_and_contestability"
+        },
+        {
+          "framework": "NIST AI 100-4",
+          "family": "provenance_data_tracking",
+          "controlId": "nist_ai_100_4.family.provenance_data_tracking"
+        },
+        {
+          "framework": "NIST AI RMF 1.0",
+          "family": "transparency_and_accountability",
+          "controlId": "nist_ai_rmf_1_0.family.transparency_and_accountability"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "human_review_and_impact_response",
+          "controlId": "iso_iec_42005.family.human_review_and_impact_response"
+        },
+        {
+          "framework": "ISO/IEC TS 6254",
+          "family": "traceability_and_metadata_retention",
+          "controlId": "iso_iec_ts_6254.family.traceability_and_metadata_retention"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "NIST AI 100-4",
+            "anchorKinds": [
+              "section",
+              "appendix"
+            ]
+          },
+          {
+            "framework": "NIST AI RMF 1.0",
+            "anchorKinds": [
+              "function_outcome"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "ISO/IEC TS 6254",
+            "anchorKinds": [
+              "clause"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "That the scoped AI-assisted operation retains a rights-ready run trace capturing purpose, input classifications, output references, and human-review linkage.",
+        "doesNotProve": [
+          "That the retained trace is sufficient for every legal disclosure, investigation, or dispute",
+          "That every downstream system preserves or exposes the same trace intact"
+        ]
+      }
+    },
+    {
+      "controlId": "oc.ai-13",
+      "title": "AI supplier and transfer map current",
+      "classification": "attestation",
+      "evidenceClaimType": "ai_supplier_transfer_attestation",
+      "lean": null,
+      "publicExamples": [
+        "ai-governance"
+      ],
+      "sourceMappings": [
+        {
+          "framework": "GDPR",
+          "family": "processors_and_transfers",
+          "controlId": "gdpr.family.processors_and_transfers"
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "family": "controller_processor_and_transfer_governance",
+          "controlId": "ico_ai_guidance.family.controller_processor_and_transfer_governance"
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "family": "external_providers_and_supply_chain",
+          "controlId": "iso_iec_42001.family.external_providers_and_supply_chain"
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "family": "stakeholder_and_supply_chain_inputs",
+          "controlId": "iso_iec_42005.family.stakeholder_and_supply_chain_inputs"
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "family": "third_party_and_supply_chain_dependencies",
+          "controlId": "nist_ai_600_1.family.third_party_and_supply_chain_dependencies"
+        }
+      ],
+      "mappingStatus": {
+        "currentAnchorKind": "family_proxy",
+        "relation": "subset-of",
+        "mappingMethod": "semantic",
+        "reviewStatus": "draft_unreviewed",
+        "confidence": "low",
+        "targetAnchorPlans": [
+          {
+            "framework": "GDPR",
+            "anchorKinds": [
+              "article",
+              "recital",
+              "guidance"
+            ]
+          },
+          {
+            "framework": "UK ICO AI and data protection guidance",
+            "anchorKinds": [
+              "guidance_topic"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42001",
+            "anchorKinds": [
+              "clause",
+              "annex_b_control"
+            ]
+          },
+          {
+            "framework": "ISO/IEC 42005",
+            "anchorKinds": [
+              "clause"
+            ]
+          },
+          {
+            "framework": "NIST AI 600-1 Generative AI Profile",
+            "anchorKinds": [
+              "profile_action",
+              "risk"
+            ]
+          }
+        ]
+      },
+      "boundary": {
+        "proves": "Only that a signed attestation states the scoped AI-assisted operation maintains a current supplier and transfer map with named subprocessors or service roles and declared transfer-mechanism coverage.",
+        "doesNotProve": [
+          "That every supplier or transfer path is lawful, complete, or currently active",
+          "That the wider supplier-assurance program is sufficient for every AI dependency risk"
+        ]
+      }
     }
   ],
   "auxiliaryClaims": [

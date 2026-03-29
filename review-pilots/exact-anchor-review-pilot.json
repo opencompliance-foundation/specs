@@ -34,15 +34,17 @@
       "GLBA Safeguards Rule",
       "NYDFS 23 NYCRR Part 500",
       "CCPA/CPRA",
-      "ISO/IEC AWI 25704"
+      "ISO/IEC AWI 25704",
+      "ISO/IEC TS 6254",
+      "ISO/IEC 23053"
     ],
-    "controlsCovered": 97,
+    "controlsCovered": 101,
     "note": "Public exact anchors are only published where official text or official machine-readable source material is public. Planned controls with no public fixture yet are allowed into the pilot so framework expansion can stay honest without pretending implementation already exists. Proprietary standards remain explicitly blocked until licensed framework review is complete."
   },
   "summary": {
-    "reviewEntries": 314,
-    "publicSourceReviewed": 170,
-    "candidatePublicSourceUnreviewed": 23,
+    "reviewEntries": 332,
+    "publicSourceReviewed": 181,
+    "candidatePublicSourceUnreviewed": 30,
     "blockedNonpublicSourceReview": 121
   },
   "controls": [
@@ -6566,6 +6568,347 @@
             "authority": "AICPA",
             "documentId": "2017 Trust Services Criteria (With Revised Points of Focus - 2022)",
             "locator": "Trust Services Criteria category structure only"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.privacy-06",
+      "title": "Privacy notice publication state captured",
+      "decompositionNote": "This corridor would prove only that the scoped AI-assisted surface publishes a reachable notice snapshot that lists categories or purposes and links people to the active rights path.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article",
+          "anchorId": "Articles 12-13",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A machine-checkable notice-publication snapshot is a narrow implementation slice of the broader GDPR transparency duties to provide accessible information and rights-contact paths.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "Regulation (EU) 2016/679",
+            "locator": "Articles 12-13"
+          }
+        },
+        {
+          "framework": "HIPAA Privacy Rule",
+          "anchorType": "cfr_section",
+          "anchorId": "45 CFR 164.520",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A reachable notice-publication snapshot is a narrow implementation slice of the HIPAA requirement to provide a notice of privacy practices to individuals.",
+          "authoritativeSource": {
+            "authority": "eCFR",
+            "documentId": "45 CFR 164.520",
+            "locator": "45 CFR 164.520"
+          }
+        },
+        {
+          "framework": "CCPA/CPRA",
+          "anchorType": "statute_section",
+          "anchorId": "Cal. Civ. Code 1798.100; 1798.130",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A machine-checkable notice-publication snapshot is a narrow implementation slice of the California notice-at-collection and privacy-policy publication duties.",
+          "authoritativeSource": {
+            "authority": "California Legislature",
+            "documentId": "California Consumer Privacy Act / CPRA amendments",
+            "locator": "1798.100; 1798.130"
+          }
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "anchorType": "guidance_section",
+          "anchorId": "How do we ensure transparency in AI?",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A reachable notice-publication snapshot is a narrow implementation slice of the ICO expectation that organisations explain meaningful AI use and route people toward the right rights or contact path.",
+          "authoritativeSource": {
+            "authority": "ICO",
+            "documentId": "Guidance on AI and data protection",
+            "locator": "How do we ensure transparency in AI?"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-11",
+      "title": "AI task envelope bounded",
+      "decompositionNote": "This corridor would prove only that the scoped AI-assisted operation publishes a typed task envelope declaring purpose, bounded tool classes, bounded data classes, a retention class, and a human-review linkage.",
+      "reviews": [
+        {
+          "framework": "NIST AI RMF 1.0",
+          "anchorType": "function_outcome",
+          "anchorId": "Map 1.3",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A typed task envelope is a narrow, machine-readable slice of the outcome that mission, goals, assumptions, and context for AI use are understood and documented.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "AI RMF 1.0 / ISO 42001 crosswalk",
+            "locator": "Map 1.3"
+          }
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "anchorType": "function_outcome",
+          "anchorId": "MAP 2.1; MAP 2.2",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A typed task envelope is a narrow implementation slice of the GenAI profile outcomes that require the use case, context, inputs, and risk framing to be bounded and documented.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 600-1",
+            "locator": "MAP 2.1; MAP 2.2"
+          }
+        },
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "anchorType": "guidance_section",
+          "anchorId": "What are the accountability and governance implications of AI?",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A typed task envelope is a narrow documentary slice of the ICO expectation that organisations bound purpose, governance, and accountability for AI systems using personal data.",
+          "authoritativeSource": {
+            "authority": "ICO",
+            "documentId": "Guidance on AI and data protection",
+            "locator": "What are the accountability and governance implications of AI?"
+          }
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "anchorType": "clause",
+          "anchorId": "5.1;5.10;5.12",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm the candidate ISO/IEC 42005 clause set against the published standard before promoting it beyond crosswalk-derived status.",
+          "rationale": "Public crosswalk material indicates overlap with documenting AI system context, intended use, and impact-assessment inputs, but exact clause publication still needs licensed review.",
+          "authoritativeSource": {
+            "authority": "NIST / INCITS/AI",
+            "documentId": "Crosswalk Between NIST AI RMF 1.0 and ISO/IEC DIS 42005",
+            "locator": "Map 1.3"
+          }
+        },
+        {
+          "framework": "ISO/IEC 23053",
+          "anchorType": "abstract",
+          "anchorId": "Abstract",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Keep the control candidate-only until the workflow and lifecycle boundary can be confirmed against the published standard.",
+          "rationale": "The public summary of ISO/IEC 23053 indicates overlap with machine-learning task, pipeline, and lifecycle boundary description, which aligns with a typed task envelope.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC 23053:2022",
+            "locator": "Abstract"
+          }
+        },
+        {
+          "framework": "ISO/IEC TS 6254",
+          "anchorType": "abstract",
+          "anchorId": "Abstract",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Keep the metadata-contract overlap candidate-only until clause-grade licensed review exists.",
+          "rationale": "The public summary of ISO/IEC TS 6254 suggests overlap with AI metadata and information-handling discipline that supports a typed task envelope, but exact clause publication still needs licensed review.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC TS 6254",
+            "locator": "Abstract"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-12",
+      "title": "AI rights-ready run trace retained",
+      "decompositionNote": "This corridor would prove only that the scoped AI-assisted operation retains a rights-ready run trace capturing purpose, input classifications, output references, and human-review linkage.",
+      "reviews": [
+        {
+          "framework": "UK ICO AI and data protection guidance",
+          "anchorType": "guidance_section",
+          "anchorId": "How do we ensure individual rights in our AI systems?",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A rights-ready run trace is a narrow operational slice of the ICO expectation that organisations must support meaningful human review, explainability, and rights handling for AI-assisted decisions.",
+          "authoritativeSource": {
+            "authority": "ICO",
+            "documentId": "Guidance on AI and data protection",
+            "locator": "How do we ensure individual rights in our AI systems?"
+          }
+        },
+        {
+          "framework": "NIST AI 100-4",
+          "anchorType": "section",
+          "anchorId": "3.1; Appendix C",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A rights-ready run trace is a narrow, replay-oriented slice of provenance data tracking for origins and history that can later support inspection and reconstruction.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 100-4",
+            "locator": "3.1; Appendix C"
+          }
+        },
+        {
+          "framework": "GDPR",
+          "anchorType": "article",
+          "anchorId": "Articles 15 and 22",
+          "relation": "intersects-with",
+          "mappingMethod": "functional",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm whether the retained-trace corridor should stay a support-layer control or be promoted as a reviewed narrow rights-operation anchor.",
+          "rationale": "A retained rights-ready run trace clearly supports access, explanation, and human-review pathways, but it is narrower than the full legal duties in Articles 15 and 22.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "Regulation (EU) 2016/679",
+            "locator": "Articles 15 and 22"
+          }
+        },
+        {
+          "framework": "ISO/IEC 42005",
+          "anchorType": "clause",
+          "anchorId": "6.2;6.3",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm the candidate monitoring and human-review clauses against the published standard before promotion.",
+          "rationale": "Public crosswalk material suggests overlap with human-review and impact-response processes, but exact clause publication still needs licensed review.",
+          "authoritativeSource": {
+            "authority": "NIST / INCITS/AI",
+            "documentId": "Crosswalk Between NIST AI RMF 1.0 and ISO/IEC DIS 42005",
+            "locator": "Monitoring and review alignment"
+          }
+        },
+        {
+          "framework": "ISO/IEC TS 6254",
+          "anchorType": "abstract",
+          "anchorId": "Abstract",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Treat the metadata-retention overlap as candidate-only until clause-grade licensed review exists.",
+          "rationale": "The public summary suggests overlap with metadata retention and traceability practices that support rights-ready run traces, but exact clause publication still needs licensed review.",
+          "authoritativeSource": {
+            "authority": "ISO",
+            "documentId": "ISO/IEC TS 6254",
+            "locator": "Abstract"
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "oc.ai-13",
+      "title": "AI supplier and transfer map current",
+      "decompositionNote": "This corridor would prove only that a signed attestation states the scoped AI-assisted operation maintains a current supplier and transfer map with named subprocessors or service roles and declared transfer-mechanism coverage.",
+      "reviews": [
+        {
+          "framework": "GDPR",
+          "anchorType": "article",
+          "anchorId": "Articles 28 and 44-46",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A current supplier and transfer map is a narrow documentary slice of processor-governance and international-transfer duties for the scoped AI-assisted operation.",
+          "authoritativeSource": {
+            "authority": "EUR-Lex",
+            "documentId": "Regulation (EU) 2016/679",
+            "locator": "Articles 28 and 44-46"
+          }
+        },
+        {
+          "framework": "ISO/IEC 42001",
+          "anchorType": "clause",
+          "anchorId": "8.1;8.4;B.7.4",
+          "relation": "intersects-with",
+          "mappingMethod": "semantic",
+          "reviewStatus": "candidate_public_source_unreviewed",
+          "confidence": "low",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "needs_framework_specialist_review",
+          "nextAction": "Confirm the candidate external-provider and supply-chain clauses against licensed ISO/IEC 42001 text before promotion.",
+          "rationale": "Public crosswalk material suggests overlap with managing external providers and supply-chain responsibilities, but exact clause publication still needs licensed review.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "AI RMF to ISO/IEC 42001 crosswalk",
+            "locator": "Supply chain and provider governance alignment"
+          }
+        },
+        {
+          "framework": "NIST AI 600-1 Generative AI Profile",
+          "anchorType": "function_outcome",
+          "anchorId": "Govern 3.4",
+          "relation": "subset-of",
+          "mappingMethod": "functional",
+          "reviewStatus": "public_source_reviewed",
+          "confidence": "medium",
+          "sourceAvailability": "public_text",
+          "externalReviewState": "not_yet_external_reviewed",
+          "rationale": "A current supplier and transfer map is a narrow documentary slice of understanding third-party and supply-chain dependencies in a scoped generative-AI deployment.",
+          "authoritativeSource": {
+            "authority": "NIST",
+            "documentId": "NIST AI 600-1",
+            "locator": "Govern 3.4"
           }
         }
       ]

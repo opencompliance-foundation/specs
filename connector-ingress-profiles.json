@@ -7,7 +7,10 @@
       "actorIdentityId": "ai-disclosure-exporter",
       "allowedClaimTypes": [
         "ai_content_labeling_state",
-        "ai_content_provenance_state"
+        "ai_content_provenance_state",
+        "ai_task_envelope_state",
+        "ai_rights_ready_run_trace_state",
+        "privacy_notice_publication_state"
       ],
       "allowedSourceSystems": [
         "example-assistant-gateway"
